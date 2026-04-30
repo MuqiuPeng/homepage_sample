@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "title": "[Brand] — 主页示例模板",
+    "description": "这是一个用于展示页面结构与视觉风格的示例模板，所有文字与数据均为占位内容，不代表任何真实业务。"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "products": "产品",
+    "industries": "应用",
+    "contact": "联系",
+    "cta": "[ 主行动 ]"
+  },
+  "hero": {
+    "eyebrow": "[ 一句话定位 / Tagline ]",
+    "title": "[ 主标题示例 ]",
+    "titleAccent": "[ 渐变强调短语 ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed mauris non magna lacinia commodo. 这里是一段约 2–3 行的副标描述占位文字，用于展示段落排版的层次与节奏。",
+    "ctaPrimary": "[ 主行动 ]",
+    "ctaSecondary": "[ 次行动 ]",
+    "stats": {
+      "experience": { "label": "[ 指标 A ]", "value": "00+" },
+      "suppliers": { "label": "[ 指标 B ]", "value": "000+" },
+      "markets": { "label": "[ 指标 C ]", "value": "00" }
+    }
+  },
+  "trustStrip": {
+    "tagline": "[ 信任带 · 一句口号占位 ]",
+    "items": {
+      "iso": "[ 资质 / 认证 01 ]",
+      "reach": "[ 资质 / 认证 02 ]",
+      "care": "[ 能力声明 03 ]",
+      "ports": "[ 经验声明 04 ]"
+    },
+    "logosLabel": "[ 合作客户 ]"
+  },
+  "overview": {
+    "eyebrow": "[ 关于版块 ]",
+    "title": "[ 公司概览 · 一句主标题示例 ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里是公司概览的引言占位 — 用一两句话交代你们是谁、做什么、服务谁。",
+    "blocks": {
+      "who": {
+        "title": "[ 我们是谁 ]",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "what": {
+        "title": "[ 我们做什么 ]",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      "where": {
+        "title": "[ 我们服务谁 ]",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      }
+    },
+    "metrics": {
+      "experience": { "label": "[ 指标 A ]", "suffix": "" },
+      "suppliers": { "label": "[ 指标 B ]", "suffix": "+" },
+      "markets": { "label": "[ 指标 C ]", "suffix": "+" },
+      "warehouses": { "label": "[ 指标 D ]", "suffix": "" }
+    }
+  },
+  "productSystem": {
+    "eyebrow": "[ 产品体系 ]",
+    "title": "[ 产品体系 · 一句主标题示例 ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里用一两句话介绍你们聚焦的几条产品线、它们之间的关系，以及共同的价值主张。",
+    "useCasesLabel": "[ Use Cases ]",
+    "categories": {
+      "a": {
+        "name": "[ 品类 A ]",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里是品类的一句话定位与差异化描述。",
+        "uses": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 列出 1–2 个最典型的下游使用场景。",
+        "tags": { "t1": "[ 规格 ]", "t2": "[ 等级 ]", "t3": "[ 包装 ]" }
+      },
+      "b": {
+        "name": "[ 品类 B ]",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        "uses": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.",
+        "tags": { "t1": "[ 规格 ]", "t2": "[ 等级 ]", "t3": "[ 包装 ]" }
+      },
+      "c": {
+        "name": "[ 品类 C ]",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+        "uses": "Nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa.",
+        "tags": { "t1": "[ 规格 ]", "t2": "[ 等级 ]", "t3": "[ 包装 ]" }
+      }
+    }
+  },
+  "industries": {
+    "eyebrow": "[ 应用市场 ]",
+    "title": "[ 应用市场 · 一句主标题示例 ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里说明产品大致流向哪几类下游行业的关键工序。",
+    "items": {
+      "plastics": {
+        "name": "[ 行业 01 ]",
+        "use": "Lorem ipsum dolor sit amet — 一行描述说明该行业的典型使用方式。",
+        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
+      },
+      "coatings": {
+        "name": "[ 行业 02 ]",
+        "use": "Sed do eiusmod tempor incididunt — 一行描述说明该行业的典型使用方式。",
+        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
+      },
+      "textiles": {
+        "name": "[ 行业 03 ]",
+        "use": "Ut enim ad minim veniam — 一行描述说明该行业的典型使用方式。",
+        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
+      },
+      "agro": {
+        "name": "[ 行业 04 ]",
+        "use": "Quis nostrud exercitation — 一行描述说明该行业的典型使用方式。",
+        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
+      },
+      "construction": {
+        "name": "[ 行业 05 ]",
+        "use": "Duis aute irure dolor — 一行描述说明该行业的典型使用方式。",
+        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
+      },
+      "energy": {
+        "name": "[ 行业 06 ]",
+        "use": "Excepteur sint occaecat — 一行描述说明该行业的典型使用方式。",
+        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
+      }
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ 为什么选我们 ]",
+    "title": "[ 差异化主张 · 一句主标题示例 ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里用一两句话总结你们最希望客户记住的差异点。",
+    "items": {
+      "supply": {
+        "title": "[ 优势 01 ]",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+      },
+      "spec": {
+        "title": "[ 优势 02 ]",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "compliance": {
+        "title": "[ 优势 03 ]",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+      },
+      "logistics": {
+        "title": "[ 优势 04 ]",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."
+      }
+    }
+  },
+  "preview": {
+    "eyebrow": "[ 产品预览 ]",
+    "title": "[ 精选 / 热门产品 · 一句主标题示例 ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里展示几张精选产品卡，作为产品体系的视觉化补充。",
+    "items": {
+      "a": {
+        "name": "[ 产品 / 牌号 01 ]",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "spec": "[ 规格 / 来源占位 ]",
+        "cta": "[ 行动 ]"
+      },
+      "b": {
+        "name": "[ 产品 / 牌号 02 ]",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "spec": "[ 规格 / 来源占位 ]",
+        "cta": "[ 行动 ]"
+      },
+      "c": {
+        "name": "[ 产品 / 牌号 03 ]",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "spec": "[ 规格 / 来源占位 ]",
+        "cta": "[ 行动 ]"
+      }
+    },
+    "footer": "[ 更多产品 / 引导查看完整目录 — 占位文案 ]"
+  },
+  "contact": {
+    "eyebrow": "[ 联系版块 ]",
+    "title": "[ 联系 / 询盘 · 一句主标题示例 ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里用一两句话告诉访客如何最快找到你们。",
+    "infoTitle": "[ 联系方式 ]",
+    "info": {
+      "address": { "label": "[ 地址 ]", "value": "[ 公司地址占位 ]" },
+      "email": { "label": "[ 邮箱 ]", "value": "hello@example.com" },
+      "sales": { "label": "[ 电话 1 ]", "value": "+00 000-0000-0000" },
+      "support": { "label": "[ 电话 2 ]", "value": "+00 000-0000-0000" }
+    },
+    "wechat": {
+      "title": "[ 二维码标题 ]",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "form": {
+      "name": "[ 字段：姓名 ]",
+      "company": "[ 字段：公司 ]",
+      "email": "[ 字段：邮箱 ]",
+      "product": "[ 字段：产品 ]",
+      "quantity": "[ 字段：数量 ]",
+      "message": "[ 字段：留言 ]",
+      "submit": "[ 提交 ]",
+      "sending": "[ 提交中… ]",
+      "success": "[ 提交成功 · 提示文案占位 ]",
+      "privacy": "[ 隐私声明占位 — Lorem ipsum dolor sit amet. ]"
+    },
+    "errors": {
+      "required": "此项为必填",
+      "email": "请输入有效的邮箱地址"
+    }
+  },
+  "footer": {
+    "tagline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里是 Footer 一段公司简介占位文案。",
+    "nav": "[ 导航 ]",
+    "contact": "[ 联系 ]",
+    "address": "[ 公司地址占位 ]",
+    "rights": "[ 版权声明占位 ]",
+    "legal": "[ 备案 / 许可证号 占位 ]"
+  }
+}

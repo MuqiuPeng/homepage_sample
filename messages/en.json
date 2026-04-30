@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "title": "[Brand] — Homepage Sample Template",
+    "description": "Sample template demonstrating layout and visual style. All copy is placeholder; nothing here represents real business."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "industries": "Markets",
+    "contact": "Contact",
+    "cta": "[ Primary CTA ]"
+  },
+  "hero": {
+    "eyebrow": "[ Tagline / Positioning line ]",
+    "title": "[ Hero Headline Sample ]",
+    "titleAccent": "[ gradient accent phrase ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sample subhead in two to three lines.",
+    "ctaPrimary": "[ Primary CTA ]",
+    "ctaSecondary": "[ Secondary CTA ]",
+    "stats": {
+      "experience": { "label": "[ Metric A ]", "value": "00+" },
+      "suppliers": { "label": "[ Metric B ]", "value": "000+" },
+      "markets": { "label": "[ Metric C ]", "value": "00" }
+    }
+  },
+  "trustStrip": {
+    "tagline": "[ Trust Strip · single tagline placeholder ]",
+    "items": {
+      "iso": "[ Certification 01 ]",
+      "reach": "[ Certification 02 ]",
+      "care": "[ Capability claim 03 ]",
+      "ports": "[ Experience claim 04 ]"
+    },
+    "logosLabel": "[ Trusted by ]"
+  },
+  "overview": {
+    "eyebrow": "[ About section ]",
+    "title": "[ Company overview · headline sample ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sample lead paragraph — one or two sentences explaining who you are, what you do, who you serve.",
+    "blocks": {
+      "who": {
+        "title": "[ Who we are ]",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "what": {
+        "title": "[ What we do ]",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      "where": {
+        "title": "[ Who we serve ]",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      }
+    },
+    "metrics": {
+      "experience": { "label": "[ Metric A ]", "suffix": "" },
+      "suppliers": { "label": "[ Metric B ]", "suffix": "+" },
+      "markets": { "label": "[ Metric C ]", "suffix": "+" },
+      "warehouses": { "label": "[ Metric D ]", "suffix": "" }
+    }
+  },
+  "productSystem": {
+    "eyebrow": "[ Product system ]",
+    "title": "[ Product system · headline sample ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sample paragraph describing the few focused product lines and their shared value proposition.",
+    "useCasesLabel": "[ Use Cases ]",
+    "categories": {
+      "a": {
+        "name": "[ Category A ]",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. One-line positioning and differentiation for this category.",
+        "uses": "Sed do eiusmod tempor incididunt ut labore. List one or two typical downstream use cases.",
+        "tags": { "t1": "[ Spec ]", "t2": "[ Grade ]", "t3": "[ Packaging ]" }
+      },
+      "b": {
+        "name": "[ Category B ]",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.",
+        "uses": "Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt.",
+        "tags": { "t1": "[ Spec ]", "t2": "[ Grade ]", "t3": "[ Packaging ]" }
+      },
+      "c": {
+        "name": "[ Category C ]",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+        "uses": "Nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa.",
+        "tags": { "t1": "[ Spec ]", "t2": "[ Grade ]", "t3": "[ Packaging ]" }
+      }
+    }
+  },
+  "industries": {
+    "eyebrow": "[ Application markets ]",
+    "title": "[ Application markets · headline sample ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. One sentence about which downstream industries the product serves.",
+    "items": {
+      "plastics": {
+        "name": "[ Industry 01 ]",
+        "use": "Lorem ipsum dolor sit amet — one-line note on how the product is used here.",
+        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
+      },
+      "coatings": {
+        "name": "[ Industry 02 ]",
+        "use": "Sed do eiusmod tempor incididunt — one-line note on how the product is used here.",
+        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
+      },
+      "textiles": {
+        "name": "[ Industry 03 ]",
+        "use": "Ut enim ad minim veniam — one-line note on how the product is used here.",
+        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
+      },
+      "agro": {
+        "name": "[ Industry 04 ]",
+        "use": "Quis nostrud exercitation — one-line note on how the product is used here.",
+        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
+      },
+      "construction": {
+        "name": "[ Industry 05 ]",
+        "use": "Duis aute irure dolor — one-line note on how the product is used here.",
+        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
+      },
+      "energy": {
+        "name": "[ Industry 06 ]",
+        "use": "Excepteur sint occaecat — one-line note on how the product is used here.",
+        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
+      }
+    }
+  },
+  "whyUs": {
+    "eyebrow": "[ Why us ]",
+    "title": "[ Differentiation · headline sample ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. One or two sentences summarizing the differentiators you most want customers to remember.",
+    "items": {
+      "supply": {
+        "title": "[ Advantage 01 ]",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+      },
+      "spec": {
+        "title": "[ Advantage 02 ]",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+      },
+      "compliance": {
+        "title": "[ Advantage 03 ]",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+      },
+      "logistics": {
+        "title": "[ Advantage 04 ]",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."
+      }
+    }
+  },
+  "preview": {
+    "eyebrow": "[ Product preview ]",
+    "title": "[ Featured products · headline sample ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A few featured product cards as a visual companion to the product system.",
+    "items": {
+      "a": {
+        "name": "[ Product / SKU 01 ]",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "spec": "[ SPEC / SOURCE ]",
+        "cta": "[ Action ]"
+      },
+      "b": {
+        "name": "[ Product / SKU 02 ]",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "spec": "[ SPEC / SOURCE ]",
+        "cta": "[ Action ]"
+      },
+      "c": {
+        "name": "[ Product / SKU 03 ]",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "spec": "[ SPEC / SOURCE ]",
+        "cta": "[ Action ]"
+      }
+    },
+    "footer": "[ Browse the full catalog — placeholder copy ]"
+  },
+  "contact": {
+    "eyebrow": "[ Contact section ]",
+    "title": "[ Contact · headline sample ]",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. One or two sentences telling visitors the fastest way to reach you.",
+    "infoTitle": "[ Contact details ]",
+    "info": {
+      "address": { "label": "[ Address ]", "value": "[ Company address placeholder ]" },
+      "email": { "label": "[ Email ]", "value": "hello@example.com" },
+      "sales": { "label": "[ Phone 1 ]", "value": "+00 000-0000-0000" },
+      "support": { "label": "[ Phone 2 ]", "value": "+00 000-0000-0000" }
+    },
+    "wechat": {
+      "title": "[ QR title ]",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "form": {
+      "name": "[ Field: Name ]",
+      "company": "[ Field: Company ]",
+      "email": "[ Field: Email ]",
+      "product": "[ Field: Product ]",
+      "quantity": "[ Field: Quantity ]",
+      "message": "[ Field: Message ]",
+      "submit": "[ Submit ]",
+      "sending": "[ Sending… ]",
+      "success": "[ Success — placeholder confirmation copy ]",
+      "privacy": "[ Privacy notice placeholder — Lorem ipsum dolor sit amet. ]"
+    },
+    "errors": {
+      "required": "This field is required",
+      "email": "Please enter a valid email address"
+    }
+  },
+  "footer": {
+    "tagline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Footer placeholder paragraph for company tagline.",
+    "nav": "[ Navigation ]",
+    "contact": "[ Contact ]",
+    "address": "[ Company address placeholder ]",
+    "rights": "[ Rights placeholder ]",
+    "legal": "[ Legal / license placeholder ]"
+  }
+}

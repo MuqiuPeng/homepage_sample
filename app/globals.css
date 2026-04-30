@@ -1,26 +1,136 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Brand color palette — Deep Teal (petrol blue) */
+  --color-brand-50: #eef6f8;
+  --color-brand-100: #d6e8ed;
+  --color-brand-200: #a9cdd6;
+  --color-brand-300: #7aaeba;
+  --color-brand-400: #4a8fa5;
+  --color-brand-500: #1b6b7f;
+  --color-brand-600: #0f4c5c;
+  --color-brand-700: #0e3b47;
+  --color-brand-800: #0a2b33;
+  --color-brand-900: #061b21;
+
+  /* Accent — Sunlight Gold */
+  --color-accent-200: #fde7b8;
+  --color-accent-300: #f4cf80;
+  --color-accent-400: #e8a33d;
+  --color-accent-500: #c9842f;
+  --color-accent-600: #a36821;
+
+  /* Glass/shadow tokens */
+  --shadow-glass: 0 8px 32px rgba(15, 76, 92, 0.12);
+  --shadow-glass-lg: 0 16px 48px rgba(15, 76, 92, 0.18);
+  --shadow-glow: 0 0 0 1px rgba(255, 255, 255, 0.5), 0 8px 32px rgba(27, 107, 127, 0.18);
+
+  /* Font families */
+  --font-sans: var(--font-inter), var(--font-noto-sc), ui-sans-serif, system-ui, sans-serif;
+
+  /* Animations */
+  --animate-blob: blob 22s ease-in-out infinite;
+  --animate-marquee: marquee 36s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-shimmer: shimmer 3s linear infinite;
+  --animate-spin-slow: spin 36s linear infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(24px, -36px) scale(1.08);
+  }
+  66% {
+    transform: translate(-18px, 18px) scale(0.96);
   }
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+:root {
+  --background: #fbfaf6;
+  --foreground: #0a2b33;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 4.5rem;
+}
+/* Note: SnapScrollController briefly clears `scroll-snap-type` via inline
+   style during its damped tween, then restores it. */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility: gradient text — teal → gold */
+.text-gradient {
+  background-image: linear-gradient(120deg, #0f4c5c 0%, #1b6b7f 45%, #e8a33d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Utility: gradient border via mask */
+.gradient-border {
+  position: relative;
+  isolation: isolate;
+}
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(74, 143, 165, 0.55), rgba(232, 163, 61, 0.4), rgba(255, 255, 255, 0.3));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
 }

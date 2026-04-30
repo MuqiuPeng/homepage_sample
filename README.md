@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# homepage_sample
 
-## Getting Started
+A bilingual (中/EN) corporate homepage **template** with deep-teal + sunlight-gold glassmorphism, built as a Next.js 16 + Tailwind v4 reference. All copy is placeholder content (lorem ipsum + bracketed labels) — the structure, motion and layout are the deliverable; real text and assets are dropped in later.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 16** (App Router, TypeScript)
+- **Tailwind CSS v4**
+- **next-intl** for `/zh` and `/en` locale routing
+- **Framer Motion** for in-view reveals and hero molecular SVG
+- **lucide-react** icons + a few inline SVG brand glyphs
+- Custom `SnapScrollController` for damped one-section-per-gesture wheel snap (with native CSS scroll-snap as fallback for keyboard / touch / anchor links)
+
+## Sections
+
+```
+Hero  →  TrustStrip  →  Overview  →  ProductSystem
+     →  Industries  →  WhyUs  →  ProductPreview  →  Contact
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Each main section is `min-h-screen` with `snap-start`; TrustStrip stays as a non-snap transition band between Hero and Overview.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Local development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm install
+pnpm dev   # http://localhost:3000  (or pnpm dev --port 3030)
+```
 
-## Learn More
+Routes:
 
-To learn more about Next.js, take a look at the following resources:
+- `/` redirects to `/zh`
+- `/zh` and `/en` are pre-rendered statically
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customizing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Copy: edit `messages/zh.json` and `messages/en.json` — all labels live here
+- Color palette: `app/globals.css` `@theme` block (`--color-brand-*`, `--color-accent-*`)
+- Section structure: `app/[locale]/page.tsx`
+- Snap feel: `components/motion/SnapScrollController.tsx` — `ANIM_MS` (transition duration) and `GESTURE_GAP_MS` (gesture boundary detection)
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Designed for Vercel — zero-config; just import the repo, set custom domain in dashboard.
