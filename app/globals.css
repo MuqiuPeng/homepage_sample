@@ -87,6 +87,14 @@ html {
 /* Note: SnapScrollController briefly clears `scroll-snap-type` via inline
    style during its damped tween, then restores it. */
 
+/* Touch devices (mobile/tablet) get free natural scrolling — mandatory snap
+   plus mobile-chrome viewport changes feel jarring with finger momentum. */
+@media (pointer: coarse) {
+  html {
+    scroll-snap-type: none;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

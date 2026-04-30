@@ -93,7 +93,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative snap-start min-h-screen flex flex-col justify-center px-4 py-24 sm:px-6 sm:py-28 lg:px-8 lg:py-32"
+      className="relative snap-start min-h-svh flex flex-col lg:justify-center px-4 py-24 sm:px-6 sm:py-28 lg:px-8 lg:py-32"
     >
       <div className="mx-auto max-w-7xl">
         <SectionHeading

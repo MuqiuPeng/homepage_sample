@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Noto_Sans_SC } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale, getMessages, getTranslations } from "next-intl/server";
@@ -27,6 +27,17 @@ const notoSC = Noto_Sans_SC({
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+// Lock the viewport to device width with no user scaling — the design relies
+// on the desktop-vs-mobile breakpoint hierarchy and pinch-to-zoom would break
+// the section "one-page-per-screen" feel on mobile.
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
+};
 
 export async function generateMetadata({
   params,
