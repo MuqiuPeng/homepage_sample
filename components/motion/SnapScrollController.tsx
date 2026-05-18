@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { usePathname, useRouter } from "@/i18n/navigation";
 
 const SNAP_IDS = [
   "hero",
@@ -21,6 +22,40 @@ const CLICK_ANIM_MS = 620;
 // events for 500–700ms). Mouse-wheel clicks are typically separated by
 // hundreds of ms, so each click registers as its own gesture.
 const GESTURE_GAP_MS = 100;
+// Section IDs that only exist on the homepage. Anchor clicks targeting one
+// of these from a non-homepage route are rewritten into a SPA navigation
+// back to "/" with the hash, then tweened once the route transition lands.
+const HOMEPAGE_ANCHOR_IDS = new Set(SNAP_IDS);
+
+/**
+ * One-shot eased scroll. Module-scoped so both the click handler and the
+ * post-navigation hash effect can reuse it without re-binding.
+ */
+function tweenScroll(targetY: number, duration: number) {
+  if (typeof window === "undefined") return;
+  const startY = window.scrollY;
+  const distance = targetY - startY;
+  if (Math.abs(distance) < 2) return;
+  const html = document.documentElement;
+  const prevSnap = html.style.scrollSnapType;
+  const prevBehavior = html.style.scrollBehavior;
+  html.style.scrollSnapType = "none";
+  html.style.scrollBehavior = "auto";
+  const startTime = performance.now();
+  function step(now: number) {
+    const elapsed = now - startTime;
+    const t = Math.min(elapsed / duration, 1);
+    const eased = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    window.scrollTo(0, Math.round(startY + distance * eased));
+    if (t < 1) {
+      requestAnimationFrame(step);
+    } else {
+      html.style.scrollSnapType = prevSnap;
+      html.style.scrollBehavior = prevBehavior;
+    }
+  }
+  requestAnimationFrame(step);
+}
 
 /**
  * Replaces native scroll-snap on desktop with a JS-driven tween, so wheel
@@ -28,39 +63,28 @@ const GESTURE_GAP_MS = 100;
  * instant. Also intercepts anchor-link clicks (nav, CTA, footer) on every
  * device to give them the same damped feel — clicks would otherwise fall
  * back to the browser's instant scroll-to-anchor.
+ *
+ * Cross-page support: when an anchor click happens off the homepage (e.g.
+ * "Contact" in the header on /products/<id>), the click is rewritten into
+ * a SPA navigation to "/" with the hash, and a post-navigation effect
+ * tweens to the target section once the homepage's sections are mounted.
  */
 export function SnapScrollController() {
+  const router = useRouter();
+  const pathname = usePathname();
+  // Stable ref so the document-level click listener (bound once) always
+  // sees the current homepage flag — avoids rebinding on every route change.
+  const isHomepageRef = useRef(pathname === "/");
+  useEffect(() => {
+    isHomepageRef.current = pathname === "/";
+  }, [pathname]);
+
   // Anchor-click interception is universal — runs on touch, on reduced
   // motion (where it falls back to an instant jump), on every device. Wheel
   // and keyboard handlers below are gated to fine pointers.
   useEffect(() => {
     if (typeof window === "undefined") return;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-    function tweenScroll(targetY: number, duration: number) {
-      const startY = window.scrollY;
-      const distance = targetY - startY;
-      if (Math.abs(distance) < 2) return;
-      const html = document.documentElement;
-      const prevSnap = html.style.scrollSnapType;
-      const prevBehavior = html.style.scrollBehavior;
-      html.style.scrollSnapType = "none";
-      html.style.scrollBehavior = "auto";
-      const startTime = performance.now();
-      function step(now: number) {
-        const elapsed = now - startTime;
-        const t = Math.min(elapsed / duration, 1);
-        const eased = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-        window.scrollTo(0, Math.round(startY + distance * eased));
-        if (t < 1) {
-          requestAnimationFrame(step);
-        } else {
-          html.style.scrollSnapType = prevSnap;
-          html.style.scrollBehavior = prevBehavior;
-        }
-      }
-      requestAnimationFrame(step);
-    }
 
     function onClick(e: MouseEvent) {
       // Plain left-clicks only — let modifier-clicks (cmd-open-in-new-tab) pass through.
@@ -70,6 +94,19 @@ export function SnapScrollController() {
       const href = link.getAttribute("href");
       if (!href || href === "#" || href.length < 2) return;
       const id = href.slice(1);
+
+      // Off-homepage path: only re-route if the hash targets a known
+      // homepage section. Unknown hashes (e.g. tab IDs on a product page)
+      // are left alone so the rest of the app can use anchors normally.
+      if (!isHomepageRef.current) {
+        if (!HOMEPAGE_ANCHOR_IDS.has(id)) return;
+        e.preventDefault();
+        // The post-navigation effect below picks up the hash and tweens to
+        // the section once the homepage finishes route-transitioning in.
+        router.push(`/#${id}`);
+        return;
+      }
+
       const el = document.getElementById(id);
       if (!el) return;
 
@@ -90,7 +127,44 @@ export function SnapScrollController() {
 
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);
-  }, []);
+  }, [router]);
+
+  // After a route change lands on the homepage with a hash (typically
+  // caused by the click handler above doing `router.push("/#about")` from
+  // a product page), find the target section and tween to it. Then strip
+  // the hash from the URL so reloads start at the top.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (pathname !== "/") return;
+    const hash = window.location.hash.slice(1);
+    if (!hash || !HOMEPAGE_ANCHOR_IDS.has(hash)) return;
+
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    // One paint frame for the homepage's section elements to be in the DOM
+    // post route-transition. rAF is enough in practice — Next.js streams the
+    // server-rendered HTML before this effect runs.
+    const raf = requestAnimationFrame(() => {
+      const el = document.getElementById(hash);
+      if (!el) return;
+      const targetY = Math.max(0, el.offsetTop - HEADER_OFFSET);
+      if (reduced) {
+        window.scrollTo(0, targetY);
+      } else {
+        tweenScroll(targetY, CLICK_ANIM_MS);
+      }
+      // Strip the hash so reloads/back-button start at the top instead of
+      // re-running this jump.
+      window.history.replaceState(
+        null,
+        "",
+        window.location.pathname + window.location.search,
+      );
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [pathname]);
 
   // Wheel + keyboard tween — desktop fine-pointer only.
   useEffect(() => {
