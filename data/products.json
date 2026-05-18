@@ -50,16 +50,16 @@
 
       "applications": {
         "zh": [
-          "建筑、桥梁等钢结构",
-          "石化、化学设备防腐蚀",
+          "建筑钢结构",
+          "化工设备防腐",
           "交通运输",
-          "其他户外高耐候装饰"
+          "户外耐候装饰"
         ],
         "en": [
-          "Steel structures of buildings, bridges, etc.",
-          "Anti-corrosion of petrochemical and chemical equipment",
+          "Steel structures",
+          "Chemical anti-corrosion",
           "Transportation",
-          "Other outdoor high-weather-resistant decoration"
+          "Outdoor decoration"
         ]
       },
 
@@ -241,20 +241,20 @@
 
       "applications": {
         "zh": [
-          "建筑、桥梁等钢结构",
-          "太阳能背板涂料",
-          "沿海、海洋设施",
-          "石化、化学设备防腐蚀",
+          "建筑钢结构",
+          "太阳能背板",
+          "海洋设施",
+          "化工设备防腐",
           "交通运输",
-          "其他户外高耐候装饰"
+          "户外耐候装饰"
         ],
         "en": [
-          "Steel structures of buildings, bridges, etc.",
-          "Solar backsheet coatings",
-          "Coastal and marine facilities",
-          "Anti-corrosion of petrochemical and chemical equipment",
+          "Steel structures",
+          "Solar backsheets",
+          "Marine facilities",
+          "Chemical anti-corrosion",
           "Transportation",
-          "Other outdoor high-weather-resistant decoration"
+          "Outdoor decoration"
         ]
       },
 
@@ -395,8 +395,8 @@
         ],
         "en": [
           "Coil coatings",
-          "Aluminum profile coatings",
-          "Aluminum curtain wall coatings"
+          "Aluminum profiles",
+          "Curtain wall coatings"
         ]
       },
 
@@ -491,15 +491,15 @@
 
       "applications": {
         "zh": [
-          "太阳能光伏背板涂层",
+          "光伏背板涂层",
           "海洋防腐",
           "大型钢构",
           "卷材涂装"
         ],
         "en": [
-          "Solar photovoltaic backsheet coatings",
-          "Marine anticorrosion",
-          "Large-scale steel structures",
+          "PV backsheet coatings",
+          "Marine anti-corrosion",
+          "Steel structures",
           "Coil coating"
         ]
       },
@@ -615,20 +615,20 @@
 
       "applications": {
         "zh": [
-          "建筑、桥梁等钢结构",
-          "太阳能背板涂料",
-          "沿海、海洋设施",
-          "石化、化学设备防腐蚀",
+          "建筑钢结构",
+          "太阳能背板",
+          "海洋设施",
+          "化工设备防腐",
           "交通运输",
-          "其他户外高耐候装饰"
+          "户外耐候装饰"
         ],
         "en": [
-          "Steel structures of buildings, bridges, etc.",
-          "Solar backsheet coatings",
-          "Coastal and marine facilities",
-          "Anti-corrosion of petrochemical and chemical equipment",
+          "Steel structures",
+          "Solar backsheets",
+          "Marine facilities",
+          "Chemical anti-corrosion",
           "Transportation",
-          "Other outdoor high-weather-resistant decoration"
+          "Outdoor decoration"
         ]
       },
 
@@ -703,8 +703,14 @@
       "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）二元生胶，氟含量 66.5%。适用于挤出与注压成型，可制造各类密封件、垫片与管件。", "en": "Medium-to-low Mooney VDF-based binary FKM raw rubber, 66.5% fluorine. Used for extrusion and injection-compression molding to make seals, gaskets and pipe fittings." },
 
       "applications": {
-        "zh": ["挤出成型", "注压成型"],
-        "en": ["Extrusion molding", "Injection compression molding"]
+        "zh": [
+          "挤出成型",
+          "注压成型"
+        ],
+        "en": [
+          "Extrusion",
+          "Injection-compression"
+        ]
       },
 
       "engineering_cases": null,
@@ -888,8 +894,16 @@
       "description": { "zh": "双峰分子量分布的中、低门尼 VDF 基氟橡胶（FKM）二元生胶，氟含量 66.5%。适用于模压、挤出与注压成型，可制造密封件、管件与异型橡胶件。", "en": "Bimodal-MW medium-to-low Mooney VDF-based binary FKM raw rubber, 66.5% fluorine. Used for compression, extrusion and injection-compression molding of seals, pipe fittings and shaped rubber parts." },
 
       "applications": {
-        "zh": ["模压成型", "挤出成型", "注压成型"],
-        "en": ["Compression molding", "Extrusion molding", "Injection compression molding"]
+        "zh": [
+          "模压成型",
+          "挤出成型",
+          "注压成型"
+        ],
+        "en": [
+          "Compression molding",
+          "Extrusion",
+          "Injection-compression"
+        ]
       },
 
       "engineering_cases": null,
@@ -1060,8 +1074,16 @@
       "description": { "zh": "低门尼 VDF 基氟橡胶（FKM）二元生胶，氟含量 66.5%。适用于挤出、注压与注射成型，流动性高，可制造复杂截面与小型精密件。", "en": "Low-Mooney VDF-based binary FKM raw rubber, 66.5% fluorine. Used for extrusion, injection-compression and injection molding — high flow for complex profiles and small precision parts." },
 
       "applications": {
-        "zh": ["挤出成型", "注压成型", "注射成型"],
-        "en": ["Extrusion molding", "Injection compression molding", "Injection molding"]
+        "zh": [
+          "挤出成型",
+          "注压成型",
+          "注射成型"
+        ],
+        "en": [
+          "Extrusion",
+          "Injection-compression",
+          "Injection molding"
+        ]
       },
 
       "engineering_cases": null,
@@ -1202,8 +1224,14 @@
       "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）三元生胶，氟含量 67.5%。适用于挤出与注压成型，可制造密封件、垫片与管件。", "en": "Medium-to-low Mooney VDF-based ternary FKM raw rubber, 67.5% fluorine. Used for extrusion and injection-compression molding of seals, gaskets and pipe fittings." },
 
       "applications": {
-        "zh": ["挤出成型", "注压成型"],
-        "en": ["Extrusion molding", "Injection compression molding"]
+        "zh": [
+          "挤出成型",
+          "注压成型"
+        ],
+        "en": [
+          "Extrusion",
+          "Injection-compression"
+        ]
       },
 
       "engineering_cases": null,
@@ -1268,8 +1296,18 @@
       "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）三元生胶，氟含量 68.5%。适用于模压、挤出、注压与压延成型，可制造各类密封件、垫片、管件与片材。", "en": "Medium-to-low Mooney VDF-based ternary FKM raw rubber, 68.5% fluorine. Used for compression, extrusion, injection-compression and calendering — suitable for seals, gaskets, pipe fittings and sheets." },
 
       "applications": {
-        "zh": ["模压成型", "挤出成型", "注压成型", "压延成型"],
-        "en": ["Compression molding", "Extrusion molding", "Injection compression molding", "Calendering"]
+        "zh": [
+          "模压成型",
+          "挤出成型",
+          "注压成型",
+          "压延成型"
+        ],
+        "en": [
+          "Compression molding",
+          "Extrusion",
+          "Injection-compression",
+          "Calendering"
+        ]
       },
 
       "engineering_cases": null,
@@ -1457,8 +1495,16 @@
       "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）高氟含量三元生胶，氟含量 69.5% — 较常规 FKM 介质耐受性更优。适用于模压、挤出与注压成型，可制造耐油 / 燃料 / 化学介质密封件。", "en": "Medium-to-low Mooney high-fluorine VDF-based ternary FKM raw rubber, 69.5% fluorine — better chemical-media resistance than standard FKM. Used for compression, extrusion and injection-compression molding of oil-, fuel- and chemical-resistant seals." },
 
       "applications": {
-        "zh": ["模压成型", "挤出成型", "注压成型"],
-        "en": ["Compression molding", "Extrusion molding", "Injection compression molding"]
+        "zh": [
+          "模压成型",
+          "挤出成型",
+          "注压成型"
+        ],
+        "en": [
+          "Compression molding",
+          "Extrusion",
+          "Injection-compression"
+        ]
       },
 
       "engineering_cases": null,
@@ -1569,8 +1615,16 @@
       "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）超高氟含量三元生胶，氟含量 70% — 系列中介质耐受性最强。适用于模压、挤出与注压成型，可制造苛刻介质环境下的密封件。", "en": "Medium-to-low Mooney ultra-high-fluorine VDF-based ternary FKM raw rubber, 70% fluorine — top media resistance in the FKM series. Used for compression, extrusion and injection-compression molding of seals exposed to aggressive media." },
 
       "applications": {
-        "zh": ["模压成型", "挤出成型", "注压成型"],
-        "en": ["Compression molding", "Extrusion molding", "Injection compression molding"]
+        "zh": [
+          "模压成型",
+          "挤出成型",
+          "注压成型"
+        ],
+        "en": [
+          "Compression molding",
+          "Extrusion",
+          "Injection-compression"
+        ]
       },
 
       "engineering_cases": null,
@@ -1932,8 +1986,14 @@
       "description": { "zh": "TFE-丙烯共聚氟橡胶（FEPM）生胶，氟含量 57%、长期使用温度 200°C — 较 VDF 基 FKM 具有更优的耐碱性与耐胺性。适用于挤出成型并经辐照交联，主要用于耐热电线电缆绝缘。", "en": "TFE-propylene fluoroelastomer (FEPM) raw rubber, 57% fluorine, long-term service 200°C — better base and amine resistance than VDF-based FKM. Used for extrusion followed by radiation crosslinking, primarily for heat-resistant wire & cable insulation." },
 
       "applications": {
-        "zh": ["耐热电线电缆（200°C 长期使用）", "挤出成型 + 辐照交联"],
-        "en": ["Heat-resistant wires and cables (200°C long-term)", "Extrusion molding + radiation crosslinking"]
+        "zh": [
+          "耐热电线电缆",
+          "辐照交联挤出"
+        ],
+        "en": [
+          "Heat-resistant cables",
+          "Radiation-cure extrusion"
+        ]
       },
 
       "engineering_cases": null,
@@ -1994,8 +2054,12 @@
       "description": { "zh": "用于制备聚合物加工助剂（PPA）的 FKM 水基分散液，固含量约 27%。适用于乳液型 PPA 配方生产，作为聚烯烃加工助剂的关键中间体。", "en": "FKM water-based dispersion for the preparation of polymer processing aids (PPA), ~27% solid content. Used in emulsion-type PPA formulations as a key intermediate for polyolefin processing aids." },
 
       "applications": {
-        "zh": ["聚合物加工助剂（PPA）原料"],
-        "en": ["Feedstock for polymer processing aids (PPA)"]
+        "zh": [
+          "PPA 原料"
+        ],
+        "en": [
+          "PPA feedstock"
+        ]
       },
 
       "engineering_cases": null,
@@ -2058,9 +2122,9 @@
           "PP 加工助剂"
         ],
         "en": [
-          "HDPE processing aid",
-          "LLDPE processing aid",
-          "PP processing aid"
+          "HDPE PPA",
+          "LLDPE PPA",
+          "PP PPA"
         ]
       },
 
@@ -2115,18 +2179,22 @@
         "en": "Terpolymer of tetrafluoroethylene (TFE), perfluoromethyl vinyl ether (PMVE) and a cure-site monomer — perfluoroether rubber (FFKM)"
       },
 
-      "description": { "zh": "全氟醚橡胶（FFKM）生胶系列，氟含量 72.5%、适用温度 −10°C 至 230°C — 对腐蚀性介质提供最广泛的耐受性与优秀压缩永久变形。适用于模压成型，可制造苛刻工况下的 O 型圈、垫圈、阀体与机械密封件。", "en": "Perfluoroether elastomer (FFKM) raw rubber series, 72.5% fluorine, service −10°C to 230°C — broadest media resistance with excellent compression set. Used for compression molding of O-rings, gaskets, valve bodies and mechanical seals in aggressive process environments." },
+      "description": { "zh": "全氟醚橡胶（FFKM）生胶系列，氟含量 72.5%、适用温度 −10°C 至 230°C — 对腐蚀性介质提供最广泛的耐受性与优秀压缩永久变形。适用于模压成型，主要用于航空航天、半导体、化工、石油天然气、食品与医药行业的密封部件 — O 型圈、垫圈、阀体、泵壳与机械密封件。", "en": "Perfluoroether elastomer (FFKM) raw rubber series, 72.5% fluorine, service −10°C to 230°C — broadest media resistance with excellent compression set. Used for compression molding of sealing parts (O-rings, gaskets, valve bodies, pump casings, mechanical seals) in aerospace, semiconductor, chemical, oil & gas, food and pharmaceutical industries." },
 
       "applications": {
         "zh": [
-          "弹性密封元件：O 型圈、垫圈、阀体、蝶阀、泵壳与定子、金属粘接件",
-          "机械密封 / 泵 / 压缩机 / 阀门 / 反应釜 / 搅拌机 / 喷雾器 / 分配器 / 控制器 / 仪表",
-          "应用行业：航空航天、半导体制造、化工、石油天然气、食品、医药、喷涂"
+          "O 型圈 / 垫圈",
+          "阀体 / 蝶阀",
+          "机械密封件",
+          "泵壳与定子",
+          "金属粘接件"
         ],
         "en": [
-          "Elastic sealing elements: O-rings, gaskets, valve bodies, butterfly valves, pump casings & stators, metal-bonded parts",
-          "Mechanical seals / pumps / compressors / valves / reactors / mixers / aerosols / dispensers / controllers / instrumentation",
-          "Industries: aerospace, semiconductor manufacturing, chemical engineering, oil & gas, food, pharmaceutical, spraying"
+          "O-rings / gaskets",
+          "Valves",
+          "Mechanical seals",
+          "Pump casings & stators",
+          "Metal-bonded parts"
         ]
       },
 
@@ -2282,8 +2350,12 @@
       "description": { "zh": "涂料级 PVDF 粉末（VDF 均聚），加工窗口宽、烘干成膜耐候性优异。适用于建筑外墙烘干型 PVDF 氟碳涂料，与丙烯酸树脂及助剂配方使用。", "en": "Coating-grade PVDF powder (VDF homopolymer) — wide processing window with excellent baked-film weather resistance. Used in baking-type PVDF fluorocarbon coatings for exterior building walls, formulated with acrylic resin and additives." },
 
       "applications": {
-        "zh": ["建筑外墙烘干型 PVDF 氟碳涂料"],
-        "en": ["Baking-type PVDF fluorocarbon coatings for exterior walls"]
+        "zh": [
+          "建筑外墙涂料"
+        ],
+        "en": [
+          "Exterior wall coatings"
+        ]
       },
 
       "engineering_cases": [
@@ -2362,8 +2434,16 @@
       "description": { "zh": "锂电级 PVDF 粉末，覆盖正极粘合剂与隔膜涂层应用。适用于锂离子电池正极极片涂布（LFP / 三元体系）及隔膜涂层 — 提供乳液均聚、悬浮改性、乳液共聚三种工艺类型供选择。", "en": "Lithium-grade PVDF powders covering positive-cathode binder and separator-coating applications. Used in Li-ion battery cathode coating (LFP / ternary systems) and separator coating — available in emulsion-homopolymer, modified-suspension and emulsion-copolymer forms." },
 
       "applications": {
-        "zh": ["锂电池正极粘合剂（LFP）", "锂电池正极粘合剂（三元）", "锂电池隔膜涂层"],
-        "en": ["Lithium battery positive-cathode binder (LFP)", "Lithium battery positive-cathode binder (ternary)", "Lithium battery separator coating"]
+        "zh": [
+          "LFP 正极粘合剂",
+          "三元正极粘合剂",
+          "隔膜涂层"
+        ],
+        "en": [
+          "LFP cathode binder",
+          "Ternary cathode binder",
+          "Separator coating"
+        ]
       },
 
       "engineering_cases": [
@@ -2467,8 +2547,14 @@
       "description": { "zh": "水膜级 PVDF 粉末（VDF 均聚），机械韧性与耐化学性优异。适用于 NIPS 与 TIPS 工艺过滤膜制备 — 提供乳液与悬浮两种聚合方式的牌号供选择。", "en": "Water-film-grade PVDF powder (VDF homopolymer) with strong mechanical toughness and chemical resistance. Used in NIPS- and TIPS-process filtration-membrane preparation — available in emulsion and suspension forms." },
 
       "applications": {
-        "zh": ["NIPS 工艺过滤膜", "TIPS 工艺过滤膜"],
-        "en": ["NIPS-process filtration membranes", "TIPS-process filtration membranes"]
+        "zh": [
+          "NIPS 过滤膜",
+          "TIPS 过滤膜"
+        ],
+        "en": [
+          "NIPS membranes",
+          "TIPS membranes"
+        ]
       },
 
       "engineering_cases": [
@@ -2547,8 +2633,12 @@
       "description": { "zh": "光伏背板级 PVDF 粉末（乳液均聚），耐 UV 辐照、阻燃、易加工。适用于光伏组件背板膜挤出，可显著延长背板服役寿命。", "en": "Solar-backsheet-grade PVDF powder (emulsion homopolymer) — UV resistance, flame retardance and easy processing. Used for extrusion of PV-module backsheet film with significant service-life extension." },
 
       "applications": {
-        "zh": ["光伏背板膜"],
-        "en": ["Solar (PV) backsheet film"]
+        "zh": [
+          "光伏背板膜"
+        ],
+        "en": [
+          "PV backsheet film"
+        ]
       },
 
       "engineering_cases": [
@@ -2606,8 +2696,16 @@
       "description": { "zh": "通用级 PVDF（粉料与颗粒），机械强度、耐磨性与耐化学性优异且具良好熔融加工性。适用于注塑与挤出工艺，可制成片材、复合膜、阀门、管材、罐体等部件。", "en": "General-purpose PVDF (powder and pellet) — excellent mechanical strength, abrasion and chemical resistance with good melt processability. Used for injection molding and extrusion to make sheets, composite films, valves, pipes and tanks." },
 
       "applications": {
-        "zh": ["管材", "片材 / 复合膜", "阀门 / 罐体 / 工业部件"],
-        "en": ["Pipes", "Sheets / composite films", "Valves / tanks / industrial components"]
+        "zh": [
+          "管材",
+          "片材 / 复合膜",
+          "阀门 / 罐体"
+        ],
+        "en": [
+          "Pipes",
+          "Sheets / films",
+          "Valves / tanks"
+        ]
       },
 
       "engineering_cases": [
@@ -2703,8 +2801,16 @@
       "description": { "zh": "VDF-HFP 共聚 PVDF（粉料与颗粒），兼具机械强度与柔韧性、绝缘性能突出。适用于挤出与模压成型，主要用于电缆护套、光纤护套及高柔韧氟塑制品。", "en": "VDF-HFP copolymer PVDF (powder and pellet) — combines mechanical strength with flexibility plus outstanding insulation. Used for extrusion and compression molding of cable sheathing, optical-fiber sheathing and high-flexibility fluoropolymer parts." },
 
       "applications": {
-        "zh": ["电缆护套", "光纤护套", "高柔韧氟塑制品"],
-        "en": ["Cable sheathing", "Optical fiber sheathing", "High-flexibility fluoropolymer parts"]
+        "zh": [
+          "电缆护套",
+          "光纤护套",
+          "柔韧氟塑件"
+        ],
+        "en": [
+          "Cable jackets",
+          "Fiber jackets",
+          "Flexible fluoroparts"
+        ]
       },
 
       "engineering_cases": [
@@ -2800,8 +2906,16 @@
       "description": { "zh": "中粒度悬浮 PTFE 树脂粉末，平均粒径约 200 μm、熔点 327±5°C。适用于模压成型，可制造板材、棒材、薄膜及异型件 — 系列内 3 个牌号区分洁净度与流动性。", "en": "Medium-particle suspension PTFE resin powder, average particle size ~200 μm, melting point 327±5°C. Used for compression molding of plates, rods, films and shaped parts — three grades differentiated by cleanliness and flow." },
 
       "applications": {
-        "zh": ["PTFE 板材、棒材", "PTFE 薄膜（高洁净）", "小型及异型模压件"],
-        "en": ["PTFE plates and rods", "PTFE films (high cleanliness)", "Small and shaped molded parts"]
+        "zh": [
+          "板材 / 棒材",
+          "高洁净薄膜",
+          "小型模压件"
+        ],
+        "en": [
+          "Plates / rods",
+          "High-cleanliness films",
+          "Small molded parts"
+        ]
       },
 
       "engineering_cases": [
@@ -2900,8 +3014,18 @@
       "description": { "zh": "细粒度悬浮 PTFE 树脂粉末，平均粒径约 25 μm、熔点 327±5°C。适用于模压成型，可制造高强度、电气绝缘及高拉伸性能制品 — 系列内 4 个牌号区分性能侧重。", "en": "Fine-particle suspension PTFE resin powder, average particle size ~25 μm, melting point 327±5°C. Used for compression molding of high-strength, electrically insulating and high-elongation parts — four grades differentiated by performance focus." },
 
       "applications": {
-        "zh": ["普通模压件", "高强度填充件", "电气绝缘薄膜 / 车削板", "高强度模压件"],
-        "en": ["General molded parts", "High-strength filled products", "Electrical insulation films / turned boards", "High-strength molded parts"]
+        "zh": [
+          "普通模压件",
+          "高强度填充件",
+          "电气绝缘件",
+          "高强度模压件"
+        ],
+        "en": [
+          "General molded parts",
+          "High-strength fillers",
+          "Electrical insulation",
+          "High-strength moldings"
+        ]
       },
 
       "engineering_cases": [
@@ -3007,8 +3131,14 @@
       "description": { "zh": "中分子量分散 PTFE 树脂粉末，平均粒径约 480 μm、熔点 327±10°C。适用于糊膏挤出加工，可制造生料带及异型挤出件。", "en": "Medium-MW dispersion PTFE resin powder, average particle size ~480 μm, melting point 327±10°C. Used for paste extrusion of raw-material (sealing) tapes and shaped extruded parts." },
 
       "applications": {
-        "zh": ["生料带", "异型挤出件"],
-        "en": ["Raw material tape (Teflon tape)", "Shaped extruded parts"]
+        "zh": [
+          "生料带",
+          "异型挤出件"
+        ],
+        "en": [
+          "Sealing tape",
+          "Shaped extrusions"
+        ]
       },
 
       "engineering_cases": [
@@ -3086,8 +3216,16 @@
       "description": { "zh": "FR203 系列唯一牌号 — 拉伸强度 ≥24 MPa，覆盖生料带与纤维制品。", "en": "Sole grade in the series — tensile strength ≥24 MPa, covering raw tapes and fibers." },
 
       "applications": {
-        "zh": ["中高密度生料带", "PTFE 长纤维", "PTFE 短纤维"],
-        "en": ["Medium-high density raw tapes", "PTFE long fibers", "PTFE short fibers"]
+        "zh": [
+          "中密度生料带",
+          "PTFE 长纤维",
+          "PTFE 短纤维"
+        ],
+        "en": [
+          "Dense raw tapes",
+          "PTFE long fibers",
+          "PTFE short fibers"
+        ]
       },
 
       "engineering_cases": [
@@ -3153,8 +3291,20 @@
       "description": { "zh": "FR204 系列唯一牌号 — 超高分子量分散树脂，热不稳定指数 ≤10。", "en": "Sole grade in the series — ultra-high-MW dispersion resin, thermal-instability index ≤10." },
 
       "applications": {
-        "zh": ["单向 / 双向拉伸薄膜", "挤出管材", "服装薄膜", "医药过滤膜", "膨化板材"],
-        "en": ["Uni- / bi-directional stretch films", "Extruded tubes", "Garment films", "Pharmaceutical filter films", "Bulked plates"]
+        "zh": [
+          "拉伸薄膜",
+          "挤出管材",
+          "服装薄膜",
+          "医药过滤膜",
+          "膨化板材"
+        ],
+        "en": [
+          "Stretch films",
+          "Extruded tubes",
+          "Garment films",
+          "Pharma filter films",
+          "Expanded boards"
+        ]
       },
 
       "engineering_cases": [
@@ -3222,8 +3372,12 @@
       "description": { "zh": "FR301K 系列唯一牌号 — 阻燃滴落剂专用 PTFE 分散液。", "en": "Sole grade in the series — PTFE dispersion dedicated to anti-drip-agent production." },
 
       "applications": {
-        "zh": ["塑料阻燃滴落剂"],
-        "en": ["Anti-drip agent for plastics"]
+        "zh": [
+          "阻燃滴落剂"
+        ],
+        "en": [
+          "Anti-drip agent"
+        ]
       },
 
       "engineering_cases": [
@@ -3284,8 +3438,16 @@
       "description": { "zh": "PTFE 浓缩水基分散液系列，固含量约 60%、pH 8–10。适用于浸渍工艺，可制造浸渍玻纤基布、PTFE 盘根及多层浸渍制品。", "en": "PTFE concentrated aqueous dispersion series, ~60% solids, pH 8–10. Used in dipping processes to make impregnated glass-fiber cloth, PTFE packing and multi-layer dipped products." },
 
       "applications": {
-        "zh": ["浸渍玻璃纤维基布", "PTFE 盘根", "多层浸渍制品"],
-        "en": ["Dipped glass-fiber base cloth", "PTFE packing", "Multi-layer dipped products"]
+        "zh": [
+          "玻纤浸渍布",
+          "PTFE 盘根",
+          "多层浸渍件"
+        ],
+        "en": [
+          "Glass-fiber dip cloth",
+          "PTFE packing",
+          "Multi-layer dip products"
+        ]
       },
 
       "engineering_cases": [
@@ -3373,8 +3535,16 @@
       "description": { "zh": "PTFE 浓缩水基分散液系列，固含量约 60%、pH 8–10。适用于涂料配方，可制造不粘锅涂层、熨衣板底面涂层等涂料制品。", "en": "PTFE concentrated aqueous dispersion series, ~60% solids, pH 8–10. Used in coating formulations for non-stick pan coatings, ironing-board bottom coatings and similar applications." },
 
       "applications": {
-        "zh": ["不粘锅涂层", "熨衣板底面涂层", "其他涂料制品"],
-        "en": ["Non-stick pan coatings", "Ironing-board bottom coatings", "Other coating applications"]
+        "zh": [
+          "不粘锅涂层",
+          "熨衣板涂层",
+          "其他涂料"
+        ],
+        "en": [
+          "Non-stick coatings",
+          "Iron-board coatings",
+          "Other coatings"
+        ]
       },
 
       "engineering_cases": [
@@ -3462,8 +3632,12 @@
       "description": { "zh": "FR305W 系列唯一牌号 — 改性 PTFE 分散液，作为 PTFE 涂料的表面改性添加剂。", "en": "Sole grade in the series — modified PTFE dispersion used as a surface-improvement additive for PTFE coatings." },
 
       "applications": {
-        "zh": ["PTFE 涂料添加剂（改善表面性能 / 高光泽）"],
-        "en": ["PTFE coating additive (surface improvement / high gloss)"]
+        "zh": [
+          "PTFE 涂料添加剂"
+        ],
+        "en": [
+          "PTFE coating additive"
+        ]
       },
 
       "engineering_cases": [
@@ -3523,8 +3697,14 @@
       "description": { "zh": "环保型 PTFE 浓缩水基分散液系列，固含量 27–62%、熔点 327±10°C。适用于 PTFE 基覆铜板（CCL）的生产，可用于高频高速板材。", "en": "Eco-friendly PTFE concentrated aqueous dispersion series, 27–62% solids, melting point 327±10°C. Used to produce PTFE-based copper-clad laminates (CCL) for high-frequency / high-speed PCBs." },
 
       "applications": {
-        "zh": ["PTFE 基覆铜板（CCL）", "高频高速板"],
-        "en": ["PTFE-based copper-clad laminates (CCL)", "High-frequency / high-speed laminates"]
+        "zh": [
+          "PTFE 覆铜板",
+          "高频板材"
+        ],
+        "en": [
+          "PTFE CCL",
+          "High-frequency PCB"
+        ]
       },
 
       "engineering_cases": [
@@ -3602,8 +3782,20 @@
       "description": { "zh": "FR462 系列唯一牌号 — 熔融指数 0.8–2.0，FEP 模压通用牌号。", "en": "Sole grade in the series — MFI 0.8–2.0, general-purpose FEP compression grade." },
 
       "applications": {
-        "zh": ["阀门", "管道", "外壳衬里", "接头与连接配件", "板材与棒材"],
-        "en": ["Valves", "Pipelines", "Shell linings", "Joints and connecting fittings", "Plates and rods"]
+        "zh": [
+          "阀门",
+          "管道",
+          "外壳衬里",
+          "接头配件",
+          "板材棒材"
+        ],
+        "en": [
+          "Valves",
+          "Pipelines",
+          "Shell linings",
+          "Connecting fittings",
+          "Plates & rods"
+        ]
       },
 
       "engineering_cases": [
@@ -3735,8 +3927,16 @@
       "description": { "zh": "FR463 系列唯一牌号 — 浸渍 / 涂料用 FEP 分散液。", "en": "Sole grade in the series — FEP dispersion for impregnation and coating." },
 
       "applications": {
-        "zh": ["模具脱模剂", "机械表面不粘涂层", "器具防粘涂层"],
-        "en": ["Mold release agent", "Anti-adhesive coatings for machinery", "Non-stick coatings on appliances"]
+        "zh": [
+          "模具脱模剂",
+          "机械不粘涂层",
+          "器具防粘涂层"
+        ],
+        "en": [
+          "Mold release agent",
+          "Machinery coatings",
+          "Appliance coatings"
+        ]
       },
 
       "engineering_cases": [
@@ -3788,8 +3988,14 @@
       "description": { "zh": "FEP 电缆级颗粒（TFE-HFP 共聚），熔点 258°C、长期使用温度 200°C。适用于电线电缆绝缘层挤出，按熔融指数区分可生产各种直径与厚度的绝缘包覆 — 系列内 3 个牌号区分挤出速度需求。", "en": "FEP cable-grade pellet (TFE-HFP copolymer), Tm 258°C, long-term service 200°C. Used for wire & cable insulation extrusion — three grades differentiated by MFI to match line-speed requirements." },
 
       "applications": {
-        "zh": ["电线电缆绝缘包覆", "高频通信线缆绝缘"],
-        "en": ["Wire and cable insulation coating", "High-frequency communication cable insulation"]
+        "zh": [
+          "电缆绝缘",
+          "高频线缆绝缘"
+        ],
+        "en": [
+          "Cable insulation",
+          "High-frequency insulation"
+        ]
       },
 
       "engineering_cases": [
@@ -3877,8 +4083,20 @@
       "description": { "zh": "FR511 系列唯一牌号 — MFI 0.8–3.0，PFA 模压通用牌号。", "en": "Sole grade in the series — MFI 0.8–3.0, general-purpose PFA compression grade." },
 
       "applications": {
-        "zh": ["阀门", "管道", "外壳衬里", "接头与连接配件", "大直径管材与棒材"],
-        "en": ["Valves", "Pipelines", "Shell linings", "Joints and connecting fittings", "Large-diameter pipes and rods"]
+        "zh": [
+          "阀门",
+          "管道",
+          "外壳衬里",
+          "接头配件",
+          "大直径管棒材"
+        ],
+        "en": [
+          "Valves",
+          "Pipelines",
+          "Shell linings",
+          "Connecting fittings",
+          "Large-dia pipes/rods"
+        ]
       },
 
       "engineering_cases": [
@@ -3999,8 +4217,14 @@
       "description": { "zh": "FR513 系列唯一牌号 — MFI 8.1–18.0,PFA 注塑通用牌号。", "en": "Sole grade in the series — MFI 8.1–18.0, general-purpose PFA injection grade." },
 
       "applications": {
-        "zh": ["复杂形状的注塑件", "接头 / 弯头管件"],
-        "en": ["Complex-shaped injection-molded parts", "Joints / elbows / pipe fittings"]
+        "zh": [
+          "复杂注塑件",
+          "接头 / 弯头"
+        ],
+        "en": [
+          "Complex molded parts",
+          "Joints / elbows"
+        ]
       },
 
       "engineering_cases": [
@@ -4060,8 +4284,12 @@
       "description": { "zh": "FR515 系列唯一牌号 — MFI 18.1–40.0,PFA 电缆高速挤出专用。", "en": "Sole grade in the series — MFI 18.1–40.0, dedicated PFA grade for high-speed cable extrusion." },
 
       "applications": {
-        "zh": ["电线电缆绝缘包覆（高速挤出）"],
-        "en": ["Wire and cable insulation coverings (high-speed extrusion)"]
+        "zh": [
+          "高速挤出电缆绝缘"
+        ],
+        "en": [
+          "High-speed cable insulation"
+        ]
       },
 
       "engineering_cases": [
@@ -4121,8 +4349,20 @@
       "description": { "zh": "HFPO — 纯度 ≥99.3%、含水量 ≤50 ppm 的电子级气体。", "en": "HFPO — electronic-grade gas at ≥99.3% purity and moisture ≤50 ppm." },
 
       "applications": {
-        "zh": ["合成含氟功能化合物", "化工 / 氯碱工业", "电池中间体", "半导体 / 微电子", "航空航天"],
-        "en": ["Synthesis of fluorinated functional compounds", "Chemical engineering / chlor-alkali industry", "Battery intermediates", "Semiconductors / microelectronics", "Aerospace"]
+        "zh": [
+          "含氟化合物合成",
+          "化工 / 氯碱",
+          "电池中间体",
+          "半导体",
+          "航空航天"
+        ],
+        "en": [
+          "Fluoro-compound synthesis",
+          "Chemicals / chlor-alkali",
+          "Battery intermediates",
+          "Semiconductors",
+          "Aerospace"
+        ]
       },
 
       "engineering_cases": null,
@@ -4184,8 +4424,20 @@
       "description": { "zh": "氟氮混合气（F₂/N₂），强氧化剂，氟纯度 ≥99%。用于化学法制备六氟化硫、三氟化氮等有机 / 无机氟化物，以及氟化石墨与氟化沥青的制备。", "en": "Fluorine-nitrogen mixture (F₂/N₂), strong oxidizer, fluorine purity ≥99%. Used in the chemical preparation of sulfur hexafluoride, nitrogen trifluoride and other organic / inorganic fluorides, plus fluorographite polymer and fluorinated asphalt." },
 
       "applications": {
-        "zh": ["有机/无机氟化物合成", "六氟化硫（SF₆）制备", "三氟化氮（NF₃）制备", "氟化石墨", "氟化沥青"],
-        "en": ["Synthesis of organic / inorganic fluorides", "Sulfur hexafluoride (SF₆) preparation", "Nitrogen trifluoride (NF₃) preparation", "Fluorographite polymer", "Fluorinated asphalt"]
+        "zh": [
+          "氟化物合成",
+          "SF₆ 制备",
+          "NF₃ 制备",
+          "氟化石墨",
+          "氟化沥青"
+        ],
+        "en": [
+          "Fluoride synthesis",
+          "SF₆ production",
+          "NF₃ production",
+          "Fluorographite",
+          "Fluorinated asphalt"
+        ]
       },
 
       "engineering_cases": [
@@ -4251,8 +4503,18 @@
       "description": { "zh": "HFA·3H₂O 系列唯一牌号 — 纯度 ≥99%、pH 3–4 的水合物液体。", "en": "Sole grade in the series — trihydrate liquid at ≥99% purity, pH 3–4." },
 
       "applications": {
-        "zh": ["医药中间体", "农药中间体", "含氟弹性体合成", "聚合物改性"],
-        "en": ["Pharmaceutical intermediates", "Agrochemical intermediates", "Fluorinated elastomer synthesis", "Polymer modification"]
+        "zh": [
+          "医药中间体",
+          "农药中间体",
+          "含氟弹性体合成",
+          "聚合物改性"
+        ],
+        "en": [
+          "Pharma intermediate",
+          "Agro intermediate",
+          "Elastomer synthesis",
+          "Polymer modification"
+        ]
       },
 
       "engineering_cases": [
@@ -4309,8 +4571,18 @@
       "description": { "zh": "HFIP 系列唯一牌号 — 高纯电子级溶剂,纯度 ≥99.95%。", "en": "Sole grade in the series — high-purity electronic-grade solvent at ≥99.95% purity." },
 
       "applications": {
-        "zh": ["七氟醚（吸入麻醉剂）原料", "塑料回收剂", "高极性溶剂", "医药 / 农药 / 有机合成"],
-        "en": ["Raw material for sevoflurane (inhalational anaesthesia)", "Plastic recycling agent", "High-polarity solvent", "Pharma / agrochemical / organic synthesis"]
+        "zh": [
+          "七氟醚原料",
+          "塑料回收剂",
+          "高极性溶剂",
+          "医药 / 农药合成"
+        ],
+        "en": [
+          "Sevoflurane feedstock",
+          "Plastic recycling agent",
+          "High-polarity solvent",
+          "Pharma / agro synthesis"
+        ]
       },
 
       "engineering_cases": [
@@ -4378,8 +4650,16 @@
       "description": { "zh": "BPAF 系列唯一牌号 — 高纯固体,纯度 ≥99.5%。", "en": "Sole grade in the series — high-purity solid at ≥99.5%." },
 
       "applications": {
-        "zh": ["氟橡胶硫化促进剂", "含氟聚合物合成中间体", "含氟化学品合成"],
-        "en": ["Fluorine rubber vulcanization accelerator", "Fluorinated polymer synthesis intermediate", "Fluorinated chemicals synthesis"]
+        "zh": [
+          "硫化促进剂",
+          "含氟中间体",
+          "含氟化合物合成"
+        ],
+        "en": [
+          "Cure accelerator",
+          "Fluoro-intermediate",
+          "Fluoro-compound synthesis"
+        ]
       },
 
       "engineering_cases": [
@@ -4448,8 +4728,22 @@
       "description": { "zh": "全氟聚醚（PFPE）液体系列，含氟饱和长链聚醚 — 优异化学惰性、宽工作温度、低蒸气压。适用于特种润滑油 / 润滑脂、半导体设备传热液、精密电子清洗、汽相焊接及数据中心浸没式冷却液。", "en": "Perfluoropolyether (PFPE) liquid series — fluorinated saturated polyether with broad chemical inertness, wide service temperature and low vapor pressure. Used in specialty lubricating oils / greases, semiconductor heat-transfer fluids, precision electronics cleaning, vapor-phase soldering and data-center immersion coolants." },
 
       "applications": {
-        "zh": ["特种润滑油 / 润滑脂", "半导体设备传热液", "精密电子清洗", "汽相焊接", "含氟表面活性剂", "浸没式冷却液（数据中心）"],
-        "en": ["Specialty lubricating oils / greases", "Heat-transfer fluids for semiconductor equipment", "Precision electronics cleaning", "Vapor-phase soldering", "Fluorine-containing surfactants", "Immersion coolants (data centers)"]
+        "zh": [
+          "特种润滑油 / 脂",
+          "半导体传热液",
+          "精密清洗",
+          "汽相焊接",
+          "含氟表面活性剂",
+          "数据中心冷却液"
+        ],
+        "en": [
+          "Specialty lubricants",
+          "Heat-transfer fluids",
+          "Precision cleaning",
+          "Vapor-phase soldering",
+          "Fluoro-surfactants",
+          "Data-center coolants"
+        ]
       },
 
       "engineering_cases": [
@@ -4596,8 +4890,12 @@
       "description": { "zh": "HFPO trimer 系列唯一牌号 — 纯度 ≥95%，含氟表面活性剂合成原料。", "en": "Sole grade in the series — ≥95% purity, feedstock for fluorinated surfactants." },
 
       "applications": {
-        "zh": ["含氟表面活性剂合成"],
-        "en": ["Synthesis of fluorine-containing surfactants"]
+        "zh": [
+          "表面活性剂合成"
+        ],
+        "en": [
+          "Surfactant synthesis"
+        ]
       },
 
       "engineering_cases": null,
@@ -4653,8 +4951,18 @@
       "description": { "zh": "PPVE 系列唯一牌号 — 纯度 ≥99.5% 的共聚单体。", "en": "Sole grade in the series — ≥99.5%-purity comonomer." },
 
       "applications": {
-        "zh": ["PFA 共聚单体", "改性 PTFE 共聚单体", "农化中间体", "医药中间体"],
-        "en": ["PFA comonomer", "Modified PTFE comonomer", "Agrochemical intermediate", "Pharmaceutical intermediate"]
+        "zh": [
+          "PFA 共聚单体",
+          "改性 PTFE 单体",
+          "农化中间体",
+          "医药中间体"
+        ],
+        "en": [
+          "PFA comonomer",
+          "Modified PTFE monomer",
+          "Agro intermediate",
+          "Pharma intermediate"
+        ]
       },
 
       "engineering_cases": [
@@ -4718,8 +5026,16 @@
       "description": { "zh": "六氟丁二烯（HFBD），分子式 C₄F₆、沸点 6–7°C、纯度 ≥99.90%。含氟单体兼半导体行业高深宽比刻蚀气体 — 较传统全氟烷烃（PFC）刻蚀气体污染更低、选择性更优。", "en": "Hexafluorobutadiene (HFBD), formula C₄F₆, boiling point 6–7°C, purity ≥99.90%. Fluorinated monomer and high-aspect-ratio etching gas for the semiconductor industry — lower atmospheric impact and better selectivity than legacy perfluoroalkane (PFC) etching gases." },
 
       "applications": {
-        "zh": ["半导体刻蚀气体（高深宽比）", "含氟树脂合成单体", "含氟化学品合成"],
-        "en": ["Semiconductor etching gas (high aspect ratio)", "Fluorinated resin synthesis monomer", "Fluorinated chemicals synthesis"]
+        "zh": [
+          "半导体刻蚀气体",
+          "含氟树脂单体",
+          "含氟化合物合成"
+        ],
+        "en": [
+          "Semiconductor etch gas",
+          "Fluoro-resin monomer",
+          "Fluoro-compound synthesis"
+        ]
       },
 
       "engineering_cases": [

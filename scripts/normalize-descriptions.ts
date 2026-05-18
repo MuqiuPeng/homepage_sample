@@ -24,6 +24,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 type I18n = { zh: string; en: string };
+type I18nList = { zh: string[]; en: string[] };
 
 const ROOT = path.resolve(__dirname, "..");
 const DATA_PATH = path.join(ROOT, "data", "products.json");
@@ -121,8 +122,8 @@ const SERIES_DESCRIPTIONS: Record<string, I18n> = {
     en: "Powder-form polymer processing aid (PPA), density 1.76 g/cm³. Added to polyolefins (HDPE / LLDPE / PP) in extrusion and blow molding to eliminate melt fracture, reduce die pressure and processing temperature, and increase throughput.",
   },
   "pfe4010-series": {
-    zh: "全氟醚橡胶（FFKM）生胶系列，氟含量 72.5%、适用温度 −10°C 至 230°C — 对腐蚀性介质提供最广泛的耐受性与优秀压缩永久变形。适用于模压成型，可制造苛刻工况下的 O 型圈、垫圈、阀体与机械密封件。",
-    en: "Perfluoroether elastomer (FFKM) raw rubber series, 72.5% fluorine, service −10°C to 230°C — broadest media resistance with excellent compression set. Used for compression molding of O-rings, gaskets, valve bodies and mechanical seals in aggressive process environments.",
+    zh: "全氟醚橡胶（FFKM）生胶系列，氟含量 72.5%、适用温度 −10°C 至 230°C — 对腐蚀性介质提供最广泛的耐受性与优秀压缩永久变形。适用于模压成型，主要用于航空航天、半导体、化工、石油天然气、食品与医药行业的密封部件 — O 型圈、垫圈、阀体、泵壳与机械密封件。",
+    en: "Perfluoroether elastomer (FFKM) raw rubber series, 72.5% fluorine, service −10°C to 230°C — broadest media resistance with excellent compression set. Used for compression molding of sealing parts (O-rings, gaskets, valve bodies, pump casings, mechanical seals) in aerospace, semiconductor, chemical, oil & gas, food and pharmaceutical industries.",
   },
 
   // ===== pvdf =====
@@ -762,6 +763,201 @@ const VARIANT_DESCRIPTIONS: Record<string, I18n> = {
 };
 
 // -----------------------------------------------------------------------------
+// Applications overrides — tag-friendly rewrites of `applications.zh` /
+// `applications.en` for series whose original entries are too long (some run
+// 30–50 zh chars or 100+ en chars and broke the chip layout on the category
+// listing page). Rules of thumb:
+//   • zh entry ≤ 8 chars; en entry ≤ 25 chars
+//   • each item reads as a tag, not a sentence
+//   • info that gets cut and isn't already in the description is added there
+//     (so far that's only `pfe4010-series` — industries)
+// Series not listed here keep their existing applications array as-is.
+// -----------------------------------------------------------------------------
+const APPLICATIONS_OVERRIDES: Record<string, I18nList> = {
+  // ===== fluororesin =====
+  "jf-series": {
+    zh: ["建筑钢结构", "化工设备防腐", "交通运输", "户外耐候装饰"],
+    en: ["Steel structures", "Chemical anti-corrosion", "Transportation", "Outdoor decoration"],
+  },
+  "zhm-2-series": {
+    zh: ["建筑钢结构", "太阳能背板", "海洋设施", "化工设备防腐", "交通运输", "户外耐候装饰"],
+    en: ["Steel structures", "Solar backsheets", "Marine facilities", "Chemical anti-corrosion", "Transportation", "Outdoor decoration"],
+  },
+  "zhm-5-series": {
+    zh: ["卷材涂料", "铝型材涂料", "铝幕墙涂料"],
+    en: ["Coil coatings", "Aluminum profiles", "Curtain wall coatings"],
+  },
+  "zhm-modified-series": {
+    zh: ["光伏背板涂层", "海洋防腐", "大型钢构", "卷材涂装"],
+    en: ["PV backsheet coatings", "Marine anti-corrosion", "Steel structures", "Coil coating"],
+  },
+  "zht-series": {
+    zh: ["建筑钢结构", "太阳能背板", "海洋设施", "化工设备防腐", "交通运输", "户外耐候装饰"],
+    en: ["Steel structures", "Solar backsheets", "Marine facilities", "Chemical anti-corrosion", "Transportation", "Outdoor decoration"],
+  },
+
+  // ===== fluoroelastomer =====
+  // Most fluoroelastomer series only list the processing method; the EN side
+  // "Injection compression molding" is 29 chars — tightened to "Injection-compression".
+  "fe2601-series": { zh: ["挤出成型", "注压成型"], en: ["Extrusion", "Injection-compression"] },
+  "fe2603-series": { zh: ["模压成型", "挤出成型", "注压成型"], en: ["Compression molding", "Extrusion", "Injection-compression"] },
+  "fe2605-series": { zh: ["挤出成型", "注压成型", "注射成型"], en: ["Extrusion", "Injection-compression", "Injection molding"] },
+  "fe2463-series": { zh: ["挤出成型", "注压成型"], en: ["Extrusion", "Injection-compression"] },
+  "fe2465-series": { zh: ["模压成型", "挤出成型", "注压成型", "压延成型"], en: ["Compression molding", "Extrusion", "Injection-compression", "Calendering"] },
+  "fe2465g-series": { zh: ["模压成型", "挤出成型", "注压成型"], en: ["Compression molding", "Extrusion", "Injection-compression"] },
+  "fe2465h-series": { zh: ["模压成型", "挤出成型", "注压成型"], en: ["Compression molding", "Extrusion", "Injection-compression"] },
+  "fe2701-series": {
+    zh: ["耐热电线电缆", "辐照交联挤出"],
+    en: ["Heat-resistant cables", "Radiation-cure extrusion"],
+  },
+  "fe2600d-series": { zh: ["PPA 原料"], en: ["PPA feedstock"] },
+  "fe2651-series": {
+    zh: ["HDPE 加工助剂", "LLDPE 加工助剂", "PP 加工助剂"],
+    en: ["HDPE PPA", "LLDPE PPA", "PP PPA"],
+  },
+  "pfe4010-series": {
+    // Industries (originally crammed into a 33-char tag) and the equipment
+    // list (54-char tag) move into the description; tags become product types.
+    zh: ["O 型圈 / 垫圈", "阀体 / 蝶阀", "机械密封件", "泵壳与定子", "金属粘接件"],
+    en: ["O-rings / gaskets", "Valves", "Mechanical seals", "Pump casings & stators", "Metal-bonded parts"],
+  },
+
+  // ===== pvdf =====
+  "pvdf-coating-grade": {
+    zh: ["建筑外墙涂料"],
+    en: ["Exterior wall coatings"],
+  },
+  "pvdf-lithium-grade": {
+    zh: ["LFP 正极粘合剂", "三元正极粘合剂", "隔膜涂层"],
+    en: ["LFP cathode binder", "Ternary cathode binder", "Separator coating"],
+  },
+  "pvdf-water-film-grade": {
+    zh: ["NIPS 过滤膜", "TIPS 过滤膜"],
+    en: ["NIPS membranes", "TIPS membranes"],
+  },
+  "pvdf-solar-backsheet": {
+    zh: ["光伏背板膜"],
+    en: ["PV backsheet film"],
+  },
+  "pvdf-product-grade": {
+    zh: ["管材", "片材 / 复合膜", "阀门 / 罐体"],
+    en: ["Pipes", "Sheets / films", "Valves / tanks"],
+  },
+  "pvdf-copolymer": {
+    zh: ["电缆护套", "光纤护套", "柔韧氟塑件"],
+    en: ["Cable jackets", "Fiber jackets", "Flexible fluoroparts"],
+  },
+
+  // ===== ptfe =====
+  "ptfe-fr101": {
+    zh: ["板材 / 棒材", "高洁净薄膜", "小型模压件"],
+    en: ["Plates / rods", "High-cleanliness films", "Small molded parts"],
+  },
+  "ptfe-fr104": {
+    zh: ["普通模压件", "高强度填充件", "电气绝缘件", "高强度模压件"],
+    en: ["General molded parts", "High-strength fillers", "Electrical insulation", "High-strength moldings"],
+  },
+  "ptfe-fr202": {
+    zh: ["生料带", "异型挤出件"],
+    en: ["Sealing tape", "Shaped extrusions"],
+  },
+  "ptfe-fr203": {
+    zh: ["中密度生料带", "PTFE 长纤维", "PTFE 短纤维"],
+    en: ["Dense raw tapes", "PTFE long fibers", "PTFE short fibers"],
+  },
+  "ptfe-fr204": {
+    zh: ["拉伸薄膜", "挤出管材", "服装薄膜", "医药过滤膜", "膨化板材"],
+    en: ["Stretch films", "Extruded tubes", "Garment films", "Pharma filter films", "Expanded boards"],
+  },
+  "ptfe-fr301k": {
+    zh: ["阻燃滴落剂"],
+    en: ["Anti-drip agent"],
+  },
+  "ptfe-fr302-fr304d": {
+    zh: ["玻纤浸渍布", "PTFE 盘根", "多层浸渍件"],
+    en: ["Glass-fiber dip cloth", "PTFE packing", "Multi-layer dip products"],
+  },
+  "ptfe-fr303-fr306w": {
+    zh: ["不粘锅涂层", "熨衣板涂层", "其他涂料"],
+    en: ["Non-stick coatings", "Iron-board coatings", "Other coatings"],
+  },
+  "ptfe-fr305w": {
+    zh: ["PTFE 涂料添加剂"],
+    en: ["PTFE coating additive"],
+  },
+  "ptfe-fr307f-fr308f": {
+    zh: ["PTFE 覆铜板", "高频板材"],
+    en: ["PTFE CCL", "High-frequency PCB"],
+  },
+
+  // ===== fep =====
+  "fep-fr462": {
+    zh: ["阀门", "管道", "外壳衬里", "接头配件", "板材棒材"],
+    en: ["Valves", "Pipelines", "Shell linings", "Connecting fittings", "Plates & rods"],
+  },
+  "fep-fr463": {
+    zh: ["模具脱模剂", "机械不粘涂层", "器具防粘涂层"],
+    en: ["Mold release agent", "Machinery coatings", "Appliance coatings"],
+  },
+  "fep-fr468": {
+    zh: ["电缆绝缘", "高频线缆绝缘"],
+    en: ["Cable insulation", "High-frequency insulation"],
+  },
+
+  // ===== pfa =====
+  "pfa-fr511": {
+    zh: ["阀门", "管道", "外壳衬里", "接头配件", "大直径管棒材"],
+    en: ["Valves", "Pipelines", "Shell linings", "Connecting fittings", "Large-dia pipes/rods"],
+  },
+  "pfa-fr513": {
+    zh: ["复杂注塑件", "接头 / 弯头"],
+    en: ["Complex molded parts", "Joints / elbows"],
+  },
+  "pfa-fr515": {
+    zh: ["高速挤出电缆绝缘"],
+    en: ["High-speed cable insulation"],
+  },
+
+  // ===== fluorine-fine-chemicals =====
+  "ffc-hfpo": {
+    zh: ["含氟化合物合成", "化工 / 氯碱", "电池中间体", "半导体", "航空航天"],
+    en: ["Fluoro-compound synthesis", "Chemicals / chlor-alkali", "Battery intermediates", "Semiconductors", "Aerospace"],
+  },
+  "ffc-f2n2": {
+    zh: ["氟化物合成", "SF₆ 制备", "NF₃ 制备", "氟化石墨", "氟化沥青"],
+    en: ["Fluoride synthesis", "SF₆ production", "NF₃ production", "Fluorographite", "Fluorinated asphalt"],
+  },
+  "ffc-hfa-3h2o": {
+    zh: ["医药中间体", "农药中间体", "含氟弹性体合成", "聚合物改性"],
+    en: ["Pharma intermediate", "Agro intermediate", "Elastomer synthesis", "Polymer modification"],
+  },
+  "ffc-hfip": {
+    zh: ["七氟醚原料", "塑料回收剂", "高极性溶剂", "医药 / 农药合成"],
+    en: ["Sevoflurane feedstock", "Plastic recycling agent", "High-polarity solvent", "Pharma / agro synthesis"],
+  },
+  "ffc-bpaf": {
+    zh: ["硫化促进剂", "含氟中间体", "含氟化合物合成"],
+    en: ["Cure accelerator", "Fluoro-intermediate", "Fluoro-compound synthesis"],
+  },
+  "ffc-pfpe": {
+    zh: ["特种润滑油 / 脂", "半导体传热液", "精密清洗", "汽相焊接", "含氟表面活性剂", "数据中心冷却液"],
+    en: ["Specialty lubricants", "Heat-transfer fluids", "Precision cleaning", "Vapor-phase soldering", "Fluoro-surfactants", "Data-center coolants"],
+  },
+  "ffc-hfpo-trimer": {
+    zh: ["表面活性剂合成"],
+    en: ["Surfactant synthesis"],
+  },
+  "ffc-ppve": {
+    zh: ["PFA 共聚单体", "改性 PTFE 单体", "农化中间体", "医药中间体"],
+    en: ["PFA comonomer", "Modified PTFE monomer", "Agro intermediate", "Pharma intermediate"],
+  },
+  "ffc-hfbd": {
+    zh: ["半导体刻蚀气体", "含氟树脂单体", "含氟化合物合成"],
+    en: ["Semiconductor etch gas", "Fluoro-resin monomer", "Fluoro-compound synthesis"],
+  },
+};
+
+// -----------------------------------------------------------------------------
 // Apply
 // -----------------------------------------------------------------------------
 //
@@ -864,6 +1060,84 @@ function buildDescriptionLine(indent: string, neu: I18n): string {
   return `${indent}"description": { "zh": ${zh}, "en": ${en} },\n`;
 }
 
+/**
+ * Find the byte range of the `"applications": { "zh": [...], "en": [...] }`
+ * block for a given series. The source has two layouts:
+ *
+ *   "applications": {
+ *     "zh": [ "a", "b" ],
+ *     "en": [ "A", "B" ]
+ *   }
+ *
+ *   "applications": { "zh": [...], "en": [...] }    (when short enough)
+ *
+ * We anchor at the series's `"id":` line, walk forward to `"applications":`,
+ * then balance braces to find the end of its object value.
+ */
+function findApplicationsSpan(text: string, seriesId: string): { start: number; end: number; indent: string } | null {
+  const idLine = `"id": ${JSON.stringify(seriesId)}`;
+  const idIdx = text.indexOf(idLine);
+  if (idIdx === -1) return null;
+
+  // Bound search to within this series (stop at next "id":).
+  const nextId = text.indexOf(`"id": "`, idIdx + idLine.length);
+  const upper = nextId === -1 ? text.length : nextId;
+
+  const localIdx = text.indexOf(`"applications":`, idIdx);
+  if (localIdx === -1 || localIdx >= upper) return null;
+
+  // Start of the line containing "applications": (preserve indent).
+  const lineStart = text.lastIndexOf("\n", localIdx) + 1;
+  const indent = text.slice(lineStart, localIdx);
+
+  // Walk to value start.
+  let p = localIdx + `"applications":`.length;
+  while (p < text.length && (text[p] === " " || text[p] === "\t")) p++;
+  if (text[p] !== "{") return null;
+
+  // Balance braces (handling strings).
+  let depth = 0;
+  let inString = false;
+  let escape = false;
+  for (; p < text.length; p++) {
+    const ch = text[p];
+    if (escape) { escape = false; continue; }
+    if (ch === "\\") { escape = true; continue; }
+    if (inString) {
+      if (ch === '"') inString = false;
+      continue;
+    }
+    if (ch === '"') { inString = true; continue; }
+    if (ch === "{") depth++;
+    else if (ch === "}") {
+      depth--;
+      if (depth === 0) { p++; break; }
+    }
+  }
+  let valueEnd = p;
+  if (text[valueEnd] === ",") valueEnd++;
+  if (text[valueEnd] === "\n") valueEnd++;
+  return { start: lineStart, end: valueEnd, indent };
+}
+
+/**
+ * Render a new `"applications": { ... }` block using the same expanded layout
+ * as the source file (one item per line under each zh/en list), so the diff
+ * stays readable.
+ */
+function buildApplicationsBlock(indent: string, neu: I18nList): string {
+  const innerIndent = indent + "  ";
+  const itemIndent = innerIndent + "  ";
+  const zhItems = neu.zh.map((s) => `${itemIndent}${JSON.stringify(s)}`).join(",\n");
+  const enItems = neu.en.map((s) => `${itemIndent}${JSON.stringify(s)}`).join(",\n");
+  return (
+    `${indent}"applications": {\n` +
+    `${innerIndent}"zh": [\n${zhItems}\n${innerIndent}],\n` +
+    `${innerIndent}"en": [\n${enItems}\n${innerIndent}]\n` +
+    `${indent}},\n`
+  );
+}
+
 function main() {
   const raw = fs.readFileSync(DATA_PATH, "utf8");
   const data = JSON.parse(raw) as Doc;
@@ -909,42 +1183,62 @@ function main() {
 
   // Walk patches in REVERSE source order so that earlier byte offsets stay
   // valid as we mutate later regions.
-  type Patch = { id: string; kind: "series" | "variant"; neu: I18n; idOffset: number };
+  type DescPatch = { id: string; kind: "series-desc" | "variant-desc"; neu: I18n; idOffset: number };
+  type AppPatch = { id: string; kind: "series-apps"; neu: I18nList; idOffset: number };
+  type Patch = DescPatch | AppPatch;
   let text = raw;
 
   const patches: Patch[] = [];
   for (const [id, neu] of Object.entries(SERIES_DESCRIPTIONS)) {
     const idOffset = text.indexOf(`"id": ${JSON.stringify(id)}`);
     if (idOffset === -1) throw new Error(`series:${id} not found in source`);
-    patches.push({ id, kind: "series", neu, idOffset });
+    patches.push({ id, kind: "series-desc", neu, idOffset });
   }
   for (const [id, neu] of Object.entries(VARIANT_DESCRIPTIONS)) {
     const idOffset = text.indexOf(`"id": ${JSON.stringify(id)}`);
     if (idOffset === -1) throw new Error(`variant:${id} not found in source`);
-    patches.push({ id, kind: "variant", neu, idOffset });
+    patches.push({ id, kind: "variant-desc", neu, idOffset });
+  }
+  for (const [id, neu] of Object.entries(APPLICATIONS_OVERRIDES)) {
+    const idOffset = text.indexOf(`"id": ${JSON.stringify(id)}`);
+    if (idOffset === -1) throw new Error(`series:${id} (applications) not found in source`);
+    patches.push({ id, kind: "series-apps", neu, idOffset });
   }
   patches.sort((a, b) => b.idOffset - a.idOffset);
 
   let seriesChanged = 0;
   let variantsChanged = 0;
+  let applicationsChanged = 0;
   const failures: string[] = [];
 
-  for (const { id, kind, neu } of patches) {
-    const span = findDescriptionSpan(text, id);
+  for (const patch of patches) {
+    if (patch.kind === "series-apps") {
+      const span = findApplicationsSpan(text, patch.id);
+      if (!span) {
+        failures.push(`series:${patch.id} — no applications block found`);
+        continue;
+      }
+      const replacement = buildApplicationsBlock(span.indent, patch.neu);
+      text = text.slice(0, span.start) + replacement + text.slice(span.end);
+      applicationsChanged++;
+      continue;
+    }
+    // Description patch (series or variant).
+    const span = findDescriptionSpan(text, patch.id);
     if (!span) {
-      failures.push(`${kind}:${id} — unexpected span shape`);
+      failures.push(`${patch.kind}:${patch.id} — unexpected span shape`);
       continue;
     }
     if (span.start === -1) {
       // No description block at all — insert one right after the id line.
-      const line = buildDescriptionLine(span.indent, neu);
+      const line = buildDescriptionLine(span.indent, patch.neu);
       text = text.slice(0, span.afterIdEnd + 1) + line + text.slice(span.afterIdEnd + 1);
     } else {
       // Replace the existing block with a compact inline form.
-      const replacement = buildDescriptionLine(span.indent, neu);
+      const replacement = buildDescriptionLine(span.indent, patch.neu);
       text = text.slice(0, span.start) + replacement + text.slice(span.end);
     }
-    if (kind === "series") seriesChanged++;
+    if (patch.kind === "series-desc") seriesChanged++;
     else variantsChanged++;
   }
 
@@ -964,7 +1258,7 @@ function main() {
 
   fs.writeFileSync(DATA_PATH, text, "utf8");
   console.log(
-    `✓ Patched ${seriesChanged} series + ${variantsChanged} variants in ${path.relative(
+    `✓ Patched ${seriesChanged} series descriptions, ${variantsChanged} variant descriptions, ${applicationsChanged} applications blocks in ${path.relative(
       ROOT,
       DATA_PATH,
     )}`,

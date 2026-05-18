@@ -101,19 +101,12 @@ export default async function CategoryPage({
                   {applications.length > 0 && (
                     <ul className="mt-4 flex flex-wrap gap-1.5">
                       {applications.slice(0, 3).map((app, i) => (
-                        // Cap each chip width + ellipsis the overflow so an
-                        // unusually long application (e.g. "应用行业：航空航天、
-                        // 半导体制造、化工…") can't push the card height past
-                        // its siblings. `title` keeps the full text accessible
-                        // on hover for sighted users; screen readers still read
-                        // the inner text.
                         <li
                           key={i}
-                          title={app}
-                          className="inline-flex items-center gap-1 rounded-full border border-brand-200/60 bg-brand-50/40 px-2 py-0.5 text-[11px] font-medium text-brand-700 max-w-[10rem]"
+                          className="inline-flex items-center gap-1 rounded-full border border-brand-200/60 bg-brand-50/40 px-2 py-0.5 text-[11px] font-medium text-brand-700"
                         >
-                          <Tag className="h-2.5 w-2.5 shrink-0" strokeWidth={2.2} />
-                          <span className="min-w-0 truncate">{app}</span>
+                          <Tag className="h-2.5 w-2.5" strokeWidth={2.2} />
+                          {app}
                         </li>
                       ))}
                       {applications.length > 3 && (
