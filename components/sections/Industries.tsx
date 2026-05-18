@@ -5,21 +5,25 @@ import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
 import {
-  Package,
-  Paintbrush,
-  Shirt,
-  Sprout,
-  Building2,
   BatteryCharging,
+  Cpu,
+  Paintbrush,
+  Building2,
+  Pill,
+  FlaskConical,
 } from "lucide-react";
 
+// Keys match `industries.items.<key>.*` in the messages catalog. Each item
+// represents one downstream market segment that consumes 3F's fluorine
+// materials — chosen so the six cards collectively cover the main demand
+// drivers without overlap.
 const INDUSTRIES = [
-  { key: "plastics", icon: Package },
+  { key: "batteries", icon: BatteryCharging },
+  { key: "semiconductor", icon: Cpu },
   { key: "coatings", icon: Paintbrush },
-  { key: "textiles", icon: Shirt },
-  { key: "agro", icon: Sprout },
   { key: "construction", icon: Building2 },
-  { key: "energy", icon: BatteryCharging },
+  { key: "pharma", icon: Pill },
+  { key: "energy", icon: FlaskConical },
 ] as const;
 
 export function Industries() {

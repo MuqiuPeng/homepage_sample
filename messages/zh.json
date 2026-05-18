@@ -1,202 +1,203 @@
 {
   "meta": {
-    "title": "[Brand] — 主页示例模板",
-    "description": "这是一个用于展示页面结构与视觉风格的示例模板，所有文字与数据均为占位内容，不代表任何真实业务。"
+    "title": "华谊三爱富 — 含氟材料 · 完整产业链供应商",
+    "description": "上海华谊三爱富新材料是华谊集团核心企业，60+ 年专注含氟聚合物、含氟精细化学品的研发与生产。覆盖氟树脂、氟橡胶、PVDF、PTFE、FEP、PFA 等全系列含氟材料。"
   },
   "nav": {
+    "brand": "华谊三爱富",
     "home": "首页",
     "about": "关于",
     "products": "产品",
     "industries": "应用",
     "contact": "联系",
-    "cta": "[ 主行动 ]"
+    "cta": "在线询价"
   },
   "hero": {
-    "eyebrow": "[ 一句话定位 / Tagline ]",
-    "title": "[ 主标题示例 ]",
-    "titleAccent": "[ 渐变强调短语 ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed mauris non magna lacinia commodo. 这里是一段约 2–3 行的副标描述占位文字，用于展示段落排版的层次与节奏。",
-    "ctaPrimary": "[ 主行动 ]",
-    "ctaSecondary": "[ 次行动 ]",
+    "eyebrow": "含氟材料 · 完整产业链供应商",
+    "title": "高附加值含氟材料",
+    "titleAccent": "· 一站式供应",
+    "description": "上海华谊三爱富新材料 — 华谊集团核心企业。专注含氟聚合物、含氟精细化学品的研发与生产逾 60 年，拥有 5 大生产基地，与国内外世界 500 强化工企业建立长期合作。",
+    "ctaPrimary": "查看产品体系",
+    "ctaSecondary": "联系销售",
     "stats": {
-      "experience": { "label": "[ 指标 A ]", "value": "00+" },
-      "suppliers": { "label": "[ 指标 B ]", "value": "000+" },
-      "markets": { "label": "[ 指标 C ]", "value": "00" }
+      "experience": { "label": "经营年限", "value": "60+" },
+      "suppliers": { "label": "在产牌号", "value": "130+" },
+      "markets": { "label": "生产基地", "value": "5" }
     }
   },
   "trustStrip": {
-    "tagline": "[ 信任带 · 一句口号占位 ]",
+    "tagline": "60+ 年含氟材料专家 · 与世界 500 强长期合作",
     "items": {
-      "iso": "[ 资质 / 认证 01 ]",
-      "reach": "[ 资质 / 认证 02 ]",
-      "care": "[ 能力声明 03 ]",
-      "ports": "[ 经验声明 04 ]"
+      "iso": "A 股上市企业（沪市 600636）",
+      "reach": "60+ 年含氟材料技术积淀",
+      "care": "世界 500 强长期合作伙伴",
+      "ports": "5 大生产基地 · 完整产业链"
     },
-    "logosLabel": "[ 合作客户 ]"
+    "logosLabel": "服务客户领域"
   },
   "overview": {
-    "eyebrow": "[ 关于版块 ]",
-    "title": "[ 公司概览 · 一句主标题示例 ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里是公司概览的引言占位 — 用一两句话交代你们是谁、做什么、服务谁。",
+    "eyebrow": "公司概况",
+    "title": "华谊集团核心企业 · 含氟材料行业引领者",
+    "description": "上海华谊三爱富新材料股份有限公司是华谊集团核心企业，专注于含氟聚合物、含氟精细化学品、含氟制冷剂及其他含氟化学品的研发、生产与运营。",
     "blocks": {
       "who": {
-        "title": "[ 我们是谁 ]",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "title": "我们是谁",
+        "description": "起源于 1960 年上海合成橡胶研究所，1980 年更名为上海有机氟材料研究所，1994 年作为上海三爱富新材料股份有限公司在 A 股上市 — 逾 60 年含氟材料研发与运营经验。"
       },
       "what": {
-        "title": "[ 我们做什么 ]",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "我们做什么",
+        "description": "覆盖含氟聚合物（氟树脂、PVDF、PTFE、FEP、PFA、氟橡胶）、含氟精细化学品、含氟制冷剂的全产业链产品 — 一站式满足客户的含氟材料需求。"
       },
       "where": {
-        "title": "[ 我们服务谁 ]",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        "title": "我们服务谁",
+        "description": "客户覆盖航空航天、半导体、新能源、化工、医药、建筑等关键行业，与国内外世界 500 强化工企业建立长期合作关系。"
       }
     },
     "metrics": {
-      "experience": { "label": "[ 指标 A ]", "suffix": "" },
-      "suppliers": { "label": "[ 指标 B ]", "suffix": "+" },
-      "markets": { "label": "[ 指标 C ]", "suffix": "+" },
-      "warehouses": { "label": "[ 指标 D ]", "suffix": "" }
+      "experience": { "label": "经营年限", "suffix": "+" },
+      "suppliers": { "label": "在产牌号", "suffix": "+" },
+      "markets": { "label": "产品大类", "suffix": "" },
+      "warehouses": { "label": "生产基地", "suffix": "" }
     }
   },
   "productSystem": {
-    "eyebrow": "[ 产品体系 ]",
-    "title": "[ 产品体系 · 一句主标题示例 ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里用一两句话介绍你们聚焦的几条产品线、它们之间的关系，以及共同的价值主张。",
-    "useCasesLabel": "[ Use Cases ]",
+    "eyebrow": "产品体系",
+    "title": "完整含氟材料体系 · 7 大产品家族",
+    "description": "覆盖氟树脂、氟橡胶、PVDF、PTFE、FEP、PFA 与含氟精细化学品 — 130+ 在产牌号一站式查询。",
+    "useCasesLabel": "典型应用",
     "categories": {
       "a": {
-        "name": "[ 品类 A ]",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里是品类的一句话定位与差异化描述。",
-        "uses": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 列出 1–2 个最典型的下游使用场景。",
-        "tags": { "t1": "[ 规格 ]", "t2": "[ 等级 ]", "t3": "[ 包装 ]" }
+        "name": "氟树脂 / 氟橡胶",
+        "description": "含氟聚合物核心品类 — 涂料、密封件、高温部件的关键材料。",
+        "uses": "建筑外墙涂装、桥梁防腐、化工密封件、汽车燃油系统。",
+        "tags": { "t1": "粉末 / 颗粒", "t2": "生胶 / 分散液", "t3": "多种成型" }
       },
       "b": {
-        "name": "[ 品类 B ]",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
-        "uses": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.",
-        "tags": { "t1": "[ 规格 ]", "t2": "[ 等级 ]", "t3": "[ 包装 ]" }
+        "name": "PVDF / PTFE",
+        "description": "热塑与高熔点氟塑料 — 锂电、光伏、过滤膜及防粘涂层的核心材料。",
+        "uses": "锂电池粘合剂、光伏背板膜、滤膜、不粘锅涂层。",
+        "tags": { "t1": "锂电级", "t2": "水膜级", "t3": "涂料级" }
       },
       "c": {
-        "name": "[ 品类 C ]",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
-        "uses": "Nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa.",
-        "tags": { "t1": "[ 规格 ]", "t2": "[ 等级 ]", "t3": "[ 包装 ]" }
+        "name": "FEP / PFA / 精细化学品",
+        "description": "高温熔融加工氟塑料与关键含氟中间体 — 半导体、电缆与医药领域。",
+        "uses": "高频通信电缆、晶圆制造、七氟醚原料、含氟聚合物中间体。",
+        "tags": { "t1": "高纯电子级", "t2": "电缆专用", "t3": "医药中间体" }
       }
     }
   },
   "industries": {
-    "eyebrow": "[ 应用市场 ]",
-    "title": "[ 应用市场 · 一句主标题示例 ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里说明产品大致流向哪几类下游行业的关键工序。",
+    "eyebrow": "应用领域",
+    "title": "含氟材料 · 服务关键行业关键工序",
+    "description": "我们的含氟材料服务于航空航天、半导体、新能源、化工、建筑与医药等关键行业的核心工序与部件。",
     "items": {
-      "plastics": {
-        "name": "[ 行业 01 ]",
-        "use": "Lorem ipsum dolor sit amet — 一行描述说明该行业的典型使用方式。",
-        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
+      "batteries": {
+        "name": "锂电池 / 新能源",
+        "use": "PVDF 锂电级粘合剂与隔膜涂层 — 服务于 LFP 与三元体系正极极片涂布及隔膜涂层。",
+        "tags": { "t1": "PVDF 粘合剂", "t2": "正极极片", "t3": "隔膜涂层" }
+      },
+      "semiconductor": {
+        "name": "半导体 / 电子",
+        "use": "PFA 高纯部件、FEP 电缆绝缘与 HFBD 刻蚀气体 — 服务于晶圆制造、封装与高频通信电缆。",
+        "tags": { "t1": "PFA 部件", "t2": "FEP 电缆", "t3": "HFBD 刻蚀气" }
       },
       "coatings": {
-        "name": "[ 行业 02 ]",
-        "use": "Sed do eiusmod tempor incididunt — 一行描述说明该行业的典型使用方式。",
-        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
-      },
-      "textiles": {
-        "name": "[ 行业 03 ]",
-        "use": "Ut enim ad minim veniam — 一行描述说明该行业的典型使用方式。",
-        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
-      },
-      "agro": {
-        "name": "[ 行业 04 ]",
-        "use": "Quis nostrud exercitation — 一行描述说明该行业的典型使用方式。",
-        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
+        "name": "涂料 / 防腐",
+        "use": "氟树脂（JF / ZHM / ZHT 系列）与 PTFE / PVDF 涂料分散液 — 高耐候、高耐腐蚀涂层配方。",
+        "tags": { "t1": "高耐候", "t2": "高耐腐蚀", "t3": "PVDF 氟碳涂料" }
       },
       "construction": {
-        "name": "[ 行业 05 ]",
-        "use": "Duis aute irure dolor — 一行描述说明该行业的典型使用方式。",
-        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
+        "name": "建筑 / 桥梁 / 光伏",
+        "use": "氟碳树脂（JF / ZHM）用于建筑外墙、桥梁钢结构与太阳能背板，PVDF FR906W 用于光伏背板膜挤出。",
+        "tags": { "t1": "建筑外墙", "t2": "桥梁防腐", "t3": "光伏背板" }
+      },
+      "pharma": {
+        "name": "医药 / 农药 / 精细化学品",
+        "use": "HFIP（七氟醚原料）、HFA·3H₂O、BPAF 等含氟精细化学品 — 服务于医药与农药合成中间体。",
+        "tags": { "t1": "医药中间体", "t2": "农药", "t3": "精细化学品" }
       },
       "energy": {
-        "name": "[ 行业 06 ]",
-        "use": "Excepteur sint occaecat — 一行描述说明该行业的典型使用方式。",
-        "tags": { "t1": "[ 标签 ]", "t2": "[ 标签 ]", "t3": "[ 标签 ]" }
+        "name": "化工 / 能源 / 高温",
+        "use": "全氟醚橡胶（FFKM）、FEP、PFA 与氟橡胶 — 用于化工设备、阀门、密封件与高温管道。",
+        "tags": { "t1": "FFKM 密封", "t2": "化工阀门", "t3": "高温管道" }
       }
     }
   },
   "whyUs": {
-    "eyebrow": "[ 为什么选我们 ]",
-    "title": "[ 差异化主张 · 一句主标题示例 ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里用一两句话总结你们最希望客户记住的差异点。",
+    "eyebrow": "为什么选我们",
+    "title": "4 大优势 · 与全球客户共创价值",
+    "description": "从研发到生产、从合规到供应 — 完整含氟产业链能力让我们成为长期可靠的合作伙伴。",
     "items": {
       "supply": {
-        "title": "[ 优势 01 ]",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+        "title": "完整含氟产业链",
+        "description": "从含氟单体到精细化学品 — 一家公司满足客户全部含氟材料需求，省去多源采购的协调成本。"
       },
       "spec": {
-        "title": "[ 优势 02 ]",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        "title": "定制化研发能力",
+        "description": "60+ 年技术积淀与完整研发体系 — 可为客户定制特种含氟产品或共同开发新牌号。"
       },
       "compliance": {
-        "title": "[ 优势 03 ]",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+        "title": "A 股上市 · 合规体系",
+        "description": "上海主板 A 股上市企业（股票代码 600636）— 完整的财务与合规体系，长期透明经营。"
       },
       "logistics": {
-        "title": "[ 优势 04 ]",
-        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."
+        "title": "5 大生产基地",
+        "description": "上海 + 江苏常熟（3 大基地）+ 内蒙古 + 福建 — 全国布局保障稳定供应与全球出口能力。"
       }
     }
   },
   "preview": {
-    "eyebrow": "[ 产品预览 ]",
-    "title": "[ 精选 / 热门产品 · 一句主标题示例 ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里展示几张精选产品卡，作为产品体系的视觉化补充。",
+    "eyebrow": "精选产品",
+    "title": "热门牌号速览",
+    "description": "我们 130+ 在产牌号中的几款明星产品，覆盖锂电、光伏、半导体与化工领域。",
     "items": {
       "a": {
-        "name": "[ 产品 / 牌号 01 ]",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "spec": "[ 规格 / 来源占位 ]",
-        "cta": "[ 行动 ]"
+        "name": "FR909W（PVDF 锂电级）",
+        "description": "乳液均聚 LFP 正极粘合剂 — 溶解快、粘结性高，广泛用于磷酸铁锂体系。",
+        "spec": "粒径 ≤30 μm · 旋转粘度 10000~20000",
+        "cta": "查看牌号"
       },
       "b": {
-        "name": "[ 产品 / 牌号 02 ]",
-        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna.",
-        "spec": "[ 规格 / 来源占位 ]",
-        "cta": "[ 行动 ]"
+        "name": "FR906W（PVDF 光伏背板）",
+        "description": "国产光伏背板级 PVDF 开创者，已稳定使用十余年，显著延长背板服役寿命。",
+        "spec": "熔指 8~30 · 熔点 162~172°C",
+        "cta": "查看牌号"
       },
       "c": {
-        "name": "[ 产品 / 牌号 03 ]",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-        "spec": "[ 规格 / 来源占位 ]",
-        "cta": "[ 行动 ]"
+        "name": "PFE4015（FFKM 密封件）",
+        "description": "全氟醚橡胶生胶（FFKM）— 适用温度 −10~230°C，腐蚀性介质下提供最广耐受。",
+        "spec": "氟含量 72.5% · 门尼 55",
+        "cta": "查看牌号"
       }
     },
-    "footer": "[ 更多产品 / 引导查看完整目录 — 占位文案 ]"
+    "footer": "浏览完整产品目录 — 130+ 牌号 · 55 系列"
   },
   "contact": {
-    "eyebrow": "[ 联系版块 ]",
-    "title": "[ 联系 / 询盘 · 一句主标题示例 ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里用一两句话告诉访客如何最快找到你们。",
-    "infoTitle": "[ 联系方式 ]",
+    "eyebrow": "联系我们",
+    "title": "询盘 / 技术咨询 · 24 小时内回复",
+    "description": "无论是产品采购、技术参数咨询，还是定制开发需求 — 请通过以下任意方式联系我们。",
+    "infoTitle": "联系方式",
     "info": {
-      "address": { "label": "[ 地址 ]", "value": "[ 公司地址占位 ]" },
-      "email": { "label": "[ 邮箱 ]", "value": "hello@example.com" },
-      "sales": { "label": "[ 电话 1 ]", "value": "+00 000-0000-0000" },
-      "support": { "label": "[ 电话 2 ]", "value": "+00 000-0000-0000" }
+      "address": { "label": "总部地址", "value": "上海市黄浦区徐家汇路 560 号华伦大厦" },
+      "email": { "label": "邮箱", "value": "info@3fchem.com" },
+      "sales": { "label": "总部电话", "value": "+86 (021) 2353-6233" },
+      "support": { "label": "技术支持", "value": "+86 (021) 2353-6232" }
     },
     "wechat": {
-      "title": "[ 二维码标题 ]",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "title": "扫码加技术支持",
+      "description": "通过微信扫码与销售或技术人员快速对接 — 产品咨询、样品申请与定制需求均可。"
     },
     "form": {
-      "name": "[ 字段：姓名 ]",
-      "company": "[ 字段：公司 ]",
-      "email": "[ 字段：邮箱 ]",
-      "product": "[ 字段：产品 ]",
-      "quantity": "[ 字段：数量 ]",
-      "message": "[ 字段：留言 ]",
-      "submit": "[ 提交 ]",
-      "sending": "[ 提交中… ]",
-      "success": "[ 提交成功 · 提示文案占位 ]",
-      "privacy": "[ 隐私声明占位 — Lorem ipsum dolor sit amet. ]"
+      "name": "联系人",
+      "company": "公司名称",
+      "email": "邮箱",
+      "product": "意向产品（系列 / 牌号）",
+      "quantity": "预计采购量",
+      "message": "需求详情",
+      "submit": "提交询盘",
+      "sending": "提交中…",
+      "success": "询盘已提交，我们将在 24 小时内回复您。",
+      "privacy": "您提交的信息仅用于本次询盘对接，不会用于无关营销或共享给第三方。"
     },
     "errors": {
       "required": "此项为必填",
@@ -204,12 +205,12 @@
     }
   },
   "footer": {
-    "tagline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 这里是 Footer 一段公司简介占位文案。",
-    "nav": "[ 导航 ]",
-    "contact": "[ 联系 ]",
-    "address": "[ 公司地址占位 ]",
-    "rights": "[ 版权声明占位 ]",
-    "legal": "[ 备案 / 许可证号 占位 ]"
+    "tagline": "上海华谊三爱富新材料股份有限公司 — 含氟材料全产业链供应商，60+ 年技术积淀，5 大生产基地。",
+    "nav": "网站导航",
+    "contact": "联系我们",
+    "address": "上海市黄浦区徐家汇路 560 号华伦大厦",
+    "rights": "保留所有权利。",
+    "legal": "沪 ICP 备号：待补充 · 股票代码：600636"
   },
   "themeSwitcher": {
     "buttonLabel": "切换主题",
@@ -224,10 +225,10 @@
     "themeE": "石墨 + 朱红"
   },
   "products": {
-    "eyebrow": "[ 产品中心 ]",
+    "eyebrow": "产品中心",
     "title": "全产品目录",
-    "subtitle": "覆盖氟树脂、氟橡胶、PVDF、PTFE、FEP、PFA 以及氟化精细化学品 — 一站式查询所有牌号、规格与技术指标。",
-    "categoryEyebrow": "[ 产品类别 ]",
+    "subtitle": "覆盖氟树脂、氟橡胶、PVDF、PTFE、FEP、PFA 以及含氟精细化学品 — 一站式查询所有牌号、规格与技术指标。",
+    "categoryEyebrow": "产品类别",
     "categoryDescription": "本类别下共 {count} 个系列，下方可查看每个系列的牌号与技术指标。",
     "seriesCount": "系列数",
     "variantsCount": "牌号数",

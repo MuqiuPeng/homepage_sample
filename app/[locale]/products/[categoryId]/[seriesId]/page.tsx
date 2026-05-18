@@ -272,5 +272,6 @@ export async function generateMetadata({
     detail.series.nameI18n as I18n,
     locale as Locale,
   );
-  return { title: `${name} — [Brand]` };
+  const tn = await getTranslations({ locale, namespace: "nav" });
+  return { title: `${name} — ${tn("brand")}` };
 }

@@ -1,202 +1,203 @@
 {
   "meta": {
-    "title": "[Brand] — Homepage Sample Template",
-    "description": "Sample template demonstrating layout and visual style. All copy is placeholder; nothing here represents real business."
+    "title": "Huayi 3F — Fluorine Materials · Complete-chain Supplier",
+    "description": "Shanghai Huayi 3F New Materials is a core enterprise of Huayi Group with 60+ years specialized in fluoropolymer and fluorine fine chemical R&D and production. Covering fluororesin, fluoroelastomer, PVDF, PTFE, FEP, PFA and more."
   },
   "nav": {
+    "brand": "Huayi 3F",
     "home": "Home",
     "about": "About",
     "products": "Products",
-    "industries": "Markets",
+    "industries": "Industries",
     "contact": "Contact",
-    "cta": "[ Primary CTA ]"
+    "cta": "Get a quote"
   },
   "hero": {
-    "eyebrow": "[ Tagline / Positioning line ]",
-    "title": "[ Hero Headline Sample ]",
-    "titleAccent": "[ gradient accent phrase ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sample subhead in two to three lines.",
-    "ctaPrimary": "[ Primary CTA ]",
-    "ctaSecondary": "[ Secondary CTA ]",
+    "eyebrow": "Fluorine Materials · Complete-chain Supplier",
+    "title": "High-value Fluorine",
+    "titleAccent": "Materials · One-stop",
+    "description": "Shanghai Huayi 3F New Materials — a core enterprise of Huayi Group. Over 60 years specialized in fluoropolymer and fluorine fine chemical R&D and production, with 5 production bases and long-term partnerships with domestic and foreign Fortune 500 chemical enterprises.",
+    "ctaPrimary": "Explore products",
+    "ctaSecondary": "Contact sales",
     "stats": {
-      "experience": { "label": "[ Metric A ]", "value": "00+" },
-      "suppliers": { "label": "[ Metric B ]", "value": "000+" },
-      "markets": { "label": "[ Metric C ]", "value": "00" }
+      "experience": { "label": "Years operating", "value": "60+" },
+      "suppliers": { "label": "Active grades", "value": "130+" },
+      "markets": { "label": "Production bases", "value": "5" }
     }
   },
   "trustStrip": {
-    "tagline": "[ Trust Strip · single tagline placeholder ]",
+    "tagline": "60+ years of fluorine expertise · Long-term Fortune-500 partnerships",
     "items": {
-      "iso": "[ Certification 01 ]",
-      "reach": "[ Certification 02 ]",
-      "care": "[ Capability claim 03 ]",
-      "ports": "[ Experience claim 04 ]"
+      "iso": "Shanghai A-share listed (600636)",
+      "reach": "60+ years of fluorine expertise",
+      "care": "Long-term Fortune-500 partner",
+      "ports": "5 production bases · complete chain"
     },
-    "logosLabel": "[ Trusted by ]"
+    "logosLabel": "Industries served"
   },
   "overview": {
-    "eyebrow": "[ About section ]",
-    "title": "[ Company overview · headline sample ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sample lead paragraph — one or two sentences explaining who you are, what you do, who you serve.",
+    "eyebrow": "Company profile",
+    "title": "A core enterprise of Huayi Group · Fluorine materials industry leader",
+    "description": "Shanghai Huayi 3F New Materials Co., Ltd. is a core enterprise of Huayi Group, specializing in the R&D, production and operation of fluoropolymers, fluorine fine chemicals, fluorine-containing refrigerants and other fluorine-containing chemicals.",
     "blocks": {
       "who": {
-        "title": "[ Who we are ]",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "title": "Who we are",
+        "description": "Founded in 1960 as the Shanghai Synthetic Rubber Institute, renamed the Shanghai Organic Fluorine Materials Research Institute in 1980, and listed on the A-share market in 1994 as Shanghai 3F New Materials Co., Ltd. — over 60 years of fluorine materials R&D and operations."
       },
       "what": {
-        "title": "[ What we do ]",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "What we do",
+        "description": "A complete fluorine product chain — fluoropolymers (fluororesin, PVDF, PTFE, FEP, PFA, fluoroelastomer), fluorine fine chemicals and refrigerants — covering customers' full fluorine sourcing scope from one supplier."
       },
       "where": {
-        "title": "[ Who we serve ]",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        "title": "Who we serve",
+        "description": "Customers span aerospace, semiconductor, new-energy, chemical, pharmaceutical and construction industries, with long-term partnerships with domestic and foreign Fortune 500 chemical enterprises."
       }
     },
     "metrics": {
-      "experience": { "label": "[ Metric A ]", "suffix": "" },
-      "suppliers": { "label": "[ Metric B ]", "suffix": "+" },
-      "markets": { "label": "[ Metric C ]", "suffix": "+" },
-      "warehouses": { "label": "[ Metric D ]", "suffix": "" }
+      "experience": { "label": "Years operating", "suffix": "+" },
+      "suppliers": { "label": "Active grades", "suffix": "+" },
+      "markets": { "label": "Product families", "suffix": "" },
+      "warehouses": { "label": "Production bases", "suffix": "" }
     }
   },
   "productSystem": {
-    "eyebrow": "[ Product system ]",
-    "title": "[ Product system · headline sample ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sample paragraph describing the few focused product lines and their shared value proposition.",
-    "useCasesLabel": "[ Use Cases ]",
+    "eyebrow": "Product systems",
+    "title": "Complete fluorine portfolio · 7 product families",
+    "description": "Fluororesin, fluoroelastomer, PVDF, PTFE, FEP, PFA and fluorine fine chemicals — 130+ active grades available for one-stop sourcing.",
+    "useCasesLabel": "Typical uses",
     "categories": {
       "a": {
-        "name": "[ Category A ]",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. One-line positioning and differentiation for this category.",
-        "uses": "Sed do eiusmod tempor incididunt ut labore. List one or two typical downstream use cases.",
-        "tags": { "t1": "[ Spec ]", "t2": "[ Grade ]", "t3": "[ Packaging ]" }
+        "name": "Fluororesin / Fluoroelastomer",
+        "description": "Core fluoropolymer families — the key materials for coatings, seals and high-temperature components.",
+        "uses": "Building façade coatings, bridge anti-corrosion, chemical seals, automotive fuel systems.",
+        "tags": { "t1": "Powder / pellet", "t2": "Raw rubber / dispersion", "t3": "Multi-process" }
       },
       "b": {
-        "name": "[ Category B ]",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.",
-        "uses": "Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt.",
-        "tags": { "t1": "[ Spec ]", "t2": "[ Grade ]", "t3": "[ Packaging ]" }
+        "name": "PVDF / PTFE",
+        "description": "Thermoplastic and high-melting fluoroplastics — central to lithium batteries, solar, filtration membranes and non-stick coatings.",
+        "uses": "Li-ion battery binders, PV backsheet film, filter membranes, non-stick coatings.",
+        "tags": { "t1": "Lithium grade", "t2": "Water-film grade", "t3": "Coating grade" }
       },
       "c": {
-        "name": "[ Category C ]",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
-        "uses": "Nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa.",
-        "tags": { "t1": "[ Spec ]", "t2": "[ Grade ]", "t3": "[ Packaging ]" }
+        "name": "FEP / PFA / Fine chemicals",
+        "description": "Melt-processable high-temperature fluoroplastics and key fluorine intermediates — for semiconductor, cable and pharmaceutical markets.",
+        "uses": "High-frequency communication cables, wafer fab, sevoflurane feedstock, fluoropolymer intermediates.",
+        "tags": { "t1": "Electronic grade", "t2": "Cable-specific", "t3": "Pharma intermediate" }
       }
     }
   },
   "industries": {
-    "eyebrow": "[ Application markets ]",
-    "title": "[ Application markets · headline sample ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. One sentence about which downstream industries the product serves.",
+    "eyebrow": "Industries served",
+    "title": "Fluorine materials enabling critical processes across key industries",
+    "description": "Our fluorine materials enable critical processes and components across aerospace, semiconductor, new energy, chemicals, construction and pharmaceutical industries.",
     "items": {
-      "plastics": {
-        "name": "[ Industry 01 ]",
-        "use": "Lorem ipsum dolor sit amet — one-line note on how the product is used here.",
-        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
+      "batteries": {
+        "name": "Lithium batteries / New energy",
+        "use": "Lithium-grade PVDF binders and separator coatings — for LFP and ternary cathode coating plus separator coating.",
+        "tags": { "t1": "PVDF binder", "t2": "Cathode coating", "t3": "Separator coating" }
+      },
+      "semiconductor": {
+        "name": "Semiconductor / Electronics",
+        "use": "High-purity PFA parts, FEP cable insulation and HFBD etching gas — for wafer fab, packaging and high-frequency cabling.",
+        "tags": { "t1": "PFA parts", "t2": "FEP cables", "t3": "HFBD etch gas" }
       },
       "coatings": {
-        "name": "[ Industry 02 ]",
-        "use": "Sed do eiusmod tempor incididunt — one-line note on how the product is used here.",
-        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
-      },
-      "textiles": {
-        "name": "[ Industry 03 ]",
-        "use": "Ut enim ad minim veniam — one-line note on how the product is used here.",
-        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
-      },
-      "agro": {
-        "name": "[ Industry 04 ]",
-        "use": "Quis nostrud exercitation — one-line note on how the product is used here.",
-        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
+        "name": "Coatings / Anti-corrosion",
+        "use": "Fluororesins (JF / ZHM / ZHT) and PTFE / PVDF coating dispersions — high-weatherability, high-corrosion-resistance formulations.",
+        "tags": { "t1": "Weather-resistant", "t2": "Corrosion-resistant", "t3": "PVDF FC coatings" }
       },
       "construction": {
-        "name": "[ Industry 05 ]",
-        "use": "Duis aute irure dolor — one-line note on how the product is used here.",
-        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
+        "name": "Construction / Bridges / Solar",
+        "use": "Fluorocarbon resins (JF / ZHM) for building façades, bridge steel structures and solar backsheets; PVDF FR906W for PV backsheet film extrusion.",
+        "tags": { "t1": "Building facades", "t2": "Bridges", "t3": "PV backsheets" }
+      },
+      "pharma": {
+        "name": "Pharma / Agrochemicals",
+        "use": "HFIP (sevoflurane feedstock), HFA·3H₂O, BPAF and other fluorine fine chemicals — for pharmaceutical and agrochemical intermediates.",
+        "tags": { "t1": "Pharma intermediate", "t2": "Agro intermediate", "t3": "Fine chemicals" }
       },
       "energy": {
-        "name": "[ Industry 06 ]",
-        "use": "Excepteur sint occaecat — one-line note on how the product is used here.",
-        "tags": { "t1": "[ Tag ]", "t2": "[ Tag ]", "t3": "[ Tag ]" }
+        "name": "Chemicals / Energy / High-temp",
+        "use": "Perfluoroether (FFKM), FEP, PFA and FKM rubbers — for chemical equipment, valves, seals and high-temperature piping.",
+        "tags": { "t1": "FFKM seals", "t2": "Chemical valves", "t3": "High-temp piping" }
       }
     }
   },
   "whyUs": {
-    "eyebrow": "[ Why us ]",
-    "title": "[ Differentiation · headline sample ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. One or two sentences summarizing the differentiators you most want customers to remember.",
+    "eyebrow": "Why choose us",
+    "title": "4 differentiators · Creating value with global customers",
+    "description": "From R&D and production to compliance and global supply — our complete fluorine chain makes us a long-term, reliable partner.",
     "items": {
       "supply": {
-        "title": "[ Advantage 01 ]",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+        "title": "Complete fluorine chain",
+        "description": "From fluorine monomers to fine chemicals — one supplier covers customers' entire fluorine sourcing scope, eliminating multi-vendor coordination overhead."
       },
       "spec": {
-        "title": "[ Advantage 02 ]",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        "title": "Custom R&D capability",
+        "description": "60+ years of technical depth and a full R&D pipeline — we customize special fluorine products and co-develop new grades with customers."
       },
       "compliance": {
-        "title": "[ Advantage 03 ]",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+        "title": "A-share listed · Compliance",
+        "description": "Listed on the Shanghai Stock Exchange A-share market (600636) with a complete financial and compliance framework — transparent, long-term operations."
       },
       "logistics": {
-        "title": "[ Advantage 04 ]",
-        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."
+        "title": "5 production bases",
+        "description": "Shanghai + 3 sites in Changshu (Jiangsu) + Inner Mongolia + Fujian — a nationwide footprint backing stable supply and global export capacity."
       }
     }
   },
   "preview": {
-    "eyebrow": "[ Product preview ]",
-    "title": "[ Featured products · headline sample ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A few featured product cards as a visual companion to the product system.",
+    "eyebrow": "Featured products",
+    "title": "Featured grades at a glance",
+    "description": "A snapshot of our most-shipped grades — spanning lithium batteries, solar, semiconductor and chemical applications.",
     "items": {
       "a": {
-        "name": "[ Product / SKU 01 ]",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "spec": "[ SPEC / SOURCE ]",
-        "cta": "[ Action ]"
+        "name": "FR909W (Lithium-grade PVDF)",
+        "description": "Emulsion-homopolymer LFP cathode binder — fast dissolution and high adhesion, widely used in LFP systems.",
+        "spec": "Particle ≤30 μm · Rotational viscosity 10000~20000",
+        "cta": "View grade"
       },
       "b": {
-        "name": "[ Product / SKU 02 ]",
-        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna.",
-        "spec": "[ SPEC / SOURCE ]",
-        "cta": "[ Action ]"
+        "name": "FR906W (PV-backsheet PVDF)",
+        "description": "Pioneer of domestic PV-backsheet PVDF, in stable use for over a decade — significantly extending backsheet service life.",
+        "spec": "MFI 8~30 · Tm 162~172°C",
+        "cta": "View grade"
       },
       "c": {
-        "name": "[ Product / SKU 03 ]",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-        "spec": "[ SPEC / SOURCE ]",
-        "cta": "[ Action ]"
+        "name": "PFE4015 (FFKM seals)",
+        "description": "Perfluoroether elastomer (FFKM) raw rubber — service −10~230°C, broadest resistance against corrosive media.",
+        "spec": "Fluorine 72.5% · Mooney 55",
+        "cta": "View grade"
       }
     },
-    "footer": "[ Browse the full catalog — placeholder copy ]"
+    "footer": "Browse the full catalog — 130+ grades across 55 series"
   },
   "contact": {
-    "eyebrow": "[ Contact section ]",
-    "title": "[ Contact · headline sample ]",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. One or two sentences telling visitors the fastest way to reach you.",
-    "infoTitle": "[ Contact details ]",
+    "eyebrow": "Get in touch",
+    "title": "Inquiries & technical consulting · We respond within 24 hours",
+    "description": "Whether you need product sourcing, technical-data inquiries or custom development, please reach us through any of the channels below.",
+    "infoTitle": "Contact info",
     "info": {
-      "address": { "label": "[ Address ]", "value": "[ Company address placeholder ]" },
-      "email": { "label": "[ Email ]", "value": "hello@example.com" },
-      "sales": { "label": "[ Phone 1 ]", "value": "+00 000-0000-0000" },
-      "support": { "label": "[ Phone 2 ]", "value": "+00 000-0000-0000" }
+      "address": { "label": "HQ address", "value": "Hualun Building, No. 560 Xujiahui Road, Huangpu District, Shanghai" },
+      "email": { "label": "Email", "value": "info@3fchem.com" },
+      "sales": { "label": "HQ phone", "value": "+86 (021) 2353-6233" },
+      "support": { "label": "Technical support", "value": "+86 (021) 2353-6232" }
     },
     "wechat": {
-      "title": "[ QR title ]",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "title": "Scan for technical support",
+      "description": "Scan with WeChat to quickly reach our sales or technical team for inquiries, sample requests and custom needs."
     },
     "form": {
-      "name": "[ Field: Name ]",
-      "company": "[ Field: Company ]",
-      "email": "[ Field: Email ]",
-      "product": "[ Field: Product ]",
-      "quantity": "[ Field: Quantity ]",
-      "message": "[ Field: Message ]",
-      "submit": "[ Submit ]",
-      "sending": "[ Sending… ]",
-      "success": "[ Success — placeholder confirmation copy ]",
-      "privacy": "[ Privacy notice placeholder — Lorem ipsum dolor sit amet. ]"
+      "name": "Your name",
+      "company": "Company",
+      "email": "Email",
+      "product": "Product of interest (series / grade)",
+      "quantity": "Estimated quantity",
+      "message": "Additional details",
+      "submit": "Submit inquiry",
+      "sending": "Submitting…",
+      "success": "Inquiry received. We'll respond within 24 hours.",
+      "privacy": "The information you submit is used only for this inquiry — we will not use it for unrelated marketing or share it with third parties."
     },
     "errors": {
       "required": "This field is required",
@@ -204,12 +205,12 @@
     }
   },
   "footer": {
-    "tagline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Footer placeholder paragraph for company tagline.",
-    "nav": "[ Navigation ]",
-    "contact": "[ Contact ]",
-    "address": "[ Company address placeholder ]",
-    "rights": "[ Rights placeholder ]",
-    "legal": "[ Legal / license placeholder ]"
+    "tagline": "Shanghai Huayi 3F New Materials Co., Ltd. — complete-chain fluorine materials supplier with 60+ years of expertise and 5 production bases.",
+    "nav": "Navigation",
+    "contact": "Contact",
+    "address": "Hualun Building, No. 560 Xujiahui Road, Shanghai",
+    "rights": "All rights reserved.",
+    "legal": "Stock Code: 600636 · ICP number — TBD"
   },
   "themeSwitcher": {
     "buttonLabel": "Switch theme",
@@ -217,17 +218,17 @@
     "modeLabel": "Mode",
     "modeLight": "Light",
     "modeDark": "Dark",
-    "themeA": "Teal & Gold",
-    "themeB": "Royal Blue & Amber",
-    "themeC": "Forest Green & Cream",
-    "themeD": "Navy & Copper",
-    "themeE": "Charcoal & Crimson"
+    "themeA": "Teal + Gold",
+    "themeB": "Royal Blue + Amber",
+    "themeC": "Forest Green + Cream",
+    "themeD": "Navy + Copper",
+    "themeE": "Charcoal + Crimson"
   },
   "products": {
-    "eyebrow": "[ Product Catalog ]",
-    "title": "Full Product Catalog",
-    "subtitle": "Covering FEVE fluororesin, FKM fluoroelastomers, PVDF, PTFE, FEP, PFA, and fluorine fine chemicals — browse every grade, spec, and technical data sheet in one place.",
-    "categoryEyebrow": "[ Category ]",
+    "eyebrow": "Product center",
+    "title": "Full product catalog",
+    "subtitle": "Covering fluororesin, fluoroelastomer, PVDF, PTFE, FEP, PFA and fluorine fine chemicals — one-stop access to every grade, spec and technical data sheet.",
+    "categoryEyebrow": "Category",
     "categoryDescription": "{count} product series in this category — click into a series to see all of its grades and technical specs.",
     "seriesCount": "Series",
     "variantsCount": "Grades",

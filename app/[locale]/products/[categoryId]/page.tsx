@@ -157,7 +157,8 @@ export async function generateMetadata({
     category.nameI18n as { zh: string; en: string },
     locale as Locale,
   );
+  const tn = await getTranslations({ locale, namespace: "nav" });
   return {
-    title: `${name} — [Brand]`,
+    title: `${name} — ${tn("brand")}`,
   };
 }

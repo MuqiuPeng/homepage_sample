@@ -59,14 +59,14 @@ export function Header() {
         <Link
           href="/"
           className="group flex items-center gap-2.5"
-          aria-label="Brand placeholder"
+          aria-label={t("brand")}
         >
           <span className="relative grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-ink-onbrand shadow-brand-md transition-transform duration-300 group-hover:scale-105">
             <Hexagon className="h-5 w-5 fill-accent-400/80 stroke-white" strokeWidth={2} />
             <span className="absolute inset-0 rounded-xl bg-gradient-to-tr from-white/30 to-transparent opacity-60" />
           </span>
-          <span className="text-base font-semibold tracking-tight text-ink-faint">
-            [ Brand ]
+          <span className="text-base font-semibold tracking-tight text-ink-strong">
+            {t("brand")}
           </span>
         </Link>
 

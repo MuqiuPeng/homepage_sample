@@ -121,9 +121,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const tr = await getTranslations({ locale, namespace: "products" });
+  const [tr, tn] = await Promise.all([
+    getTranslations({ locale, namespace: "products" }),
+    getTranslations({ locale, namespace: "nav" }),
+  ]);
   return {
-    title: `${tr("title")} — [Brand]`,
+    title: `${tr("title")} — ${tn("brand")}`,
     description: tr("subtitle"),
   };
 }

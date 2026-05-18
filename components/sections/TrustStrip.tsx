@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ShieldCheck, BadgeCheck, Heart, Anchor } from "lucide-react";
 import { Marquee } from "@/components/ui/Marquee";
 import { RevealOnScroll } from "@/components/motion/RevealOnScroll";
@@ -10,19 +10,19 @@ const ITEMS = [
   { key: "ports", icon: Anchor },
 ] as const;
 
-const PARTNERS = [
-  "[ Logo 01 ]",
-  "[ Logo 02 ]",
-  "[ Logo 03 ]",
-  "[ Logo 04 ]",
-  "[ Logo 05 ]",
-  "[ Logo 06 ]",
-  "[ Logo 07 ]",
-  "[ Logo 08 ]",
-];
+// The "logos" band underneath the trust items shows downstream industry
+// segments our materials serve rather than a literal customer-logo strip —
+// we don't have permission to display partner brand marks. Worded compactly
+// because they scroll in a marquee.
+const SEGMENTS = {
+  zh: ["新能源 / 锂电", "光伏背板", "半导体", "高频通信", "化工与油气", "医药与农药", "建筑与桥梁", "航空航天"],
+  en: ["New energy / Li-ion", "PV backsheet", "Semiconductor", "High-frequency comms", "Chemicals & oil/gas", "Pharma & agro", "Construction & bridges", "Aerospace"],
+} as const;
 
 export function TrustStrip() {
   const t = useTranslations("trustStrip");
+  const locale = useLocale();
+  const segments = locale === "en" ? SEGMENTS.en : SEGMENTS.zh;
 
   // Rendered inside the Hero section as the bottom band — no top-level
   // <section> wrapper / snap point of its own.
@@ -56,7 +56,7 @@ export function TrustStrip() {
             </span>
             <div className="w-full min-w-0 flex-1">
               <Marquee speed={42}>
-                {PARTNERS.map((name) => (
+                {segments.map((name) => (
                   <span
                     key={name}
                     className="text-base font-semibold tracking-wide text-ink-faint"

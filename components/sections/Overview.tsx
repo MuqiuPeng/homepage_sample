@@ -11,11 +11,19 @@ const BLOCKS = [
   { key: "where", icon: Globe2 },
 ] as const;
 
+// Counts shown in the Company-profile band. Tracks reality:
+//   experience  — years of operation since the 1960 institute that became 3F
+//   suppliers   — total active grades in the DB (variants table)
+//   markets     — top-level product families (categories table)
+//   warehouses  — physical production sites (Shanghai + 3× Changshu + Inner
+//                 Mongolia + Fujian = 5)
+// `hasSuffix` is true when the matching i18n entry has a non-empty `suffix`
+// (e.g. "+"). For exact counts ("7", "5") we leave it false.
 const METRICS = [
-  { key: "experience", to: 26, hasSuffix: true },
-  { key: "suppliers", to: 200, hasSuffix: true },
-  { key: "markets", to: 60, hasSuffix: true },
-  { key: "warehouses", to: 8, hasSuffix: true },
+  { key: "experience", to: 60, hasSuffix: true },
+  { key: "suppliers", to: 130, hasSuffix: true },
+  { key: "markets", to: 7, hasSuffix: false },
+  { key: "warehouses", to: 5, hasSuffix: false },
 ] as const;
 
 export function Overview() {
