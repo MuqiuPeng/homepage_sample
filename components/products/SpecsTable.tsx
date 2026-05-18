@@ -50,14 +50,30 @@ export function SpecsTable({ schema, variants, locale, labels }: Props) {
               <th className="px-4 py-3 text-left font-semibold whitespace-nowrap">
                 {labels.unit}
               </th>
-              {variants.map((v) => (
-                <th
-                  key={v.id}
-                  className="px-4 py-3 text-left font-semibold whitespace-nowrap"
-                >
-                  {pickI18n(v.nameI18n, locale)}
-                </th>
-              ))}
+              {variants.map((v) => {
+                const tag = pickI18n(v.tagI18n ?? null, locale);
+                const desc = pickI18n(v.descriptionI18n ?? null, locale);
+                return (
+                  <th
+                    key={v.id}
+                    className="px-4 py-3 text-left font-semibold align-top min-w-[180px]"
+                  >
+                    <div className="whitespace-nowrap">
+                      {pickI18n(v.nameI18n, locale)}
+                    </div>
+                    {tag && (
+                      <div className="mt-1 text-[10px] font-medium uppercase tracking-[0.12em] opacity-80 whitespace-nowrap">
+                        {tag}
+                      </div>
+                    )}
+                    {desc && (
+                      <div className="mt-1.5 text-xs font-normal leading-snug text-pretty opacity-90 max-w-[260px]">
+                        {desc}
+                      </div>
+                    )}
+                  </th>
+                );
+              })}
             </tr>
           </thead>
           <tbody>
@@ -112,8 +128,13 @@ export function SpecsTable({ schema, variants, locale, labels }: Props) {
                 {pickI18n(v.nameI18n, locale)}
               </p>
               {v.tagI18n && (
-                <p className="text-xs opacity-90 mt-0.5">
+                <p className="text-[10px] font-medium uppercase tracking-[0.12em] opacity-80 mt-1">
                   {pickI18n(v.tagI18n, locale)}
+                </p>
+              )}
+              {v.descriptionI18n && (
+                <p className="mt-1.5 text-xs opacity-90 leading-snug">
+                  {pickI18n(v.descriptionI18n, locale)}
                 </p>
               )}
             </div>

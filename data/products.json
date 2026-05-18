@@ -46,10 +46,7 @@
         "en": "Copolymer of chlorotrifluoroethylene and vinyl ester monomer"
       },
 
-      "description": {
-        "zh": "中昊从 2005 年起开始批量生产 JF-2X / JF-3X 两个牌号的氟树脂产品，已稳定销售多年，在国内有较大的客户群体。",
-        "en": "Zhonghao has been mass-producing JF-2X / JF-3X fluororesin grades since 2005. Both have been on the market for many years with a large customer base in China."
-      },
+      "description": { "zh": "三氟氯乙烯（CTFE）与乙烯基酯共聚溶剂型氟碳树脂，固含量 ≥50%、氟含量 25±1%。适用于双组分常温固化氟碳涂料，用于钢结构、桥梁、化工设备及户外高耐候装饰。", "en": "CTFE / vinyl-ester copolymer solvent-based fluorocarbon resin, solid content ≥50%, fluorine content 25±1%. Formulated into two-component ambient-cure fluorocarbon coatings for steel structures, bridges, chemical equipment and outdoor weather-resistant decoration." },
 
       "applications": {
         "zh": [
@@ -104,10 +101,7 @@
           "id": "jf-2x",
           "name": { "zh": "JF-2X", "en": "JF-2X" },
           "tag": null,
-          "description": {
-            "zh": "JF 系列基础牌号。",
-            "en": "Base grade of the JF series."
-          },
+          "description": { "zh": "JF 系列基础牌号，酸值 6±1。", "en": "Base grade of the JF series; acid value 6±1." },
           "specs": {
             "appearance":       { "zh": "无色透明液体", "en": "Colorless transparent liquid" },
             "chromaticity":     "<1",
@@ -128,7 +122,7 @@
           "id": "jf-3x",
           "name": { "zh": "JF-3X", "en": "JF-3X" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "在 JF-2X 的基础上降低酸值（3±1），匹配更宽的配方窗口。", "en": "Lower acid value (3±1) than JF-2X for a wider formulation window." },
           "specs": {
             "appearance":       { "zh": "无色透明液体", "en": "Colorless transparent liquid" },
             "chromaticity":     "<1",
@@ -149,10 +143,7 @@
           "id": "jf-5x",
           "name": { "zh": "JF-5X", "en": "JF-5X" },
           "tag": { "zh": "更高耐候", "en": "Higher weatherability" },
-          "description": {
-            "zh": "在 JF-2X 的基础上具有更优异的耐候性能。",
-            "en": "Offers more excellent weather resistance than JF-2X."
-          },
+          "description": { "zh": "JF-2X 升级牌号 — 优化分子量分布、提升耐候性。", "en": "Upgraded JF-2X with optimized molecular-weight distribution and enhanced weather resistance." },
           "specs": {
             "appearance":       { "zh": "无色透明液体", "en": "Colorless transparent liquid" },
             "chromaticity":     "<1",
@@ -173,10 +164,7 @@
           "id": "jf-2x65",
           "name": { "zh": "JF-2X65", "en": "JF-2X65" },
           "tag": { "zh": "高固低粘", "en": "High-solids, low-viscosity" },
-          "description": {
-            "zh": "在保持 JF-2X 树脂原有性能的基础上，具有高固含量、低粘度的特点。",
-            "en": "Maintains the core performance of JF-2X with higher solid content and lower viscosity."
-          },
+          "description": { "zh": "JF-2X 高固含量版本（65±2%）— 同等性能下降低 VOC。", "en": "High-solids version of JF-2X (65±2%) for lower VOC at equivalent performance." },
           "specs": {
             "appearance":       { "zh": "无色透明液体", "en": "Colorless transparent liquid" },
             "chromaticity":     "<1",
@@ -197,10 +185,7 @@
           "id": "jf-2x-benzene-free",
           "name": { "zh": "JF-2X（无苯）", "en": "JF-2X (benzene-free)" },
           "tag": { "zh": "无苯环保", "en": "Benzene-free / eco-friendly" },
-          "description": {
-            "zh": "在保持 JF-2X 原有树脂性能的基础上，针对有特别要求的客户使用了无苯溶剂，更具环保性。",
-            "en": "Same resin performance as JF-2X but reformulated with benzene-free solvents for customers with stricter environmental requirements."
-          },
+          "description": { "zh": "JF-2X 无苯溶剂版本 — 同等性能下环保配方。", "en": "Benzene-free solvent version of JF-2X with equivalent performance." },
           "specs": {
             "appearance":       { "zh": "无色透明液体", "en": "Colorless transparent liquid" },
             "chromaticity":     "<1",
@@ -221,10 +206,7 @@
           "id": "jf-3x-benzene-free",
           "name": { "zh": "JF-3X（无苯）", "en": "JF-3X (benzene-free)" },
           "tag": { "zh": "无苯环保", "en": "Benzene-free / eco-friendly" },
-          "description": {
-            "zh": "在保持 JF-3X 原有树脂性能的基础上，针对有特别要求的客户使用了无苯溶剂，更具环保性。",
-            "en": "Same resin performance as JF-3X but reformulated with benzene-free solvents for customers with stricter environmental requirements."
-          },
+          "description": { "zh": "JF-3X 无苯溶剂版本 — 同等性能下环保配方。", "en": "Benzene-free solvent version of JF-3X with equivalent performance." },
           "specs": {
             "appearance":       { "zh": "无色透明液体", "en": "Colorless transparent liquid" },
             "chromaticity":     "<1",
@@ -255,10 +237,7 @@
         "en": "Copolymer of chlorotrifluoroethylene and vinyl ether monomer"
       },
 
-      "description": {
-        "zh": "ZHM-2 系列具有优异的耐老化、耐盐雾性能及良好的耐水、耐化学性能。",
-        "en": "The ZHM-2 series offers excellent aging and salt-spray resistance with good water and chemical resistance."
-      },
+      "description": { "zh": "中昊 ZHM-2 系列溶剂型氟碳树脂，固含量 60±2%、氟含量 27±1%。适用于双组分氟碳涂料，用于钢结构、太阳能背板、沿海/海洋设施及化工设备防腐。", "en": "Zhonghao ZHM-2 series solvent-based fluorocarbon resin, solid content 60±2%, fluorine content 27±1%. Used in two-component fluorocarbon coatings for steel structures, solar backsheets, coastal / marine facilities and chemical-equipment anti-corrosion." },
 
       "applications": {
         "zh": [
@@ -316,10 +295,7 @@
           "id": "zhm-2",
           "name": { "zh": "ZHM-2", "en": "ZHM-2" },
           "tag": null,
-          "description": {
-            "zh": "ZHM-2 系列基础牌号 — 优异耐老化、耐盐雾、耐水、耐化学性能。",
-            "en": "Base grade of the ZHM-2 series — excellent aging, salt-spray, water and chemical resistance."
-          },
+          "description": { "zh": "ZHM-2 系列基础牌号 — 平衡固含量与施工粘度。", "en": "Base grade of the ZHM-2 series — balanced solid content and application viscosity." },
           "specs": {
             "appearance":       { "zh": "无色或淡黄色粘稠液体", "en": "Colorless or light yellow viscous liquid" },
             "chromaticity":     "≤2",
@@ -339,10 +315,7 @@
           "id": "zhm-260",
           "name": { "zh": "ZHM-260", "en": "ZHM-260" },
           "tag": { "zh": "更易施工", "en": "Easier application" },
-          "description": {
-            "zh": "与 ZHM-2 具有相同的固含量，更低的粘度，便于施工。",
-            "en": "Same solid content as ZHM-2 but lower viscosity for easier application."
-          },
+          "description": { "zh": "与 ZHM-2 同固含量，更低粘度便于施工。", "en": "Same solid content as ZHM-2 with lower viscosity for easier application." },
           "specs": {
             "appearance":       { "zh": "无色或淡黄色粘稠液体", "en": "Colorless or light yellow viscous liquid" },
             "chromaticity":     "≤2",
@@ -362,10 +335,7 @@
           "id": "zhm-265",
           "name": { "zh": "ZHM-265", "en": "ZHM-265" },
           "tag": { "zh": "高固低粘", "en": "High-solids, low-viscosity" },
-          "description": {
-            "zh": "在保持 ZHM-2 原有树脂性能的基础上，具有高固含量、低粘度的特点，更具环保性。",
-            "en": "Maintains the core performance of ZHM-2 with higher solid content, lower viscosity, and better environmental profile."
-          },
+          "description": { "zh": "ZHM-2 高固含量版本（65±2%）— 更低 VOC、更环保。", "en": "High-solids version of ZHM-2 (65±2%) — lower VOC and a better environmental profile." },
           "specs": {
             "appearance":       { "zh": "无色或淡黄色粘稠液体", "en": "Colorless or light yellow viscous liquid" },
             "chromaticity":     "<1",
@@ -385,10 +355,7 @@
           "id": "zhm-265h",
           "name": { "zh": "ZHM-265H", "en": "ZHM-265H" },
           "tag": { "zh": "高羟值", "en": "High hydroxyl value" },
-          "description": {
-            "zh": "ZHM-265 的高羟值版本 — 提高树脂交联密度，强化涂料耐化学性。",
-            "en": "High-hydroxyl-value variant of ZHM-265 — increases the resin's cross-link density and strengthens the coating's chemical resistance."
-          },
+          "description": { "zh": "ZHM-265 高羟值版本（100±10）— 提高交联密度与涂层耐化学性。", "en": "High-hydroxyl version of ZHM-265 (100±10) — higher crosslink density and improved chemical resistance." },
           "specs": {
             "appearance":       { "zh": "无色或淡黄色粘稠液体", "en": "Colorless or light yellow viscous liquid" },
             "chromaticity":     "≤2",
@@ -418,10 +385,7 @@
         "en": "Alternating copolymer of chlorotrifluoroethylene and multiple vinyl ether monomers"
       },
 
-      "description": {
-        "zh": "通过选择不同单体、配比及工艺调节树脂的分子量大小及其分布，专为满足卷材涂料的性能要求而设计。",
-        "en": "Resin molecular weight and distribution are tuned by selecting different monomers, ratios, and processes — engineered to meet coil-coating performance requirements."
-      },
+      "description": { "zh": "中昊 ZHM-5 系列高分子量溶剂型氟碳树脂，专为卷材涂料配方设计。适用于双组分氟碳卷材涂料，用于铝型材、铝幕墙与卷材涂装。", "en": "Zhonghao ZHM-5 series high-molecular-weight solvent-based fluorocarbon resin tuned for coil-coating formulations. Used in two-component fluorocarbon coil coatings for aluminum profiles, aluminum curtain walls and coil-coating lines." },
 
       "applications": {
         "zh": [
@@ -473,10 +437,7 @@
           "id": "zhm-5",
           "name": { "zh": "ZHM-5", "en": "ZHM-5" },
           "tag": { "zh": "卷材涂料", "en": "Coil coatings" },
-          "description": {
-            "zh": "ZHM-5 系列基础牌号，专为卷材涂料设计 — 较高分子量（30000–40000）以满足成膜性能要求。",
-            "en": "Base grade of the ZHM-5 series, engineered for coil coatings — high molecular weight (30000–40000) to meet film-forming requirements."
-          },
+          "description": { "zh": "ZHM-5 基础牌号 — 较高分子量（30000–40000）以满足卷材成膜性能要求。", "en": "ZHM-5 base grade — higher molecular weight (30 000–40 000) for coil-film performance requirements." },
           "specs": {
             "appearance":       { "zh": "无色或淡黄色粘稠液体", "en": "Colorless or light yellow viscous liquid" },
             "chromaticity":     "≤1",
@@ -496,10 +457,7 @@
           "id": "zhm-g1",
           "name": { "zh": "ZHM-G1", "en": "ZHM-G1" },
           "tag": { "zh": "铝型材 / 铝幕墙", "en": "Aluminum profile / curtain wall" },
-          "description": {
-            "zh": "在 ZHM-5 的基础上引入柔性乙烯基醚单体 — 更低玻璃化转变温度、更高断裂伸长率，适用于铝型材与铝幕墙涂料。",
-            "en": "ZHM-5 enhanced with flexible vinyl-ether monomer — lower glass-transition temperature and higher elongation at break, suited for aluminum profile and curtain-wall coatings."
-          },
+          "description": { "zh": "ZHM-5 引入柔性乙烯基醚单体 — 更低 Tg、更高断裂伸长率，匹配铝型材与幕墙涂料。", "en": "ZHM-5 modified with a flexible vinyl-ether comonomer — lower Tg, higher elongation, suited to aluminum profile and curtain-wall coatings." },
           "specs": {
             "appearance":       { "zh": "无色或淡黄色粘稠液体", "en": "Colorless or light yellow viscous liquid" },
             "chromaticity":     "≤2",
@@ -529,10 +487,7 @@
         "en": "Copolymer of chlorotrifluoroethylene, vinyl ether monomer and modified monomer"
       },
 
-      "description": {
-        "zh": "ZHM 改性系列氟碳树脂与透明 PET 薄膜具有更优异的粘结性，与 EVA、硅胶具有更好的匹配性，在太阳能光伏背板涂层中应用广泛。同时保持良好的耐老化、耐湿热性能，也可用于海洋防腐、大型钢构、卷材涂装等领域。",
-        "en": "The ZHM modified-series fluorocarbon resin offers superior adhesion to transparent PET film and better compatibility with EVA and silicone — widely used in solar photovoltaic backsheet coatings. It retains strong aging and humidity-heat resistance and is also suitable for marine anticorrosion, large steel structures, and coil coating."
-      },
+      "description": { "zh": "中昊 ZHM 改性系列溶剂型氟碳树脂，对透明 PET 薄膜及 EVA / 硅胶具有优异粘结性。适用于双组分氟碳涂料，用于太阳能光伏背板涂层、海洋防腐、大型钢构与卷材涂装。", "en": "Zhonghao ZHM modified-series solvent-based fluorocarbon resin with strong adhesion to transparent PET film and compatibility with EVA / silicone. Used in two-component fluorocarbon coatings for PV solar backsheets, marine anti-corrosion, large steel structures and coil coating." },
 
       "applications": {
         "zh": [
@@ -586,7 +541,7 @@
           "id": "zhm-3",
           "name": { "zh": "ZHM-3", "en": "ZHM-3" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "改性系列基础牌号，固含量 60±2%、氟含量 20±1%。", "en": "Modified-series base grade; solid content 60±2%, fluorine content 20±1%." },
           "specs": {
             "appearance":       { "zh": "无色或淡黄色粘稠液体", "en": "Colorless or light yellow viscous liquid" },
             "chromaticity":     "≤2",
@@ -606,7 +561,7 @@
           "id": "zhm-70",
           "name": { "zh": "ZHM-70", "en": "ZHM-70" },
           "tag": { "zh": "高固含量", "en": "High solids" },
-          "description": null,
+          "description": { "zh": "改性系列高固含量牌号（70±2%）— 降低 VOC，适配光伏背板涂层。", "en": "High-solids grade (70±2%) for lower VOC — tuned for PV backsheet coatings." },
           "specs": {
             "appearance":       { "zh": "无色或淡黄色粘稠液体", "en": "Colorless or light yellow viscous liquid" },
             "chromaticity":     "≤2",
@@ -626,7 +581,7 @@
           "id": "zhm-80",
           "name": { "zh": "ZHM-80", "en": "ZHM-80" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "改性系列高固含量低粘度牌号 — 更宽工艺窗口与更高施工效率。", "en": "High-solids, low-viscosity grade — wider processing window and higher application efficiency." },
           "specs": {
             "appearance":       { "zh": "无色或淡黄色粘稠液体", "en": "Colorless or light yellow viscous liquid" },
             "chromaticity":     "≤2",
@@ -656,10 +611,7 @@
         "en": "Copolymer of tetrafluoroethylene, vinyl ester monomer and modified monomer"
       },
 
-      "description": {
-        "zh": "中昊新开发的氟碳树脂体系。具有优异的耐老化、耐盐雾性能及良好的耐水、耐化学性能。",
-        "en": "Newly developed fluorocarbon resin system from Zhonghao. Excellent aging and salt-spray resistance with good water and chemical resistance."
-      },
+      "description": { "zh": "中昊基于四氟乙烯（TFE）开发的新一代溶剂型氟碳树脂，固含量 65±2%、氟含量 27±2%。适用于双组分氟碳涂料，用于钢结构、太阳能背板、沿海设施及化工设备防腐。", "en": "Zhonghao's next-generation TFE-based solvent fluorocarbon resin, solid content 65±2%, fluorine content 27±2%. Used in two-component fluorocarbon coatings for steel structures, solar backsheets, coastal facilities and chemical-equipment anti-corrosion." },
 
       "applications": {
         "zh": [
@@ -717,10 +669,7 @@
           "id": "zht",
           "name": { "zh": "ZHT", "en": "ZHT" },
           "tag": { "zh": "TFE 共聚 / 新开发", "en": "TFE-based / newly developed" },
-          "description": {
-            "zh": "中昊基于四氟乙烯（TFE）开发的新一代氟碳树脂，与之前的 CTFE 体系（JF / ZHM 各系列）属于不同的氟塑骨架家族。",
-            "en": "Next-generation fluorocarbon resin developed by Zhonghao based on tetrafluoroethylene (TFE) — a different fluorinated backbone family from the CTFE-based JF / ZHM series."
-          },
+          "description": { "zh": "中昊基于 TFE 的新一代氟碳树脂 — 区别于 CTFE 体系（JF / ZHM）属另一氟塑骨架家族。", "en": "Zhonghao's next-generation TFE-based fluorocarbon resin — a different polymer-backbone family from the CTFE-based JF / ZHM series." },
           "specs": {
             "appearance":       { "zh": "无色或淡黄色粘稠液体", "en": "Colorless or light yellow viscous liquid" },
             "chromaticity":     "≤2",
@@ -751,10 +700,7 @@
         "en": "Binary copolymer of vinylidene fluoride (VDF) and hexafluoropropylene (HFP), manufactured using a non-fluorinated surfactant (NFS) process"
       },
 
-      "description": {
-        "zh": "中、低门尼生胶产品，典型氟含量 66.5%，主要用于挤出和注压成型。",
-        "en": "Medium-to-low Mooney raw rubber with a typical fluorine content of 66.5%; mainly used for extrusion and injection compression molding."
-      },
+      "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）二元生胶，氟含量 66.5%。适用于挤出与注压成型，可制造各类密封件、垫片与管件。", "en": "Medium-to-low Mooney VDF-based binary FKM raw rubber, 66.5% fluorine. Used for extrusion and injection-compression molding to make seals, gaskets and pipe fittings." },
 
       "applications": {
         "zh": ["挤出成型", "注压成型"],
@@ -790,7 +736,7 @@
           "id": "fe2601-30",
           "name": { "zh": "FE2601-30", "en": "FE2601-30" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼粘度 35（较低）— 流动性优，适合复杂截面挤出。", "en": "Mooney 35 (lower) — excellent flow, suited to complex extrusion profiles." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "35",
@@ -803,7 +749,7 @@
           "id": "fe2601-40",
           "name": { "zh": "FE2601-40", "en": "FE2601-40" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼粘度 45（中等）— 综合加工平衡，通用性强。", "en": "Mooney 45 (mid) — balanced processability, broad applicability." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "45",
@@ -816,7 +762,7 @@
           "id": "fe2601-50",
           "name": { "zh": "FE2601-50", "en": "FE2601-50" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼粘度 55（较高）— 抗形变能力更强，适合厚壁件。", "en": "Mooney 55 (higher) — better deformation resistance, suited to thick-wall parts." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "55",
@@ -840,10 +786,7 @@
         "en": "Binary copolymer of vinylidene fluoride (VDF) and hexafluoropropylene (HFP), manufactured using a non-fluorinated surfactant (NFS) process"
       },
 
-      "description": {
-        "zh": "超高门尼生胶产品，典型氟含量 66.5%，主要用于模压成型。",
-        "en": "Ultra-high Mooney raw rubber with a typical fluorine content of 66.5%; mainly used for compression molding."
-      },
+      "description": { "zh": "超高门尼 VDF 基氟橡胶（FKM）二元生胶，氟含量 66.5%。适用于模压成型，可制造大型与厚壁密封件、滚轴等模压制品。", "en": "Ultra-high Mooney VDF-based binary FKM raw rubber, 66.5% fluorine. Used for compression molding of large and thick-walled seals, rollers and similar molded parts." },
 
       "applications": {
         "zh": ["模压成型"],
@@ -879,7 +822,7 @@
           "id": "fe2602-100",
           "name": { "zh": "FE2602-100", "en": "FE2602-100" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼粘度 100 — 系列起步牌号。", "en": "Mooney 100 — entry grade in the series." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "100",
@@ -892,7 +835,7 @@
           "id": "fe2602-120",
           "name": { "zh": "FE2602-120", "en": "FE2602-120" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼粘度 120 — 平衡流动性与机械强度。", "en": "Mooney 120 — balanced flow and mechanical strength." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "120",
@@ -905,7 +848,7 @@
           "id": "fe2602-140",
           "name": { "zh": "FE2602-140", "en": "FE2602-140" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼粘度 145 — 高门尼制品的常用选择。", "en": "Mooney 145 — common choice for high-Mooney compounds." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "145",
@@ -918,7 +861,7 @@
           "id": "fe2602-170",
           "name": { "zh": "FE2602-170", "en": "FE2602-170" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼粘度 175 — 系列最高门尼牌号，机械性能最优。", "en": "Mooney 175 — highest-Mooney grade in the series, best mechanical performance." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "175",
@@ -942,10 +885,7 @@
         "en": "Binary copolymer of vinylidene fluoride (VDF) and hexafluoropropylene (HFP), manufactured using a non-fluorinated surfactant (NFS) process"
       },
 
-      "description": {
-        "zh": "双峰分子量分布的中、低门尼生胶产品，典型氟含量 66.5%，主要用于模压、挤出和注压成型。",
-        "en": "Medium-to-low Mooney raw rubber with bimodal molecular-weight distribution; typical fluorine content 66.5%; suited for compression, extrusion and injection compression molding."
-      },
+      "description": { "zh": "双峰分子量分布的中、低门尼 VDF 基氟橡胶（FKM）二元生胶，氟含量 66.5%。适用于模压、挤出与注压成型，可制造密封件、管件与异型橡胶件。", "en": "Bimodal-MW medium-to-low Mooney VDF-based binary FKM raw rubber, 66.5% fluorine. Used for compression, extrusion and injection-compression molding of seals, pipe fittings and shaped rubber parts." },
 
       "applications": {
         "zh": ["模压成型", "挤出成型", "注压成型"],
@@ -981,7 +921,7 @@
           "id": "fe2603-50",
           "name": { "zh": "FE2603-50", "en": "FE2603-50" },
           "tag": { "zh": "双峰分子量", "en": "Bimodal MW" },
-          "description": null,
+          "description": { "zh": "门尼 50 — 双峰分布起步牌号。", "en": "Mooney 50 — entry bimodal grade." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "50",
@@ -994,7 +934,7 @@
           "id": "fe2603-60",
           "name": { "zh": "FE2603-60", "en": "FE2603-60" },
           "tag": { "zh": "双峰分子量", "en": "Bimodal MW" },
-          "description": null,
+          "description": { "zh": "门尼 60 — 流动性与强度的平衡。", "en": "Mooney 60 — balanced flow and strength." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "60",
@@ -1007,7 +947,7 @@
           "id": "fe2603-70",
           "name": { "zh": "FE2603-70", "en": "FE2603-70" },
           "tag": { "zh": "双峰分子量", "en": "Bimodal MW" },
-          "description": null,
+          "description": { "zh": "门尼 70 — 注压制品适用，门尼分布最高。", "en": "Mooney 70 — suited to injection-compression, highest Mooney in series." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "70",
@@ -1031,10 +971,7 @@
         "en": "Binary copolymer of vinylidene fluoride (VDF) and hexafluoropropylene (HFP), manufactured using a non-fluorinated surfactant (NFS) process"
       },
 
-      "description": {
-        "zh": "中、低门尼生胶产品，典型氟含量 66.5%，主要用于模压和挤出成型。",
-        "en": "Medium-to-low Mooney raw rubber with a typical fluorine content of 66.5%; mainly used for compression molding and extrusion molding."
-      },
+      "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）二元生胶，氟含量 66.5%。适用于模压与挤出成型，可制造密封件、O 形圈与挤出型材。", "en": "Medium-to-low Mooney VDF-based binary FKM raw rubber, 66.5% fluorine. Used for compression and extrusion molding of seals, O-rings and extruded profiles." },
 
       "applications": {
         "zh": ["模压成型", "挤出成型"],
@@ -1070,7 +1007,7 @@
           "id": "fe2604-60",
           "name": { "zh": "FE2604-60", "en": "FE2604-60" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 65 — 通用模压挤出牌号。", "en": "Mooney 65 — general molding & extrusion grade." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "65",
@@ -1083,7 +1020,7 @@
           "id": "fe2604-70",
           "name": { "zh": "FE2604-70", "en": "FE2604-70" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 75 — 中等门尼，机械性能更佳。", "en": "Mooney 75 — mid-range Mooney with better mechanical performance." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "75",
@@ -1096,7 +1033,7 @@
           "id": "fe2604-80",
           "name": { "zh": "FE2604-80", "en": "FE2604-80" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 85 — 系列最高门尼，适合厚壁模压件。", "en": "Mooney 85 — highest in series, suited to thick-wall molded parts." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "85",
@@ -1120,10 +1057,7 @@
         "en": "Binary copolymer of vinylidene fluoride (VDF) and hexafluoropropylene (HFP), manufactured using a non-fluorinated surfactant (NFS) process"
       },
 
-      "description": {
-        "zh": "低门尼生胶产品，典型氟含量 66.5%，主要用于挤出、注压和注射成型。",
-        "en": "Low-Mooney raw rubber with a typical fluorine content of 66.5%; mainly used for extrusion, injection compression and injection molding."
-      },
+      "description": { "zh": "低门尼 VDF 基氟橡胶（FKM）二元生胶，氟含量 66.5%。适用于挤出、注压与注射成型，流动性高，可制造复杂截面与小型精密件。", "en": "Low-Mooney VDF-based binary FKM raw rubber, 66.5% fluorine. Used for extrusion, injection-compression and injection molding — high flow for complex profiles and small precision parts." },
 
       "applications": {
         "zh": ["挤出成型", "注压成型", "注射成型"],
@@ -1159,7 +1093,7 @@
           "id": "fe2605",
           "name": { "zh": "FE2605", "en": "FE2605" },
           "tag": { "zh": "低门尼", "en": "Low Mooney" },
-          "description": null,
+          "description": { "zh": "FE2605 系列唯一牌号 — 门尼粘度 25，注射成型首选。", "en": "Sole grade in the FE2605 series — Mooney 25, preferred for injection molding." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "25",
@@ -1183,10 +1117,7 @@
         "en": "Terpolymer of vinylidene fluoride (VDF), tetrafluoroethylene (TFE) and hexafluoropropylene (HFP)"
       },
 
-      "description": {
-        "zh": "超高分子量生胶产品，典型氟含量 68%，主要用于模压成型。",
-        "en": "Ultra-high molecular weight raw rubber with a typical fluorine content of 68%; mainly used for compression molding."
-      },
+      "description": { "zh": "超高分子量 VDF 基氟橡胶（FKM）三元生胶，氟含量 68%。适用于模压成型，可制造大型与厚壁密封件、衬里、阀座等模压制品。", "en": "Ultra-high MW VDF-based ternary FKM raw rubber, 68% fluorine. Used for compression molding of large / thick-walled seals, linings and valve seats." },
 
       "applications": {
         "zh": ["模压成型"],
@@ -1225,7 +1156,7 @@
           "id": "fe2462",
           "name": { "zh": "FE2462", "en": "FE2462" },
           "tag": { "zh": "超高分子量", "en": "Ultra-high MW" },
-          "description": null,
+          "description": { "zh": "门尼 70 — 三元 FKM 基础牌号。", "en": "Mooney 70 — base ternary FKM grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "70",
@@ -1241,7 +1172,7 @@
           "id": "fe2462m",
           "name": { "zh": "FE2462M", "en": "FE2462M" },
           "tag": { "zh": "超高分子量", "en": "Ultra-high MW" },
-          "description": null,
+          "description": { "zh": "门尼 80 — 强化版本（M），机械强度更优。", "en": "Mooney 80 — reinforced version (M) with higher mechanical strength." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "80",
@@ -1268,10 +1199,7 @@
         "en": "Terpolymer of vinylidene fluoride (VDF), tetrafluoroethylene (TFE) and hexafluoropropylene (HFP)"
       },
 
-      "description": {
-        "zh": "中、低门尼生胶产品，典型氟含量 67.5%，主要用于挤出和注压成型。",
-        "en": "Medium-to-low Mooney raw rubber with a typical fluorine content of 67.5%; mainly used for extrusion and injection compression molding."
-      },
+      "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）三元生胶，氟含量 67.5%。适用于挤出与注压成型，可制造密封件、垫片与管件。", "en": "Medium-to-low Mooney VDF-based ternary FKM raw rubber, 67.5% fluorine. Used for extrusion and injection-compression molding of seals, gaskets and pipe fittings." },
 
       "applications": {
         "zh": ["挤出成型", "注压成型"],
@@ -1310,7 +1238,7 @@
           "id": "fe2463",
           "name": { "zh": "FE2463", "en": "FE2463" },
           "tag": { "zh": "中低门尼", "en": "Medium-low Mooney" },
-          "description": null,
+          "description": { "zh": "FE2463 系列唯一牌号 — 门尼 45，三元 FKM 通用牌号。", "en": "Sole grade in the series — Mooney 45, general-purpose ternary FKM." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "45",
@@ -1337,10 +1265,7 @@
         "en": "Terpolymer of vinylidene fluoride (VDF), tetrafluoroethylene (TFE) and hexafluoropropylene (HFP)"
       },
 
-      "description": {
-        "zh": "中、低门尼生胶产品，典型氟含量 68.5%（实测约 68.7%），主要用于模压、挤出、注压和压延成型。",
-        "en": "Medium-to-low Mooney raw rubber with a typical fluorine content of 68.5% (measured ~68.7%); used for compression, extrusion, injection compression and calendering."
-      },
+      "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）三元生胶，氟含量 68.5%。适用于模压、挤出、注压与压延成型，可制造各类密封件、垫片、管件与片材。", "en": "Medium-to-low Mooney VDF-based ternary FKM raw rubber, 68.5% fluorine. Used for compression, extrusion, injection-compression and calendering — suitable for seals, gaskets, pipe fittings and sheets." },
 
       "applications": {
         "zh": ["模压成型", "挤出成型", "注压成型", "压延成型"],
@@ -1376,7 +1301,7 @@
           "id": "fe2465-20",
           "name": { "zh": "FE2465-20", "en": "FE2465-20" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 25 — 流动性最佳，适合复杂注压。", "en": "Mooney 25 — highest flow, suited to complex injection-compression." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "25",
@@ -1389,7 +1314,7 @@
           "id": "fe2465-40",
           "name": { "zh": "FE2465-40", "en": "FE2465-40" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 40 — 通用挤出与模压牌号。", "en": "Mooney 40 — general extrusion and compression grade." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "40",
@@ -1402,7 +1327,7 @@
           "id": "fe2465-60",
           "name": { "zh": "FE2465-60", "en": "FE2465-60" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 60 — 平衡机械强度与加工性。", "en": "Mooney 60 — balanced mechanical strength and processability." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "60",
@@ -1415,7 +1340,7 @@
           "id": "fe2465-80",
           "name": { "zh": "FE2465-80", "en": "FE2465-80" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 80 — 最高门尼，适合厚壁模压。", "en": "Mooney 80 — highest Mooney, suited to thick-wall molding." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "80",
@@ -1439,10 +1364,7 @@
         "en": "Terpolymer of vinylidene fluoride (VDF), tetrafluoroethylene (TFE) and hexafluoropropylene (HFP)"
       },
 
-      "description": {
-        "zh": "中、低门尼生胶产品，典型氟含量 66%，与二元氟橡胶相比具有更好的耐低温性能，主要用于模压、挤出和注射成型。",
-        "en": "Medium-to-low Mooney raw rubber with a typical fluorine content of 66%; offers better low-temperature resistance than binary FKM; mainly used for compression, extrusion and injection molding."
-      },
+      "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）低温改性生胶，氟含量 66%、玻璃化温度约 −20°C — 较二元 FKM 具备更优耐低温性能。适用于模压、挤出与注射成型，可制造低温及燃料系统密封件。", "en": "Medium-to-low Mooney VDF-based FKM low-temperature-modified raw rubber, 66% fluorine, Tg ≈ −20°C — better low-temperature performance than standard binary FKM. Used for compression, extrusion and injection molding of low-temperature and fuel-system seals." },
 
       "applications": {
         "zh": ["模压成型", "挤出成型", "注射成型"],
@@ -1479,7 +1401,7 @@
           "id": "fe2465l-20",
           "name": { "zh": "FE2465L-20", "en": "FE2465L-20" },
           "tag": { "zh": "耐低温", "en": "Low-temp resistance" },
-          "description": null,
+          "description": { "zh": "门尼 25 — 低温改性系列流动性最佳。", "en": "Mooney 25 — best flow in the low-temp series." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "25",
@@ -1493,7 +1415,7 @@
           "id": "fe2465l-40",
           "name": { "zh": "FE2465L-40", "en": "FE2465L-40" },
           "tag": { "zh": "耐低温", "en": "Low-temp resistance" },
-          "description": null,
+          "description": { "zh": "门尼 40 — 通用低温牌号。", "en": "Mooney 40 — general low-temperature grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "40",
@@ -1507,7 +1429,7 @@
           "id": "fe2465l-60",
           "name": { "zh": "FE2465L-60", "en": "FE2465L-60" },
           "tag": { "zh": "耐低温", "en": "Low-temp resistance" },
-          "description": null,
+          "description": { "zh": "门尼 60 — 低温改性高强度牌号。", "en": "Mooney 60 — high-strength low-temperature grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "60",
@@ -1532,10 +1454,7 @@
         "en": "Terpolymer of vinylidene fluoride (VDF), tetrafluoroethylene (TFE) and hexafluoropropylene (HFP)"
       },
 
-      "description": {
-        "zh": "中、低门尼生胶产品，典型氟含量 69.5%，主要用于模压、挤出和注压成型。",
-        "en": "Medium-to-low Mooney raw rubber with a typical fluorine content of 69.5%; mainly used for compression, extrusion and injection compression molding."
-      },
+      "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）高氟含量三元生胶，氟含量 69.5% — 较常规 FKM 介质耐受性更优。适用于模压、挤出与注压成型，可制造耐油 / 燃料 / 化学介质密封件。", "en": "Medium-to-low Mooney high-fluorine VDF-based ternary FKM raw rubber, 69.5% fluorine — better chemical-media resistance than standard FKM. Used for compression, extrusion and injection-compression molding of oil-, fuel- and chemical-resistant seals." },
 
       "applications": {
         "zh": ["模压成型", "挤出成型", "注压成型"],
@@ -1571,7 +1490,7 @@
           "id": "fe2465g-20",
           "name": { "zh": "FE2465G-20", "en": "FE2465G-20" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 25 — 高氟系列流动性最佳。", "en": "Mooney 25 — best flow in the high-fluorine series." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "25",
@@ -1584,7 +1503,7 @@
           "id": "fe2465g-40",
           "name": { "zh": "FE2465G-40", "en": "FE2465G-40" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 40 — 通用高氟牌号。", "en": "Mooney 40 — general high-fluorine grade." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "40",
@@ -1597,7 +1516,7 @@
           "id": "fe2465g-60",
           "name": { "zh": "FE2465G-60", "en": "FE2465G-60" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 60 — 平衡介质耐受性与加工性。", "en": "Mooney 60 — balanced media resistance and processability." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "60",
@@ -1610,7 +1529,7 @@
           "id": "fe2465g-80",
           "name": { "zh": "FE2465G-80", "en": "FE2465G-80" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 80 — 厚壁模压适用。", "en": "Mooney 80 — suited to thick-wall molding." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "80",
@@ -1623,7 +1542,7 @@
           "id": "fe2465g-100",
           "name": { "zh": "FE2465G-100", "en": "FE2465G-100" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "门尼 100 — 最高门尼，机械性能最优。", "en": "Mooney 100 — highest Mooney, best mechanical performance." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "100",
@@ -1647,10 +1566,7 @@
         "en": "Terpolymer of vinylidene fluoride (VDF), tetrafluoroethylene (TFE) and hexafluoropropylene (HFP)"
       },
 
-      "description": {
-        "zh": "中、低门尼氟橡胶产品，具有优异的耐介质性能，典型氟含量 70%，主要用于模压、挤出和注压成型。",
-        "en": "Medium-to-low Mooney fluoroelastomer with excellent media resistance and typical fluorine content of 70%; mainly used for compression, extrusion and injection compression molding."
-      },
+      "description": { "zh": "中、低门尼 VDF 基氟橡胶（FKM）超高氟含量三元生胶，氟含量 70% — 系列中介质耐受性最强。适用于模压、挤出与注压成型，可制造苛刻介质环境下的密封件。", "en": "Medium-to-low Mooney ultra-high-fluorine VDF-based ternary FKM raw rubber, 70% fluorine — top media resistance in the FKM series. Used for compression, extrusion and injection-compression molding of seals exposed to aggressive media." },
 
       "applications": {
         "zh": ["模压成型", "挤出成型", "注压成型"],
@@ -1686,7 +1602,7 @@
           "id": "fe2465h-20",
           "name": { "zh": "FE2465H-20", "en": "FE2465H-20" },
           "tag": { "zh": "耐介质", "en": "Media-resistant" },
-          "description": null,
+          "description": { "zh": "门尼 25 — 超高氟系列流动性最佳。", "en": "Mooney 25 — best flow in the ultra-high-fluorine series." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "25",
@@ -1699,7 +1615,7 @@
           "id": "fe2465h-40",
           "name": { "zh": "FE2465H-40", "en": "FE2465H-40" },
           "tag": { "zh": "耐介质", "en": "Media-resistant" },
-          "description": null,
+          "description": { "zh": "门尼 40 — 通用超高氟牌号。", "en": "Mooney 40 — general ultra-high-fluorine grade." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "40",
@@ -1712,7 +1628,7 @@
           "id": "fe2465h-60",
           "name": { "zh": "FE2465H-60", "en": "FE2465H-60" },
           "tag": { "zh": "耐介质", "en": "Media-resistant" },
-          "description": null,
+          "description": { "zh": "门尼 60 — 平衡介质耐受性与加工性。", "en": "Mooney 60 — balanced media resistance and processability." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "60",
@@ -1725,7 +1641,7 @@
           "id": "fe2465h-80",
           "name": { "zh": "FE2465H-80", "en": "FE2465H-80" },
           "tag": { "zh": "耐介质", "en": "Media-resistant" },
-          "description": null,
+          "description": { "zh": "门尼 80 — 系列最高门尼。", "en": "Mooney 80 — highest Mooney in series." },
           "specs": {
             "appearance":       { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity": "80",
@@ -1749,10 +1665,7 @@
         "en": "Terpolymer of vinylidene fluoride (VDF), hexafluoropropylene (HFP) and a cure-site monomer (CSM)"
       },
 
-      "description": {
-        "zh": "中、低门尼粘度的过氧化物硫化型氟橡胶系列，典型氟含量 66.5%。具有优秀的流动加工性能与耐低温性能。加入交联剂（如 TAIC）后可采用过氧化物硫化体系。",
-        "en": "Medium-to-low Mooney peroxide-curable fluoroelastomer series with a typical fluorine content of 66.5%. Excellent flow processability and low-temperature resistance. Compatible with peroxide cure systems when paired with a co-agent such as TAIC."
-      },
+      "description": { "zh": "中、低门尼粘度过氧化物硫化型 VDF 基氟橡胶（FKM）三元生胶，氟含量 66.5%、玻璃化温度约 −19°C。适用于过氧化物硫化体系（配合 TAIC 等交联剂），可制造耐高温、耐介质且耐低温的密封件。", "en": "Medium-to-low Mooney peroxide-curable VDF-based ternary FKM raw rubber, 66.5% fluorine, Tg ≈ −19°C. Cures with peroxide systems (e.g. paired with TAIC) to make seals with high-temperature, chemical and low-temperature performance." },
 
       "applications": null,
       "engineering_cases": null,
@@ -1788,7 +1701,7 @@
           "id": "pcfe2611",
           "name": { "zh": "PCFE2611", "en": "PCFE2611" },
           "tag": { "zh": "过氧化物硫化", "en": "Peroxide-curable" },
-          "description": null,
+          "description": { "zh": "门尼 15 — 过硫系列流动性最佳。", "en": "Mooney 15 — best flow in the peroxide-cure series." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "15",
@@ -1805,7 +1718,7 @@
           "id": "pcfe2612",
           "name": { "zh": "PCFE2612", "en": "PCFE2612" },
           "tag": { "zh": "过氧化物硫化", "en": "Peroxide-curable" },
-          "description": null,
+          "description": { "zh": "门尼 25 — 通用过硫牌号。", "en": "Mooney 25 — general peroxide-cure grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "25",
@@ -1822,7 +1735,7 @@
           "id": "pcfe2613",
           "name": { "zh": "PCFE2613", "en": "PCFE2613" },
           "tag": { "zh": "过氧化物硫化", "en": "Peroxide-curable" },
-          "description": null,
+          "description": { "zh": "门尼 35 — 平衡过硫性能与流动性。", "en": "Mooney 35 — balanced cure and flow." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "35",
@@ -1839,7 +1752,7 @@
           "id": "pcfe2614",
           "name": { "zh": "PCFE2614", "en": "PCFE2614" },
           "tag": { "zh": "过氧化物硫化", "en": "Peroxide-curable" },
-          "description": null,
+          "description": { "zh": "门尼 45 — 中高门尼过硫牌号。", "en": "Mooney 45 — mid-high Mooney peroxide-cure grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "45",
@@ -1856,7 +1769,7 @@
           "id": "pcfe2615",
           "name": { "zh": "PCFE2615", "en": "PCFE2615" },
           "tag": { "zh": "过氧化物硫化", "en": "Peroxide-curable" },
-          "description": null,
+          "description": { "zh": "门尼 55 — 系列最高门尼。", "en": "Mooney 55 — highest Mooney in series." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "55",
@@ -1884,10 +1797,7 @@
         "en": "Quaternary copolymer of vinylidene fluoride (VDF), tetrafluoroethylene (TFE), hexafluoropropylene (HFP) and a cure-site monomer (CSM)"
       },
 
-      "description": {
-        "zh": "中、低门尼粘度的过氧化物硫化型氟橡胶系列，典型氟含量 68.5%。相较于 PCFE2610（三元）增加了 TFE 单体，介质耐受性更优；同时保持优秀的流动加工与耐低温性能。加入交联剂（如 TAIC）后可采用过氧化物硫化体系。",
-        "en": "Medium-to-low Mooney peroxide-curable fluoroelastomer series with a typical fluorine content of 68.5%. Compared to PCFE2610 (terpolymer), the additional TFE monomer improves media resistance while preserving excellent flow processability and low-temperature performance. Compatible with peroxide cure systems when paired with a co-agent such as TAIC."
-      },
+      "description": { "zh": "中、低门尼粘度过氧化物硫化型 VDF 基氟橡胶（FKM）四元生胶，氟含量 68.5%（在三元基础上增加 TFE 单体）— 介质耐受性较 PCFE2610 更优。适用于过氧化物硫化体系，可制造苛刻介质环境下的耐高低温密封件。", "en": "Medium-to-low Mooney peroxide-curable VDF-based quaternary FKM raw rubber, 68.5% fluorine (TFE monomer added on top of the ternary backbone) — better media resistance than PCFE2610. Cures with peroxide systems for seals in aggressive media with high / low-temperature requirements." },
 
       "applications": null,
       "engineering_cases": null,
@@ -1923,7 +1833,7 @@
           "id": "pcfe24612",
           "name": { "zh": "PCFE24612", "en": "PCFE24612" },
           "tag": { "zh": "过氧化物硫化（四元）", "en": "Peroxide-cure (quaternary)" },
-          "description": null,
+          "description": { "zh": "门尼 25 — 高氟过硫起步牌号。", "en": "Mooney 25 — entry high-fluorine peroxide-cure grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "25",
@@ -1940,7 +1850,7 @@
           "id": "pcfe24613",
           "name": { "zh": "PCFE24613", "en": "PCFE24613" },
           "tag": { "zh": "过氧化物硫化（四元）", "en": "Peroxide-cure (quaternary)" },
-          "description": null,
+          "description": { "zh": "门尼 35 — 通用高氟过硫牌号。", "en": "Mooney 35 — general high-fluorine peroxide-cure grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "35",
@@ -1957,7 +1867,7 @@
           "id": "pcfe24614",
           "name": { "zh": "PCFE24614", "en": "PCFE24614" },
           "tag": { "zh": "过氧化物硫化（四元）", "en": "Peroxide-cure (quaternary)" },
-          "description": null,
+          "description": { "zh": "门尼 45 — 平衡介质耐受性与加工性。", "en": "Mooney 45 — balanced media resistance and processability." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "45",
@@ -1974,7 +1884,7 @@
           "id": "pcfe24615",
           "name": { "zh": "PCFE24615", "en": "PCFE24615" },
           "tag": { "zh": "过氧化物硫化（四元）", "en": "Peroxide-cure (quaternary)" },
-          "description": null,
+          "description": { "zh": "门尼 55 — 中高门尼牌号。", "en": "Mooney 55 — mid-high Mooney grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "55",
@@ -1991,7 +1901,7 @@
           "id": "pcfe24616",
           "name": { "zh": "PCFE24616", "en": "PCFE24616" },
           "tag": { "zh": "过氧化物硫化（四元）", "en": "Peroxide-cure (quaternary)" },
-          "description": null,
+          "description": { "zh": "门尼 65 — 系列最高门尼。", "en": "Mooney 65 — highest Mooney in series." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "65",
@@ -2019,10 +1929,7 @@
         "en": "Binary copolymer of tetrafluoroethylene (TFE) and propylene (FEPM family)"
       },
 
-      "description": {
-        "zh": "典型氟含量 57%。挤出成型并经辐照交联后，主要用于制造耐热电线电缆，长期使用温度 200°C。相较于 VDF 基 FKM，TFE/丙烯体系（FEPM）具有更优的耐碱性和耐胺性。",
-        "en": "Typical fluorine content 57%. Mainly used for heat-resistant wire and cable insulation: extruded then radiation-crosslinked, with long-term service temperature of 200°C. Compared with VDF-based FKM, the TFE/propylene system (FEPM) offers superior resistance to bases and amines."
-      },
+      "description": { "zh": "TFE-丙烯共聚氟橡胶（FEPM）生胶，氟含量 57%、长期使用温度 200°C — 较 VDF 基 FKM 具有更优的耐碱性与耐胺性。适用于挤出成型并经辐照交联，主要用于耐热电线电缆绝缘。", "en": "TFE-propylene fluoroelastomer (FEPM) raw rubber, 57% fluorine, long-term service 200°C — better base and amine resistance than VDF-based FKM. Used for extrusion followed by radiation crosslinking, primarily for heat-resistant wire & cable insulation." },
 
       "applications": {
         "zh": ["耐热电线电缆（200°C 长期使用）", "挤出成型 + 辐照交联"],
@@ -2059,7 +1966,7 @@
           "id": "fe2701",
           "name": { "zh": "FE2701", "en": "FE2701" },
           "tag": { "zh": "TFE/丙烯 · 200°C 耐热", "en": "TFE/Propylene · 200°C heat-resistant" },
-          "description": null,
+          "description": { "zh": "FEPM 唯一牌号 — 门尼 106，专为耐热电线电缆设计。", "en": "Sole FEPM grade — Mooney 106, designed for heat-resistant wire & cable." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "106",
@@ -2084,10 +1991,7 @@
         "en": "Aqueous dispersion of a binary copolymer of vinylidene fluoride (VDF) and hexafluoropropylene (HFP)"
       },
 
-      "description": {
-        "zh": "用于制备聚合物加工助剂（PPA）的分散液。",
-        "en": "Dispersion used for the preparation of polymer processing aids (PPA)."
-      },
+      "description": { "zh": "用于制备聚合物加工助剂（PPA）的 FKM 水基分散液，固含量约 27%。适用于乳液型 PPA 配方生产，作为聚烯烃加工助剂的关键中间体。", "en": "FKM water-based dispersion for the preparation of polymer processing aids (PPA), ~27% solid content. Used in emulsion-type PPA formulations as a key intermediate for polyolefin processing aids." },
 
       "applications": {
         "zh": ["聚合物加工助剂（PPA）原料"],
@@ -2122,7 +2026,7 @@
           "id": "fe2600d",
           "name": { "zh": "FE2600D", "en": "FE2600D" },
           "tag": { "zh": "PPA 分散液", "en": "PPA dispersion" },
-          "description": null,
+          "description": { "zh": "FE2600D 系列唯一牌号 — 门尼 55、pH 6.5 的 PPA 中间体分散液。", "en": "Sole grade in the series — PPA-intermediate dispersion at Mooney 55, pH 6.5." },
           "specs": {
             "appearance":       { "zh": "白色分散液，无沉淀", "en": "White dispersion, no precipitation" },
             "ph_value":         "6.5",
@@ -2145,10 +2049,7 @@
         "en": "Fluoroelastomer in powder form"
       },
 
-      "description": {
-        "zh": "聚合物加工助剂（PPA）。可加入到聚烯烃中（如 HDPE / LLDPE / PP），改善其加工性能：消除或减少表面缺陷（如熔体破裂）、降低模具压力 / 功率要求 / 加工温度、降低表观熔体粘度、改善窄模口的加工性能、消除模口堆积现象、提高生产效率。",
-        "en": "Polymer processing aid (PPA). Can be added to polyolefins such as HDPE, LLDPE and PP to improve processing: eliminate or reduce surface defects (e.g. melt fracture), lower mold pressure / power consumption / processing temperature, lower apparent melt viscosity, improve narrow-die-gap processability, eliminate die buildup, and increase productivity."
-      },
+      "description": { "zh": "粉末态聚合物加工助剂（PPA），密度 1.76 g/cm³。适用于聚烯烃（HDPE / LLDPE / PP）的挤出与吹塑工艺，可消除熔体破裂、降低模压压力与加工温度、提高生产效率。", "en": "Powder-form polymer processing aid (PPA), density 1.76 g/cm³. Added to polyolefins (HDPE / LLDPE / PP) in extrusion and blow molding to eliminate melt fracture, reduce die pressure and processing temperature, and increase throughput." },
 
       "applications": {
         "zh": [
@@ -2191,7 +2092,7 @@
           "id": "fe2651",
           "name": { "zh": "FE2651", "en": "FE2651" },
           "tag": { "zh": "PPA 粉末", "en": "PPA powder" },
-          "description": null,
+          "description": { "zh": "FE2651 系列唯一牌号 — 直接加入 HDPE / LLDPE / PP 工艺的粉末 PPA。", "en": "Sole grade in the series — powder PPA directly added to HDPE / LLDPE / PP processing." },
           "specs": {
             "appearance":         { "zh": "白色或微黄色粉末", "en": "White or yellowish powder" },
             "density":            "1.76",
@@ -2214,10 +2115,7 @@
         "en": "Terpolymer of tetrafluoroethylene (TFE), perfluoromethyl vinyl ether (PMVE) and a cure-site monomer — perfluoroether rubber (FFKM)"
       },
 
-      "description": {
-        "zh": "耐化学介质的全氟醚橡胶（FFKM）系列。在腐蚀性介质下提供最广泛的密封能力以及优秀的压缩永久变形。适用温度范围 -10°C 至 230°C，可应对热介质、有机/无机酸、腐蚀剂、酮、醛、酯、醚、醇类、燃料、溶剂、酸性气体、碳氢化合物、水蒸气、热水、乙烯/丙烯、氧化物等。",
-        "en": "Perfluoroether rubber (FFKM) series resistant to chemical media. Provides the widest range of sealing capability under corrosive conditions with excellent compression set. Service temperature -10°C to 230°C; resistant to hot media, organic and inorganic acids, corrosives, ketones, aldehydes, esters, ethers, alcohols, fuels, solvents, acid gases, hydrocarbons, water vapor, hot water, ethylene/propylene, oxides, etc."
-      },
+      "description": { "zh": "全氟醚橡胶（FFKM）生胶系列，氟含量 72.5%、适用温度 −10°C 至 230°C — 对腐蚀性介质提供最广泛的耐受性与优秀压缩永久变形。适用于模压成型，可制造苛刻工况下的 O 型圈、垫圈、阀体与机械密封件。", "en": "Perfluoroether elastomer (FFKM) raw rubber series, 72.5% fluorine, service −10°C to 230°C — broadest media resistance with excellent compression set. Used for compression molding of O-rings, gaskets, valve bodies and mechanical seals in aggressive process environments." },
 
       "applications": {
         "zh": [
@@ -2268,7 +2166,7 @@
           "id": "pfe4013",
           "name": { "zh": "PFE4013", "en": "PFE4013" },
           "tag": { "zh": "FFKM 高化学耐受", "en": "FFKM chemical-resistant" },
-          "description": null,
+          "description": { "zh": "门尼 30 — FFKM 系列起步牌号。", "en": "Mooney 30 — entry FFKM grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "30",
@@ -2285,7 +2183,7 @@
           "id": "pfe4014",
           "name": { "zh": "PFE4014", "en": "PFE4014" },
           "tag": { "zh": "FFKM 高化学耐受", "en": "FFKM chemical-resistant" },
-          "description": null,
+          "description": { "zh": "门尼 45 — 通用 FFKM 牌号。", "en": "Mooney 45 — general FFKM grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "45",
@@ -2302,7 +2200,7 @@
           "id": "pfe4015",
           "name": { "zh": "PFE4015", "en": "PFE4015" },
           "tag": { "zh": "FFKM 高化学耐受", "en": "FFKM chemical-resistant" },
-          "description": null,
+          "description": { "zh": "门尼 55 — 平衡机械强度与流动性。", "en": "Mooney 55 — balanced strength and flow." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "55",
@@ -2319,7 +2217,7 @@
           "id": "pfe4016",
           "name": { "zh": "PFE4016", "en": "PFE4016" },
           "tag": { "zh": "FFKM 高化学耐受", "en": "FFKM chemical-resistant" },
-          "description": null,
+          "description": { "zh": "门尼 65 — 中高门尼 FFKM 牌号。", "en": "Mooney 65 — mid-high Mooney FFKM grade." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "65",
@@ -2336,7 +2234,7 @@
           "id": "pfe4017",
           "name": { "zh": "PFE4017", "en": "PFE4017" },
           "tag": { "zh": "FFKM 高化学耐受", "en": "FFKM chemical-resistant" },
-          "description": null,
+          "description": { "zh": "门尼 75 — 适合厚壁模压。", "en": "Mooney 75 — suited to thick-wall molding." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "75",
@@ -2353,7 +2251,7 @@
           "id": "pfe4019",
           "name": { "zh": "PFE4019", "en": "PFE4019" },
           "tag": { "zh": "FFKM 高化学耐受", "en": "FFKM chemical-resistant" },
-          "description": null,
+          "description": { "zh": "门尼 95 — 系列最高门尼，机械性能最优。", "en": "Mooney 95 — highest Mooney, best mechanical performance." },
           "specs": {
             "appearance":         { "zh": "白色或淡黄色", "en": "White or light yellow" },
             "mooney_viscosity":   "95",
@@ -2381,10 +2279,7 @@
         "en": "Vinylidene fluoride (VDF) homopolymer"
       },
 
-      "description": {
-        "zh": "T-1 是国内首款涂料级 PVDF，被多家知名涂料企业使用近 20 年，被业界公认为涂料级 PVDF 的'行业标准'。与丙烯酸树脂及助剂混合后可制成性能优异的烘干型 PVDF 氟碳涂料 — 加工窗口宽、成膜耐候性优异，已广泛用于多种地标建筑外墙。T-1W2 在保有 T-1 优异性能的基础上，提供更低的 Stormer 粘度和对各种涂料配方更优的工艺适应性。",
-        "en": "T-1 is the first domestic coating-grade PVDF, used by many well-known coating companies for nearly 20 years and recognized as the 'standard' of coating-grade PVDF. Mixed with acrylic resin and additives, it forms baking PVDF fluorocarbon coatings with excellent performance, a wide processing window and superior weather-proof film — widely used on exterior walls of landmark buildings. T-1W2 keeps the strengths of T-1 while offering a lower Stormer viscosity and excellent adaptability to a variety of coating formulas."
-      },
+      "description": { "zh": "涂料级 PVDF 粉末（VDF 均聚），加工窗口宽、烘干成膜耐候性优异。适用于建筑外墙烘干型 PVDF 氟碳涂料，与丙烯酸树脂及助剂配方使用。", "en": "Coating-grade PVDF powder (VDF homopolymer) — wide processing window with excellent baked-film weather resistance. Used in baking-type PVDF fluorocarbon coatings for exterior building walls, formulated with acrylic resin and additives." },
 
       "applications": {
         "zh": ["建筑外墙烘干型 PVDF 氟碳涂料"],
@@ -2419,7 +2314,7 @@
           "id": "pvdf-t-1",
           "name": { "zh": "T-1", "en": "T-1" },
           "tag": { "zh": "行业标准 / 经典款", "en": "Industry standard / classic" },
-          "description": null,
+          "description": { "zh": "T-1 — 国内首款涂料级 PVDF，Stormer 粘度 ≥95。", "en": "T-1 — first domestic coating-grade PVDF; Stormer viscosity ≥95." },
           "specs": {
             "appearance":         { "zh": "白色粉末", "en": "White powder" },
             "component":          { "zh": "VDF 均聚物", "en": "VDF homopolymerization" },
@@ -2436,7 +2331,7 @@
           "id": "pvdf-t-1w2",
           "name": { "zh": "T-1W2", "en": "T-1W2" },
           "tag": { "zh": "低 Stormer 粘度 / 工艺友好", "en": "Lower Stormer viscosity / processing-friendly" },
-          "description": null,
+          "description": { "zh": "T-1W2 — T-1 升级版，Stormer 粘度 ≥85，工艺适应性更广。", "en": "T-1W2 — upgraded T-1; lower Stormer (≥85) and broader formulation tolerance." },
           "specs": {
             "appearance":         { "zh": "白色粉末", "en": "White powder" },
             "component":          { "zh": "VDF 均聚物", "en": "VDF homopolymerization" },
@@ -2464,10 +2359,7 @@
         "en": "VDF homopolymer / VDF-polar-monomer copolymer / VDF-HFP copolymer (varies by grade)"
       },
 
-      "description": {
-        "zh": "国内锂电级 PVDF 的先行者之一，3F 拥有自主知识产权，通过持续创新成为头部锂电池企业的首选品牌。系列覆盖三类产品：FR909W（乳液均聚）作正极粘合剂，溶解快、易加工、粘结性高，广泛用于磷酸铁锂（LFP）体系；FR908XG（悬浮改性）作正极粘合剂，在降低粘合剂用量的同时维持高粘结力，广泛用于三元体系；FR9601W（乳液共聚）作隔膜涂层材料，兼具优异的粘结力与高柔韧性，在涂层内聚与电解液吸收之间取得卓越平衡。",
-        "en": "As a pioneer of domestic lithium-grade PVDF, 3F holds its own IP and has become the preferred brand of leading lithium battery makers through sustained innovation. The series covers three products: FR909W (emulsion homopolymer) — positive-cathode binder with fast dissolution, easy processing and high adhesion, widely used in lithium iron phosphate (LFP) systems; FR908XG (modified suspension) — positive binder that maintains high adhesion while reducing binder loading, widely used in ternary (NCM/NCA) systems; FR9601W (emulsion copolymer) — separator coating material with excellent adhesion and high flexibility, balancing coating cohesion and electrolyte uptake."
-      },
+      "description": { "zh": "锂电级 PVDF 粉末，覆盖正极粘合剂与隔膜涂层应用。适用于锂离子电池正极极片涂布（LFP / 三元体系）及隔膜涂层 — 提供乳液均聚、悬浮改性、乳液共聚三种工艺类型供选择。", "en": "Lithium-grade PVDF powders covering positive-cathode binder and separator-coating applications. Used in Li-ion battery cathode coating (LFP / ternary systems) and separator coating — available in emulsion-homopolymer, modified-suspension and emulsion-copolymer forms." },
 
       "applications": {
         "zh": ["锂电池正极粘合剂（LFP）", "锂电池正极粘合剂（三元）", "锂电池隔膜涂层"],
@@ -2504,7 +2396,7 @@
           "id": "pvdf-fr909w",
           "name": { "zh": "FR909W", "en": "FR909W" },
           "tag": { "zh": "LFP 正极粘合剂", "en": "LFP positive-cathode binder" },
-          "description": null,
+          "description": { "zh": "FR909W — 乳液均聚 LFP 正极粘合剂，溶解快、粘结性高。", "en": "FR909W — emulsion-homopolymer LFP cathode binder; fast dissolution, high adhesion." },
           "specs": {
             "appearance":            { "zh": "白色粉末", "en": "White powder" },
             "component":             { "zh": "VDF 乳液均聚物", "en": "VDF emulsion homopolymerization" },
@@ -2523,7 +2415,7 @@
           "id": "pvdf-fr908xg",
           "name": { "zh": "FR908XG", "en": "FR908XG" },
           "tag": { "zh": "三元正极粘合剂", "en": "Ternary positive-cathode binder" },
-          "description": null,
+          "description": { "zh": "FR908XG — 悬浮改性三元正极粘合剂，减少粘合剂用量同时保持粘结力。", "en": "FR908XG — modified-suspension ternary cathode binder; lower binder loading at retained adhesion." },
           "specs": {
             "appearance":            { "zh": "白色细颗粒", "en": "White fine particles" },
             "component":             { "zh": "VDF-极性单体悬浮共聚物", "en": "VDF-polar monomer suspension copolymerization" },
@@ -2542,7 +2434,7 @@
           "id": "pvdf-fr9601w",
           "name": { "zh": "FR9601W", "en": "FR9601W" },
           "tag": { "zh": "隔膜涂层", "en": "Separator coating" },
-          "description": null,
+          "description": { "zh": "FR9601W — 乳液共聚隔膜涂层材料，兼顾粘结力与柔韧性。", "en": "FR9601W — emulsion-copolymer separator-coating material balancing adhesion and flexibility." },
           "specs": {
             "appearance":            { "zh": "白色粉末", "en": "White powder" },
             "component":             { "zh": "VDF-HFP 乳液共聚物", "en": "VDF-HFP emulsion copolymerization" },
@@ -2572,10 +2464,7 @@
         "en": "Vinylidene fluoride (VDF) homopolymer (emulsion or suspension polymerization)"
       },
 
-      "description": {
-        "zh": "作为国内 PVDF 的先驱，3F 二十年前率先打破垄断、开发出国产水膜级 PVDF。该级别具有优异的耐化学性、机械韧性与强度，可满足 NIPS 与 TIPS 两种工艺需求，是制备过滤膜的理想材料。提供两种产品：FR904W（乳液均聚）— 溶解性好、中等分子量；FR903X（悬浮均聚）— 溶解性好、相对低分子量、低粘度。",
-        "en": "As the pioneer of domestic PVDF, 3F was the first to break the monopoly and develop domestic water-film-grade PVDF twenty years ago. The grade offers excellent chemical resistance and outstanding mechanical toughness and strength, fits both NIPS and TIPS processes, and is the ideal material for filtration-membrane preparation. Two products are available: FR904W (emulsion homopolymer) — good solubility, medium molecular weight; FR903X (suspension homopolymer) — good solubility, relatively low molecular weight and low viscosity."
-      },
+      "description": { "zh": "水膜级 PVDF 粉末（VDF 均聚），机械韧性与耐化学性优异。适用于 NIPS 与 TIPS 工艺过滤膜制备 — 提供乳液与悬浮两种聚合方式的牌号供选择。", "en": "Water-film-grade PVDF powder (VDF homopolymer) with strong mechanical toughness and chemical resistance. Used in NIPS- and TIPS-process filtration-membrane preparation — available in emulsion and suspension forms." },
 
       "applications": {
         "zh": ["NIPS 工艺过滤膜", "TIPS 工艺过滤膜"],
@@ -2610,7 +2499,7 @@
           "id": "pvdf-fr904w",
           "name": { "zh": "FR904W", "en": "FR904W" },
           "tag": { "zh": "中分子量 / 乳液法", "en": "Medium MW / emulsion" },
-          "description": null,
+          "description": { "zh": "FR904W — 乳液均聚牌号，中等分子量、溶解性好。", "en": "FR904W — emulsion homopolymer; medium MW, good solubility." },
           "specs": {
             "appearance":           { "zh": "白色粉末", "en": "White powder" },
             "component":            { "zh": "VDF 乳液均聚物", "en": "VDF emulsion homopolymerization" },
@@ -2627,7 +2516,7 @@
           "id": "pvdf-fr903x",
           "name": { "zh": "FR903X", "en": "FR903X" },
           "tag": { "zh": "低分子量 / 悬浮法", "en": "Low MW / suspension" },
-          "description": null,
+          "description": { "zh": "FR903X — 悬浮均聚牌号，相对低分子量、低粘度。", "en": "FR903X — suspension homopolymer; lower MW and viscosity." },
           "specs": {
             "appearance":           { "zh": "白色细颗粒", "en": "White fine particles" },
             "component":            { "zh": "VDF 悬浮均聚物", "en": "VDF suspension homopolymerization" },
@@ -2655,10 +2544,7 @@
         "en": "VDF emulsion homopolymer"
       },
 
-      "description": {
-        "zh": "FR906W 是乳液均聚产品 — 结构稳定性强、耐 UV 辐照、耐水耐氧侵蚀、阻燃性能良好、易加工。作为国产光伏背板膜用 PVDF 的开创者，已稳定使用十余年，显著延长光伏背板的服役寿命，获客户高度认可。",
-        "en": "FR906W is an emulsion homopolymer with strong structural stability, resistance to UV irradiation, water and oxygen erosion, good flame retardance and easy processing. As the pioneer of PVDF for domestic solar backsheet films, it has been used stably for over a decade — significantly extending PV backsheet service life and earning broad customer recognition."
-      },
+      "description": { "zh": "光伏背板级 PVDF 粉末（乳液均聚），耐 UV 辐照、阻燃、易加工。适用于光伏组件背板膜挤出，可显著延长背板服役寿命。", "en": "Solar-backsheet-grade PVDF powder (emulsion homopolymer) — UV resistance, flame retardance and easy processing. Used for extrusion of PV-module backsheet film with significant service-life extension." },
 
       "applications": {
         "zh": ["光伏背板膜"],
@@ -2691,7 +2577,7 @@
           "id": "pvdf-fr906w",
           "name": { "zh": "FR906W", "en": "FR906W" },
           "tag": { "zh": "光伏背板 / 耐 UV 阻燃", "en": "PV backsheet / UV-resistant, flame-retardant" },
-          "description": null,
+          "description": { "zh": "FR906W — 国产光伏背板 PVDF 开创者，已稳定使用十余年。", "en": "FR906W — pioneer of domestic PV-backsheet PVDF, in stable use for over a decade." },
           "specs": {
             "appearance":         { "zh": "白色粉末", "en": "White powder" },
             "component":          { "zh": "VDF 乳液均聚物", "en": "VDF emulsion homopolymerization" },
@@ -2717,10 +2603,7 @@
         "en": "Vinylidene fluoride (VDF) homopolymer"
       },
 
-      "description": {
-        "zh": "通用注塑、挤出加工级 PVDF。具备优异的机械强度、拉伸性能、硬度、耐磨与耐化学性；作为热塑性氟树脂还具备优秀的熔融加工性，适用于注塑、挤出等常规工艺，可制成片材、复合膜、阀门、管材、罐体等部件或制品。提供粉料、颗粒两种形态及不同熔融指数的牌号供客户选择。",
-        "en": "General-purpose PVDF for injection molding and extrusion. Offers excellent mechanical strength, tensile properties, hardness, abrasion resistance and chemical resistance; as a thermoplastic fluororesin, it also exhibits excellent melt processability — suitable for injection molding, extrusion and other common processes, and can be fabricated into sheets, composite films, valves, pipes, tanks and other components. Available in both powder and pellet form, with a range of melt flow indices."
-      },
+      "description": { "zh": "通用级 PVDF（粉料与颗粒），机械强度、耐磨性与耐化学性优异且具良好熔融加工性。适用于注塑与挤出工艺，可制成片材、复合膜、阀门、管材、罐体等部件。", "en": "General-purpose PVDF (powder and pellet) — excellent mechanical strength, abrasion and chemical resistance with good melt processability. Used for injection molding and extrusion to make sheets, composite films, valves, pipes and tanks." },
 
       "applications": {
         "zh": ["管材", "片材 / 复合膜", "阀门 / 罐体 / 工业部件"],
@@ -2755,7 +2638,7 @@
           "id": "pvdf-fr916w",
           "name": { "zh": "FR916W", "en": "FR916W" },
           "tag": { "zh": "颗粒 / 低 MFI", "en": "Granules / low MFI" },
-          "description": null,
+          "description": { "zh": "FR916W — 高熔指（230°C / 5 kg, MFI 8–30）注塑级。", "en": "FR916W — high-MFI (230°C / 5 kg, 8–30) injection grade." },
           "specs": {
             "appearance":         { "zh": "白色半透明颗粒", "en": "White semi-transparent granules" },
             "component":          { "zh": "VDF 均聚物", "en": "VDF homopolymerization" },
@@ -2772,7 +2655,7 @@
           "id": "pvdf-fr907w",
           "name": { "zh": "FR907W", "en": "FR907W" },
           "tag": { "zh": "粉料", "en": "Powder" },
-          "description": null,
+          "description": { "zh": "FR907W — 粉料通用牌号，机械与拉伸性能均衡。", "en": "FR907W — general-purpose powder grade with balanced mechanical and tensile performance." },
           "specs": {
             "appearance":         { "zh": "白色粉末", "en": "White powder" },
             "component":          { "zh": "VDF 均聚物", "en": "VDF homopolymerization" },
@@ -2789,7 +2672,7 @@
           "id": "pvdf-fr917w",
           "name": { "zh": "FR917W", "en": "FR917W" },
           "tag": { "zh": "颗粒 / 中 MFI", "en": "Granules / medium MFI" },
-          "description": null,
+          "description": { "zh": "FR917W — 高负荷熔指（230°C / 12.5 kg, MFI 10–25）挤出级。", "en": "FR917W — high-load MFI (230°C / 12.5 kg, 10–25) extrusion grade." },
           "specs": {
             "appearance":         { "zh": "白色半透明颗粒", "en": "White semi-transparent granules" },
             "component":          { "zh": "VDF 均聚物", "en": "VDF homopolymerization" },
@@ -2817,10 +2700,7 @@
         "en": "Vinylidene fluoride-hexafluoropropylene (VDF-HFP) emulsion copolymer"
       },
 
-      "description": {
-        "zh": "VDF-HFP 乳液共聚物，兼具机械性能与柔韧性，熔体流动性优良、绝缘性能突出、耐候性出色。可挤出或模压成型，应用于电缆护套与光纤等场景。提供粉料 / 颗粒及不同 HFP 比例的牌号供选择。",
-        "en": "VDF-HFP emulsion copolymer combining mechanical strength with flexibility, good melt flow, excellent insulation and outstanding weather resistance. Processable by extrusion or compression molding — used in cable sheathing, optical fiber and similar applications. Available in powder/granule forms and at different HFP ratios."
-      },
+      "description": { "zh": "VDF-HFP 共聚 PVDF（粉料与颗粒），兼具机械强度与柔韧性、绝缘性能突出。适用于挤出与模压成型，主要用于电缆护套、光纤护套及高柔韧氟塑制品。", "en": "VDF-HFP copolymer PVDF (powder and pellet) — combines mechanical strength with flexibility plus outstanding insulation. Used for extrusion and compression molding of cable sheathing, optical-fiber sheathing and high-flexibility fluoropolymer parts." },
 
       "applications": {
         "zh": ["电缆护套", "光纤护套", "高柔韧氟塑制品"],
@@ -2855,7 +2735,7 @@
           "id": "pvdf-fr9611w",
           "name": { "zh": "FR9611W", "en": "FR9611W" },
           "tag": { "zh": "颗粒 / 低 MFI", "en": "Granules / low MFI" },
-          "description": null,
+          "description": { "zh": "FR9611W — 低熔指共聚牌号（MFI 3–8），柔韧性突出。", "en": "FR9611W — low-MFI copolymer (3–8); outstanding flexibility." },
           "specs": {
             "appearance":         { "zh": "白色半透明颗粒", "en": "White semi-transparent granules" },
             "component":          { "zh": "VDF-HFP 共聚物", "en": "VDF-HFP copolymerization" },
@@ -2872,7 +2752,7 @@
           "id": "pvdf-fr9603w",
           "name": { "zh": "FR9603W", "en": "FR9603W" },
           "tag": { "zh": "粉料", "en": "Powder" },
-          "description": null,
+          "description": { "zh": "FR9603W — 粉料形态，机械与柔韧性均衡。", "en": "FR9603W — powder form; balanced mechanical and flexibility profile." },
           "specs": {
             "appearance":         { "zh": "白色粉末", "en": "White powder" },
             "component":          { "zh": "VDF-HFP 共聚物", "en": "VDF-HFP copolymerization" },
@@ -2889,7 +2769,7 @@
           "id": "pvdf-fr9613w",
           "name": { "zh": "FR9613W", "en": "FR9613W" },
           "tag": { "zh": "颗粒 / 中 MFI", "en": "Granules / medium MFI" },
-          "description": null,
+          "description": { "zh": "FR9613W — 高 HFP 比例（熔点 131–141°C），低温柔韧性最佳。", "en": "FR9613W — higher HFP ratio (Tm 131–141°C); best low-temperature flexibility." },
           "specs": {
             "appearance":         { "zh": "白色半透明颗粒", "en": "White semi-transparent granules" },
             "component":          { "zh": "VDF-HFP 共聚物", "en": "VDF-HFP copolymerization" },
@@ -2917,10 +2797,7 @@
         "en": "Polytetrafluoroethylene (PTFE) suspension polymerization resin"
       },
 
-      "description": {
-        "zh": "中粒度悬浮 PTFE 树脂，适用于模压成型。提供三个牌号：FR101-1 用于高洁净度模压，适合对洁净度要求较高的板材、棒材和薄膜制品；FR101-2 用于普通模压，适合普通模压制品；FR101-3 用于半自由流动，适合小型与异型件的模压加工。",
-        "en": "Medium-particle suspension PTFE resin for compression molding. Three grades: FR101-1 for high-cleanliness compression molding (plates, rods, films requiring high cleanliness); FR101-2 for ordinary molding compression; FR101-3 for semi-free flow — well suited to molding small parts and shaped products."
-      },
+      "description": { "zh": "中粒度悬浮 PTFE 树脂粉末，平均粒径约 200 μm、熔点 327±5°C。适用于模压成型，可制造板材、棒材、薄膜及异型件 — 系列内 3 个牌号区分洁净度与流动性。", "en": "Medium-particle suspension PTFE resin powder, average particle size ~200 μm, melting point 327±5°C. Used for compression molding of plates, rods, films and shaped parts — three grades differentiated by cleanliness and flow." },
 
       "applications": {
         "zh": ["PTFE 板材、棒材", "PTFE 薄膜（高洁净）", "小型及异型模压件"],
@@ -2961,7 +2838,7 @@
           "id": "ptfe-fr101-1",
           "name": { "zh": "FR101-1", "en": "FR101-1" },
           "tag": { "zh": "高洁净度模压", "en": "High-cleanliness compression molding" },
-          "description": null,
+          "description": { "zh": "高洁净度模压级 — 适合板材、棒材、薄膜等高洁净度制品。", "en": "High-cleanliness molding grade — suited to high-cleanliness plates, rods and films." },
           "specs": {
             "average_particle_size":     "180±80 (200)",
             "moisture_content":          "≤0.03 (0.01)",
@@ -2977,7 +2854,7 @@
           "id": "ptfe-fr101-2",
           "name": { "zh": "FR101-2", "en": "FR101-2" },
           "tag": { "zh": "普通模压", "en": "Ordinary compression molding" },
-          "description": null,
+          "description": { "zh": "普通模压级 — 通用模压制品的标准选择。", "en": "Standard compression grade — default choice for general molded parts." },
           "specs": {
             "average_particle_size":     "180±80 (200)",
             "moisture_content":          "≤0.03 (0.01)",
@@ -2993,7 +2870,7 @@
           "id": "ptfe-fr101-3",
           "name": { "zh": "FR101-3", "en": "FR101-3" },
           "tag": { "zh": "半自由流动 / 小件异型件", "en": "Semi-free flow / small & shaped parts" },
-          "description": null,
+          "description": { "zh": "半自由流动级 — 适合小型与异型件模压加工。", "en": "Semi-free-flow grade — suited to molding small parts and shaped products." },
           "specs": {
             "average_particle_size":     "180±80 (200)",
             "moisture_content":          "≤0.03 (0.01)",
@@ -3020,10 +2897,7 @@
         "en": "Polytetrafluoroethylene (PTFE) suspension polymerization resin"
       },
 
-      "description": {
-        "zh": "细粒度悬浮 PTFE 树脂，适用于模压成型。提供四个牌号：FR104-1（普通模压）适合普通模压件；FR104-2（高强度填充）适合高强度填充件加工；FR104-3（电气绝缘）适合薄膜、车削板等致密制品；FR104-4（高强度模压）适合高强度模压或填充件。",
-        "en": "Fine-particle suspension PTFE resin for compression molding. Four grades: FR104-1 (ordinary molding) — for general molded parts; FR104-2 (high-strength filling) — for high-strength filled products; FR104-3 (electrical insulation) — for dense products like films and turned boards; FR104-4 (high-strength molding compression) — for high-strength molding or filled products."
-      },
+      "description": { "zh": "细粒度悬浮 PTFE 树脂粉末，平均粒径约 25 μm、熔点 327±5°C。适用于模压成型，可制造高强度、电气绝缘及高拉伸性能制品 — 系列内 4 个牌号区分性能侧重。", "en": "Fine-particle suspension PTFE resin powder, average particle size ~25 μm, melting point 327±5°C. Used for compression molding of high-strength, electrically insulating and high-elongation parts — four grades differentiated by performance focus." },
 
       "applications": {
         "zh": ["普通模压件", "高强度填充件", "电气绝缘薄膜 / 车削板", "高强度模压件"],
@@ -3063,7 +2937,7 @@
           "id": "ptfe-fr104-1",
           "name": { "zh": "FR104-1", "en": "FR104-1" },
           "tag": { "zh": "普通模压", "en": "Ordinary molding" },
-          "description": null,
+          "description": { "zh": "普通模压级 — 通用细粒度模压件。", "en": "Standard molding grade — general fine-particle molded parts." },
           "specs": {
             "average_particle_size": "16~35 (25)",
             "moisture_content":      "≤0.03 (0.01)",
@@ -3077,7 +2951,7 @@
           "id": "ptfe-fr104-2",
           "name": { "zh": "FR104-2", "en": "FR104-2" },
           "tag": { "zh": "高强度填充", "en": "High-strength filling" },
-          "description": null,
+          "description": { "zh": "高强度填充级 — 适合填料复合制品（玻纤、碳纤、青铜等）。", "en": "High-strength filler grade — suited to filled composites (glass / carbon fiber, bronze, etc.)." },
           "specs": {
             "average_particle_size": "16~35 (25)",
             "moisture_content":      "≤0.03 (0.01)",
@@ -3091,7 +2965,7 @@
           "id": "ptfe-fr104-3",
           "name": { "zh": "FR104-3", "en": "FR104-3" },
           "tag": { "zh": "电气绝缘", "en": "Electrical insulation" },
-          "description": null,
+          "description": { "zh": "电气绝缘级 — 薄膜、车削板等致密制品。", "en": "Electrical-insulation grade — dense products such as films and turned boards." },
           "specs": {
             "average_particle_size": "16~35 (25)",
             "moisture_content":      "≤0.03 (0.01)",
@@ -3105,7 +2979,7 @@
           "id": "ptfe-fr104-4",
           "name": { "zh": "FR104-4", "en": "FR104-4" },
           "tag": { "zh": "高强度模压", "en": "High-strength molding" },
-          "description": null,
+          "description": { "zh": "高强度模压级 — 高拉伸强度模压或填充件。", "en": "High-strength compression grade — molded or filled parts with top tensile strength." },
           "specs": {
             "average_particle_size": "16~35 (25)",
             "moisture_content":      "≤0.03 (0.01)",
@@ -3130,10 +3004,7 @@
         "en": "Polytetrafluoroethylene (PTFE) dispersion polymerization resin"
       },
 
-      "description": {
-        "zh": "中分子量分散 PTFE 树脂，适用于糊膏挤出加工。FR202-1 与 FR202-2 适合制造生料带等制品。",
-        "en": "Medium-molecular-weight dispersion PTFE resin suitable for paste extrusion. FR202-1 and FR202-2 are suitable for raw material tapes and similar products."
-      },
+      "description": { "zh": "中分子量分散 PTFE 树脂粉末，平均粒径约 480 μm、熔点 327±10°C。适用于糊膏挤出加工，可制造生料带及异型挤出件。", "en": "Medium-MW dispersion PTFE resin powder, average particle size ~480 μm, melting point 327±10°C. Used for paste extrusion of raw-material (sealing) tapes and shaped extruded parts." },
 
       "applications": {
         "zh": ["生料带", "异型挤出件"],
@@ -3173,7 +3044,7 @@
           "id": "ptfe-fr202-1",
           "name": { "zh": "FR202-1", "en": "FR202-1" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "FR202-1 — 通用生料带牌号，拉伸强度 ≥25 MPa。", "en": "FR202-1 — general raw-tape grade, tensile strength ≥25 MPa." },
           "specs": {
             "average_particle_size": "500±150 (480)",
             "moisture_content":      "≤0.04 (0.03)",
@@ -3187,7 +3058,7 @@
           "id": "ptfe-fr202-2",
           "name": { "zh": "FR202-2", "en": "FR202-2" },
           "tag": null,
-          "description": null,
+          "description": { "zh": "FR202-2 — 高强度生料带牌号，拉伸强度 ≥30 MPa。", "en": "FR202-2 — high-strength raw-tape grade, tensile strength ≥30 MPa." },
           "specs": {
             "average_particle_size": "500±150 (480)",
             "moisture_content":      "≤0.04 (0.03)",
@@ -3212,10 +3083,7 @@
         "en": "Polytetrafluoroethylene (PTFE) dispersion polymerization resin"
       },
 
-      "description": {
-        "zh": "高分子量分散 PTFE 树脂，耐压、耐热性能良好，适用于糊膏挤出加工。可制造中高密度生料带、长纤、短纤等制品。",
-        "en": "High-molecular-weight dispersion PTFE resin with good pressure and heat resistance — suitable for paste extrusion. Used to produce medium- to high-density raw tapes, long fibers, short fibers and similar products."
-      },
+      "description": { "zh": "FR203 系列唯一牌号 — 拉伸强度 ≥24 MPa，覆盖生料带与纤维制品。", "en": "Sole grade in the series — tensile strength ≥24 MPa, covering raw tapes and fibers." },
 
       "applications": {
         "zh": ["中高密度生料带", "PTFE 长纤维", "PTFE 短纤维"],
@@ -3282,10 +3150,7 @@
         "en": "Polytetrafluoroethylene (PTFE) dispersion polymerization resin"
       },
 
-      "description": {
-        "zh": "超高分子量分散 PTFE 树脂，耐压、耐热性能良好，适用于糊膏挤出加工。可加工成单向/双向拉伸薄膜、挤出管材等，用于服装薄膜、医药过滤膜、膨化板材等。",
-        "en": "Ultra-high molecular weight dispersion PTFE resin with good pressure and heat resistance — suitable for paste extrusion. Processable into uniaxially / biaxially stretched films, extruded tubes, etc., for use in garment films, pharmaceutical filter films and bulked boards."
-      },
+      "description": { "zh": "FR204 系列唯一牌号 — 超高分子量分散树脂，热不稳定指数 ≤10。", "en": "Sole grade in the series — ultra-high-MW dispersion resin, thermal-instability index ≤10." },
 
       "applications": {
         "zh": ["单向 / 双向拉伸薄膜", "挤出管材", "服装薄膜", "医药过滤膜", "膨化板材"],
@@ -3354,10 +3219,7 @@
         "en": "PTFE concentrated dispersion (milky white or slightly yellow emulsion)"
       },
 
-      "description": {
-        "zh": "PTFE 浓缩分散液，用于生产阻燃滴落剂等产品。",
-        "en": "PTFE concentrated dispersion, suitable for the production of anti-drip agents and similar products."
-      },
+      "description": { "zh": "FR301K 系列唯一牌号 — 阻燃滴落剂专用 PTFE 分散液。", "en": "Sole grade in the series — PTFE dispersion dedicated to anti-drip-agent production." },
 
       "applications": {
         "zh": ["塑料阻燃滴落剂"],
@@ -3419,10 +3281,7 @@
         "en": "PTFE concentrated dispersion (milky white or slightly yellow emulsion)"
       },
 
-      "description": {
-        "zh": "PTFE 浓缩分散液系列。FR302W/HW 适用于浸渍制品；FR304D 适用于多层浸渍制品的生产。",
-        "en": "PTFE concentrated dispersion series. FR302W/HW is suitable for dipped products; FR304D is suitable for the production of multi-layer dipped products."
-      },
+      "description": { "zh": "PTFE 浓缩水基分散液系列，固含量约 60%、pH 8–10。适用于浸渍工艺，可制造浸渍玻纤基布、PTFE 盘根及多层浸渍制品。", "en": "PTFE concentrated aqueous dispersion series, ~60% solids, pH 8–10. Used in dipping processes to make impregnated glass-fiber cloth, PTFE packing and multi-layer dipped products." },
 
       "applications": {
         "zh": ["浸渍玻璃纤维基布", "PTFE 盘根", "多层浸渍制品"],
@@ -3461,7 +3320,7 @@
           "id": "ptfe-fr302w",
           "name": { "zh": "FR302W", "en": "FR302W" },
           "tag": { "zh": "浸渍制品", "en": "Dipped products" },
-          "description": null,
+          "description": { "zh": "FR302W — 通用浸渍牌号，粘度 10×10⁻³~35×10⁻³。", "en": "FR302W — general dipping grade, viscosity 10×10⁻³–35×10⁻³." },
           "specs": {
             "solid_content":        "58~62 (60)",
             "surfactant_content":   "4~6.5 (5.0)",
@@ -3474,7 +3333,7 @@
           "id": "ptfe-fr302hw",
           "name": { "zh": "FR302HW", "en": "FR302HW" },
           "tag": { "zh": "浸渍制品 / 高粘版", "en": "Dipped products / higher viscosity" },
-          "description": null,
+          "description": { "zh": "FR302HW — 高粘度浸渍牌号，适合厚层浸渍。", "en": "FR302HW — higher-viscosity dipping grade for thicker coats." },
           "specs": {
             "solid_content":        "58~62 (60)",
             "surfactant_content":   "4~6.0 (5.0)",
@@ -3487,7 +3346,7 @@
           "id": "ptfe-fr304d",
           "name": { "zh": "FR304D", "en": "FR304D" },
           "tag": { "zh": "多层浸渍", "en": "Multi-layer dipped" },
-          "description": null,
+          "description": { "zh": "FR304D — 多层浸渍专用牌号，表面活性剂含量更高（6.4%）。", "en": "FR304D — multi-layer dipping grade with higher surfactant (6.4%)." },
           "specs": {
             "solid_content":        "58~62 (60)",
             "surfactant_content":   "5~7 (6.4)",
@@ -3511,10 +3370,7 @@
         "en": "PTFE concentrated dispersion (milky white or slightly yellow emulsion)"
       },
 
-      "description": {
-        "zh": "PTFE 浓缩分散液，适用于涂料领域。FR306W 具有更优的涂层厚度表现。",
-        "en": "PTFE concentrated dispersion suitable for coating applications. FR306W offers superior coating thickness."
-      },
+      "description": { "zh": "PTFE 浓缩水基分散液系列，固含量约 60%、pH 8–10。适用于涂料配方，可制造不粘锅涂层、熨衣板底面涂层等涂料制品。", "en": "PTFE concentrated aqueous dispersion series, ~60% solids, pH 8–10. Used in coating formulations for non-stick pan coatings, ironing-board bottom coatings and similar applications." },
 
       "applications": {
         "zh": ["不粘锅涂层", "熨衣板底面涂层", "其他涂料制品"],
@@ -3553,7 +3409,7 @@
           "id": "ptfe-fr303",
           "name": { "zh": "FR303", "en": "FR303" },
           "tag": { "zh": "涂料级", "en": "Coating grade" },
-          "description": null,
+          "description": { "zh": "FR303 — 通用涂料牌号。", "en": "FR303 — general coating grade." },
           "specs": {
             "solid_content":        "58~62 (60)",
             "surfactant_content":   "4~6.5 (5.0)",
@@ -3566,7 +3422,7 @@
           "id": "ptfe-fr303hw",
           "name": { "zh": "FR303HW", "en": "FR303HW" },
           "tag": { "zh": "涂料级", "en": "Coating grade" },
-          "description": null,
+          "description": { "zh": "FR303HW — 高粘度涂料牌号，适合厚涂层。", "en": "FR303HW — higher-viscosity coating grade for thicker films." },
           "specs": {
             "solid_content":        "58~62 (60)",
             "surfactant_content":   "5~7.0 (5.8)",
@@ -3579,7 +3435,7 @@
           "id": "ptfe-fr306w",
           "name": { "zh": "FR306W", "en": "FR306W" },
           "tag": { "zh": "涂料级 / 高涂层厚度", "en": "Coating grade / better coating thickness" },
-          "description": null,
+          "description": { "zh": "FR306W — 高表面活性剂含量牌号，涂层厚度表现更优。", "en": "FR306W — higher-surfactant grade with superior coating-thickness performance." },
           "specs": {
             "solid_content":        "58~62 (60)",
             "surfactant_content":   "5.5~6.5 (6.0)",
@@ -3603,10 +3459,7 @@
         "en": "Modified PTFE concentrated dispersion"
       },
 
-      "description": {
-        "zh": "FR305W 是改性 PTFE 浓缩分散液，作为涂料时在高温下具备良好的流动性 — 通常作为添加剂加入 PTFE 浓缩分散液，以改善 PTFE 涂层的表面性能。",
-        "en": "FR305W is a modified PTFE concentrated dispersion with good fluidity at high temperatures as a coating — generally used as an additive in PTFE concentrated dispersions to improve the surface performance of PTFE coatings."
-      },
+      "description": { "zh": "FR305W 系列唯一牌号 — 改性 PTFE 分散液，作为 PTFE 涂料的表面改性添加剂。", "en": "Sole grade in the series — modified PTFE dispersion used as a surface-improvement additive for PTFE coatings." },
 
       "applications": {
         "zh": ["PTFE 涂料添加剂（改善表面性能 / 高光泽）"],
@@ -3667,10 +3520,7 @@
         "en": "PTFE concentrated dispersion (milky white or slightly yellow emulsion)"
       },
 
-      "description": {
-        "zh": "FR307F 与 FR308F 是环保型 PTFE 浓缩分散液，用于 PTFE 基覆铜板的生产。",
-        "en": "FR307F and FR308F are environmentally friendly PTFE concentrated dispersions used in the production of PTFE-based copper-clad laminates."
-      },
+      "description": { "zh": "环保型 PTFE 浓缩水基分散液系列，固含量 27–62%、熔点 327±10°C。适用于 PTFE 基覆铜板（CCL）的生产，可用于高频高速板材。", "en": "Eco-friendly PTFE concentrated aqueous dispersion series, 27–62% solids, melting point 327±10°C. Used to produce PTFE-based copper-clad laminates (CCL) for high-frequency / high-speed PCBs." },
 
       "applications": {
         "zh": ["PTFE 基覆铜板（CCL）", "高频高速板"],
@@ -3710,7 +3560,7 @@
           "id": "ptfe-fr307f",
           "name": { "zh": "FR307F", "en": "FR307F" },
           "tag": { "zh": "环保 / 覆铜板", "en": "Eco-friendly / copper-clad laminate" },
-          "description": null,
+          "description": { "zh": "FR307F — 高固含量（59–62%）覆铜板专用牌号。", "en": "FR307F — high-solids (59–62%) CCL-dedicated grade." },
           "specs": {
             "solid_content":        "59~62 (60)",
             "surfactant_content":   "5~7 (6.0)",
@@ -3724,7 +3574,7 @@
           "id": "ptfe-fr308f",
           "name": { "zh": "FR308F", "en": "FR308F" },
           "tag": { "zh": "环保 / 低固含 / 覆铜板", "en": "Eco-friendly / low-solids / copper-clad laminate" },
-          "description": null,
+          "description": { "zh": "FR308F — 低固含量（27–30%）覆铜板专用牌号，适合薄层涂布。", "en": "FR308F — low-solids (27–30%) CCL grade suited to thin-layer coating." },
           "specs": {
             "solid_content":        "27~30 (28)",
             "surfactant_content":   "1~3 (2.0)",
@@ -3749,10 +3599,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and hexafluoropropylene (HFP)"
       },
 
-      "description": {
-        "zh": "3F 最早开发的 FEP 牌号，已稳定生产逾 40 年。FEP 具备优异的耐温、耐腐蚀性能，突出的化学惰性、优良的电绝缘性和低摩擦系数，可在 200°C 下长期使用。FR462 适用于模压成型，可制造各类阀门、管道、衬里、接头等连接配件，以及各类板材与棒材。",
-        "en": "3F's earliest FEP grade, in stable production for over 40 years. FEP has excellent temperature and corrosion resistance, outstanding chemical inertness, excellent electrical insulation and a low coefficient of friction — suitable for long-term use at 200°C. FR462 is for compression molding, used to make valves, pipelines, lining of shells and connecting fittings such as joints, as well as plates and rods."
-      },
+      "description": { "zh": "FR462 系列唯一牌号 — 熔融指数 0.8–2.0，FEP 模压通用牌号。", "en": "Sole grade in the series — MFI 0.8–2.0, general-purpose FEP compression grade." },
 
       "applications": {
         "zh": ["阀门", "管道", "外壳衬里", "接头与连接配件", "板材与棒材"],
@@ -3811,10 +3658,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and hexafluoropropylene (HFP)"
       },
 
-      "description": {
-        "zh": "3F 早期开发的 FEP 牌号，已稳定生产逾 40 年。FR460 / FR461 适用于挤出、注塑与吹塑工艺，可制造各类管材、异型件与薄膜。",
-        "en": "Early-generation FEP grades from 3F, in stable production for over 40 years. FR460 / FR461 are suitable for extrusion, injection molding and blow molding — used to make pipes, shaped parts and films."
-      },
+      "description": { "zh": "FEP 挤出级颗粒（TFE-HFP 共聚），熔点 260°C、长期使用温度 200°C。适用于挤出、注塑与吹塑工艺，可制造管材、异型件与薄膜 — 系列内 2 个牌号区分熔融指数。", "en": "FEP extrusion-grade pellet (TFE-HFP copolymer), Tm 260°C, long-term service 200°C. Used for extrusion, injection molding and blow molding of pipes, shaped parts and films — two grades differentiated by MFI." },
 
       "applications": {
         "zh": ["FEP 管材", "异型挤出件", "FEP 薄膜"],
@@ -3847,7 +3691,7 @@
           "id": "fep-fr460",
           "name": { "zh": "FR460", "en": "FR460" },
           "tag": { "zh": "高 MFI 挤出", "en": "High MFI extrusion" },
-          "description": null,
+          "description": { "zh": "FR460 — 高熔指（MFI 4–12），适合薄膜与高速挤出。", "en": "FR460 — higher MFI (4–12), suited to film and high-speed extrusion." },
           "specs": {
             "melt_flow_index":        "4.0~12.0 (8.0)",
             "relative_density":       "2.12~2.17 (2.14)",
@@ -3862,7 +3706,7 @@
           "id": "fep-fr461",
           "name": { "zh": "FR461", "en": "FR461" },
           "tag": { "zh": "中 MFI 挤出", "en": "Medium MFI extrusion" },
-          "description": null,
+          "description": { "zh": "FR461 — 中熔指（MFI 2.1–3.9），通用挤出牌号。", "en": "FR461 — mid-MFI (2.1–3.9), general extrusion grade." },
           "specs": {
             "melt_flow_index":        "2.1~3.9 (3.0)",
             "relative_density":       "2.12~2.17 (2.14)",
@@ -3888,10 +3732,7 @@
         "en": "Aqueous dispersion of TFE-HFP copolymer"
       },
 
-      "description": {
-        "zh": "3F 早期开发的 FEP 浓缩分散液，已稳定生产逾 40 年。FR463 适用于浸渍和涂料工艺，可作各类模具的脱模材料，以及各种机械与器具表面的不粘涂层。",
-        "en": "Early-generation FEP concentrated dispersion from 3F, in stable production for over 40 years. FR463 is suitable for impregnation and coating processes — usable as a release material for various molds and as an anti-adhesive coating on machine and appliance surfaces."
-      },
+      "description": { "zh": "FR463 系列唯一牌号 — 浸渍 / 涂料用 FEP 分散液。", "en": "Sole grade in the series — FEP dispersion for impregnation and coating." },
 
       "applications": {
         "zh": ["模具脱模剂", "机械表面不粘涂层", "器具防粘涂层"],
@@ -3944,10 +3785,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and hexafluoropropylene (HFP)"
       },
 
-      "description": {
-        "zh": "3F 较早开发并产业化的电缆专用 FEP 牌号，已有逾 20 年稳定历史。FR468 系列特别适合电缆绝缘层挤出，可按熔融指数大小生产各种直径与厚度的电线电缆绝缘包覆层。",
-        "en": "Cable-specific FEP grades that 3F industrialized early, with a stable 20+ year track record. FR468 is well-suited to cable insulation extrusion — different MFI grades enable wire and cable insulation coatings of various diameters and thicknesses."
-      },
+      "description": { "zh": "FEP 电缆级颗粒（TFE-HFP 共聚），熔点 258°C、长期使用温度 200°C。适用于电线电缆绝缘层挤出，按熔融指数区分可生产各种直径与厚度的绝缘包覆 — 系列内 3 个牌号区分挤出速度需求。", "en": "FEP cable-grade pellet (TFE-HFP copolymer), Tm 258°C, long-term service 200°C. Used for wire & cable insulation extrusion — three grades differentiated by MFI to match line-speed requirements." },
 
       "applications": {
         "zh": ["电线电缆绝缘包覆", "高频通信线缆绝缘"],
@@ -3980,7 +3818,7 @@
           "id": "fep-fr468-1",
           "name": { "zh": "FR468-1", "en": "FR468-1" },
           "tag": { "zh": "中 MFI / 电缆", "en": "Medium MFI / cable" },
-          "description": null,
+          "description": { "zh": "FR468-1 — MFI 12–20，标准挤出速度。", "en": "FR468-1 — MFI 12–20, standard extrusion speed." },
           "specs": {
             "melt_flow_index":        "12.1~20.0 (16.0)",
             "relative_density":       "2.12~2.17 (2.14)",
@@ -3995,7 +3833,7 @@
           "id": "fep-fr468-2",
           "name": { "zh": "FR468-2", "en": "FR468-2" },
           "tag": { "zh": "高 MFI / 电缆", "en": "High MFI / cable" },
-          "description": null,
+          "description": { "zh": "FR468-2 — MFI 20–28，中高速挤出。", "en": "FR468-2 — MFI 20–28, medium-high speed." },
           "specs": {
             "melt_flow_index":        "20.1~28.0 (24.0)",
             "relative_density":       "2.12~2.17 (2.14)",
@@ -4010,7 +3848,7 @@
           "id": "fep-fr468-3",
           "name": { "zh": "FR468-3", "en": "FR468-3" },
           "tag": { "zh": "高速挤出 / 电缆", "en": "High-speed extrusion / cable" },
-          "description": null,
+          "description": { "zh": "FR468-3 — MFI 28–35，最高挤出速度。", "en": "FR468-3 — MFI 28–35, highest line speed." },
           "specs": {
             "melt_flow_index":        "28.1~35.0 (31.5)",
             "relative_density":       "2.12~2.17 (2.14)",
@@ -4036,10 +3874,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and perfluoroalkyl vinyl ether (PAVE)"
       },
 
-      "description": {
-        "zh": "PFA 与 PTFE 同样具备优异性能 — 最佳化学惰性、优异的热稳定性（可在 260°C 高温下长期使用）、优异的机械强度、介电性能和耐辐照性能；同时具备可熔融加工的特点。FR511 适用于模压与挤出工艺，可制造阀门、管道、衬里、接头等连接配件，并可挤出大直径管材和棒材，尺寸稳定性高。",
-        "en": "PFA shares PTFE's excellent properties — best-in-class chemical inertness, outstanding thermal stability (long-term service at 260°C), excellent mechanical strength, dielectric properties and radiation resistance — but is also melt-processable. FR511 is suitable for compression molding and extrusion, used to make valves, pipelines, lining of shells, joints and other connecting fittings, and to extrude large-diameter pipes and rods with high dimensional stability."
-      },
+      "description": { "zh": "FR511 系列唯一牌号 — MFI 0.8–3.0，PFA 模压通用牌号。", "en": "Sole grade in the series — MFI 0.8–3.0, general-purpose PFA compression grade." },
 
       "applications": {
         "zh": ["阀门", "管道", "外壳衬里", "接头与连接配件", "大直径管材与棒材"],
@@ -4100,10 +3935,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and perfluoroalkyl vinyl ether (PAVE)"
       },
 
-      "description": {
-        "zh": "FR512 适用于挤出工艺，可挤出尺寸稳定性高的各类管材与片材。",
-        "en": "FR512 is suitable for the extrusion process — used to make pipes and sheets with high dimensional stability."
-      },
+      "description": { "zh": "FR512 系列唯一牌号 — MFI 3.1–8.0，PFA 挤出通用牌号。", "en": "Sole grade in the series — MFI 3.1–8.0, general-purpose PFA extrusion grade." },
 
       "applications": {
         "zh": ["PFA 管材", "PFA 片材"],
@@ -4164,10 +3996,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and perfluoroalkyl vinyl ether (PAVE)"
       },
 
-      "description": {
-        "zh": "FR513 适用于注塑成型，可制造各类复杂形状的零部件以及接头、弯头等管件。",
-        "en": "FR513 is suitable for injection molding — used to make complex-shaped parts as well as joints, elbows and other pipe fittings."
-      },
+      "description": { "zh": "FR513 系列唯一牌号 — MFI 8.1–18.0,PFA 注塑通用牌号。", "en": "Sole grade in the series — MFI 8.1–18.0, general-purpose PFA injection grade." },
 
       "applications": {
         "zh": ["复杂形状的注塑件", "接头 / 弯头管件"],
@@ -4228,10 +4057,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and perfluoroalkyl vinyl ether (PAVE)"
       },
 
-      "description": {
-        "zh": "FR515 适用于电缆绝缘层的高速挤出，可制造各类电线电缆绝缘包覆。",
-        "en": "FR515 is suitable for high-speed extrusion of cable insulation layers — used to make all kinds of wire and cable insulation coverings."
-      },
+      "description": { "zh": "FR515 系列唯一牌号 — MFI 18.1–40.0,PFA 电缆高速挤出专用。", "en": "Sole grade in the series — MFI 18.1–40.0, dedicated PFA grade for high-speed cable extrusion." },
 
       "applications": {
         "zh": ["电线电缆绝缘包覆（高速挤出）"],
@@ -4292,10 +4118,7 @@
         "en": "Important fluorine-containing intermediate, molecular formula C₃F₆O"
       },
 
-      "description": {
-        "zh": "HFPO 是重要的含氟中间体，主要用于合成高级含氟功能化合物。终端应用涉及化工、氯碱工业、电池、半导体、微电子、航空航天等。",
-        "en": "Hexafluoropropylene oxide (HFPO) is an important fluorine-containing intermediate, mainly used in the synthesis of high-grade fluorine-containing functional compounds. End applications include chemical engineering, chlor-alkali industry, batteries, semiconductors, microelectronics and aerospace."
-      },
+      "description": { "zh": "HFPO — 纯度 ≥99.3%、含水量 ≤50 ppm 的电子级气体。", "en": "HFPO — electronic-grade gas at ≥99.3% purity and moisture ≤50 ppm." },
 
       "applications": {
         "zh": ["合成含氟功能化合物", "化工 / 氯碱工业", "电池中间体", "半导体 / 微电子", "航空航天"],
@@ -4358,10 +4181,7 @@
         "en": "Diluted mixture of fluorine and nitrogen (CAS: 7782-41-4 / 7727-37-9)"
       },
 
-      "description": {
-        "zh": "性质活泼，强氧化剂。可用于化学法制备有机/无机氟化物（如六氟化硫、三氟化氮等），也可用于氟化石墨聚合物与氟化沥青的制备。",
-        "en": "Active, strong oxidizer. Used in the chemical preparation of organic / inorganic fluorides (e.g. sulfur hexafluoride, nitrogen trifluoride), and in the preparation of fluorographite polymer and fluorinated asphalt."
-      },
+      "description": { "zh": "氟氮混合气（F₂/N₂），强氧化剂，氟纯度 ≥99%。用于化学法制备六氟化硫、三氟化氮等有机 / 无机氟化物，以及氟化石墨与氟化沥青的制备。", "en": "Fluorine-nitrogen mixture (F₂/N₂), strong oxidizer, fluorine purity ≥99%. Used in the chemical preparation of sulfur hexafluoride, nitrogen trifluoride and other organic / inorganic fluorides, plus fluorographite polymer and fluorinated asphalt." },
 
       "applications": {
         "zh": ["有机/无机氟化物合成", "六氟化硫（SF₆）制备", "三氟化氮（NF₃）制备", "氟化石墨", "氟化沥青"],
@@ -4391,7 +4211,7 @@
           "id": "ffc-f2n2-10",
           "name": { "zh": "F₂/N₂ 10% (V)", "en": "F₂/N₂ 10% (V)" },
           "tag": { "zh": "10% 氟气浓度", "en": "10% fluorine concentration" },
-          "description": null,
+          "description": { "zh": "F₂/N₂ 10% (V) — 10% 体积浓度混合气，常规氟化反应。", "en": "F₂/N₂ 10% (V) — 10 vol% fluorine for standard fluorination reactions." },
           "cas_number": "7782-41-4 / 7727-37-9",
           "specs": {
             "chemical_name":     { "zh": "氟气与氮气混合物", "en": "Fluorine and nitrogen mixture" },
@@ -4404,7 +4224,7 @@
           "id": "ffc-f2n2-20",
           "name": { "zh": "F₂/N₂ 20% (V)", "en": "F₂/N₂ 20% (V)" },
           "tag": { "zh": "20% 氟气浓度", "en": "20% fluorine concentration" },
-          "description": null,
+          "description": { "zh": "F₂/N₂ 20% (V) — 20% 体积浓度混合气，高反应活性需求。", "en": "F₂/N₂ 20% (V) — 20 vol% fluorine for higher-reactivity applications." },
           "cas_number": "7782-41-4 / 7727-37-9",
           "specs": {
             "chemical_name":     { "zh": "氟气与氮气混合物", "en": "Fluorine and nitrogen mixture" },
@@ -4428,10 +4248,7 @@
         "en": "Hexafluoroacetone trihydrate, molecular formula C₃F₆O·3H₂O, CAS 34202-69-2"
       },
 
-      "description": {
-        "zh": "广泛用于医药、农药和合成材料等领域。可用于制备聚合物或引入其他聚合物中以形成特殊含氟弹性体材料。",
-        "en": "Widely used in pharmaceuticals, pesticides, synthetic materials and other fields. Can be used to prepare polymers or be introduced into other polymers to form special fluorine-containing elastomer materials."
-      },
+      "description": { "zh": "HFA·3H₂O 系列唯一牌号 — 纯度 ≥99%、pH 3–4 的水合物液体。", "en": "Sole grade in the series — trihydrate liquid at ≥99% purity, pH 3–4." },
 
       "applications": {
         "zh": ["医药中间体", "农药中间体", "含氟弹性体合成", "聚合物改性"],
@@ -4489,10 +4306,7 @@
         "en": "Hexafluoroisopropanol, molecular formula C₃H₂F₆O, CAS 920-66-1"
       },
 
-      "description": {
-        "zh": "用于医药、农药和有机化学品的合成 — 可用于制备七氟醚（当前较理想的吸入麻醉剂，具有无残留、苏醒快、诱导麻醉时深度可控等优势）。也可作塑料回收剂，广泛用于各类塑料回收。属于高极性、低粘度、低表面张力的溶剂。",
-        "en": "Used in the synthesis of pharmaceuticals, pesticides and organic chemicals — can be used to prepare sevoflurane, currently among the more ideal inhalational anaesthetics with advantages such as no residue, rapid awakening and controllable anaesthesia depth during induction. Also used as a plastic recycling agent across various plastics. It is a solvent with high polarity, low viscosity and low surface tension."
-      },
+      "description": { "zh": "HFIP 系列唯一牌号 — 高纯电子级溶剂,纯度 ≥99.95%。", "en": "Sole grade in the series — high-purity electronic-grade solvent at ≥99.95% purity." },
 
       "applications": {
         "zh": ["七氟醚（吸入麻醉剂）原料", "塑料回收剂", "高极性溶剂", "医药 / 农药 / 有机合成"],
@@ -4561,10 +4375,7 @@
         "en": "4,4'-(Hexafluoroisopropylidene) bisphenol (Bisphenol AF), molecular formula C₁₅H₁₀F₆O₂, CAS 1478-61-1"
       },
 
-      "description": {
-        "zh": "BPAF（双酚 AF）主要用作氟橡胶硫化促进剂，是重要的含氟中间体，也可用于多种含氟聚合物和含氟化学品的合成。",
-        "en": "BPAF (Bisphenol AF) is mainly used as a fluorine rubber vulcanization accelerator and is an important fluorine-containing intermediate. It can also be used in the synthesis of various fluorinated polymers and fluorinated chemicals."
-      },
+      "description": { "zh": "BPAF 系列唯一牌号 — 高纯固体,纯度 ≥99.5%。", "en": "Sole grade in the series — high-purity solid at ≥99.5%." },
 
       "applications": {
         "zh": ["氟橡胶硫化促进剂", "含氟聚合物合成中间体", "含氟化学品合成"],
@@ -4634,10 +4445,7 @@
         "en": "Perfluoropolyether (PFPE) — highly perfluorinated oligomeric ether"
       },
 
-      "description": {
-        "zh": "全氟聚醚（PFPE）可用于特种润滑油、特种润滑脂、半导体设备传热液、精密电子清洗与汽相焊接、含氟表面活性剂以及浸没式冷却液等多种应用。",
-        "en": "Perfluoropolyether (PFPE) can be used in applications such as specialty lubricating oils, specialty greases, heat-transfer fluids for semiconductor equipment, precision electronics cleaning and vapor-phase soldering, fluorine-containing surfactants and immersion coolants."
-      },
+      "description": { "zh": "全氟聚醚（PFPE）液体系列，含氟饱和长链聚醚 — 优异化学惰性、宽工作温度、低蒸气压。适用于特种润滑油 / 润滑脂、半导体设备传热液、精密电子清洗、汽相焊接及数据中心浸没式冷却液。", "en": "Perfluoropolyether (PFPE) liquid series — fluorinated saturated polyether with broad chemical inertness, wide service temperature and low vapor pressure. Used in specialty lubricating oils / greases, semiconductor heat-transfer fluids, precision electronics cleaning, vapor-phase soldering and data-center immersion coolants." },
 
       "applications": {
         "zh": ["特种润滑油 / 润滑脂", "半导体设备传热液", "精密电子清洗", "汽相焊接", "含氟表面活性剂", "浸没式冷却液（数据中心）"],
@@ -4672,7 +4480,7 @@
           "id": "ffc-pfpe-fy-pa170",
           "name": { "zh": "FY-PA170", "en": "FY-PA170" },
           "tag": { "zh": "低粘度", "en": "Low viscosity" },
-          "description": null,
+          "description": { "zh": "FY-PA170 — 低沸点（170°C）传热与清洗用 PFPE。", "en": "FY-PA170 — low-boiling-point (170°C) PFPE for heat transfer and cleaning." },
           "specs": {
             "chemical_name":        { "zh": "全氟聚醚", "en": "PFPE" },
             "appearance":           { "zh": "无色液体", "en": "Colorless liquid" },
@@ -4689,7 +4497,7 @@
           "id": "ffc-pfpe-fy-pa200",
           "name": { "zh": "FY-PA200", "en": "FY-PA200" },
           "tag": { "zh": "中低粘度", "en": "Low-medium viscosity" },
-          "description": null,
+          "description": { "zh": "FY-PA200 — 中沸点（200°C）传热与清洗用 PFPE。", "en": "FY-PA200 — mid-boiling-point (200°C) PFPE for heat transfer and cleaning." },
           "specs": {
             "chemical_name":        { "zh": "全氟聚醚", "en": "PFPE" },
             "appearance":           { "zh": "无色液体", "en": "Colorless liquid" },
@@ -4706,7 +4514,7 @@
           "id": "ffc-pfpe-fy-pb01",
           "name": { "zh": "FY-PB01", "en": "FY-PB01" },
           "tag": { "zh": "中粘度", "en": "Medium viscosity" },
-          "description": null,
+          "description": { "zh": "FY-PB01 — 低粘度（40 cSt）润滑型 PFPE，分子量 ~1700。", "en": "FY-PB01 — low-viscosity (40 cSt) lubricating PFPE, MW ~1700." },
           "specs": {
             "chemical_name":        { "zh": "全氟聚醚", "en": "PFPE" },
             "appearance":           { "zh": "无色透明油状液体", "en": "Colorless transparent oily liquid" },
@@ -4723,7 +4531,7 @@
           "id": "ffc-pfpe-fy-pb02",
           "name": { "zh": "FY-PB02", "en": "FY-PB02" },
           "tag": { "zh": "中高粘度", "en": "Medium-high viscosity" },
-          "description": null,
+          "description": { "zh": "FY-PB02 — 中粘度（135 cSt）润滑型 PFPE，分子量 ~2800。", "en": "FY-PB02 — mid-viscosity (135 cSt) lubricating PFPE, MW ~2800." },
           "specs": {
             "chemical_name":        { "zh": "全氟聚醚", "en": "PFPE" },
             "appearance":           { "zh": "无色透明油状液体", "en": "Colorless transparent oily liquid" },
@@ -4740,7 +4548,7 @@
           "id": "ffc-pfpe-fy-pb03",
           "name": { "zh": "FY-PB03", "en": "FY-PB03" },
           "tag": { "zh": "高粘度", "en": "High viscosity" },
-          "description": null,
+          "description": { "zh": "FY-PB03 — 高粘度（260 cSt）润滑型 PFPE，分子量 ~3500。", "en": "FY-PB03 — high-viscosity (260 cSt) lubricating PFPE, MW ~3500." },
           "specs": {
             "chemical_name":        { "zh": "全氟聚醚", "en": "PFPE" },
             "appearance":           { "zh": "无色透明油状液体", "en": "Colorless transparent oily liquid" },
@@ -4757,7 +4565,7 @@
           "id": "ffc-pfpe-fy-pb04",
           "name": { "zh": "FY-PB04", "en": "FY-PB04" },
           "tag": { "zh": "超高粘度", "en": "Ultra-high viscosity" },
-          "description": null,
+          "description": { "zh": "FY-PB04 — 超高粘度（1630 cSt）润滑型 PFPE，分子量 ~7500。", "en": "FY-PB04 — ultra-high-viscosity (1630 cSt) lubricating PFPE, MW ~7500." },
           "specs": {
             "chemical_name":        { "zh": "全氟聚醚", "en": "PFPE" },
             "appearance":           { "zh": "无色透明油状液体", "en": "Colorless transparent oily liquid" },
@@ -4785,10 +4593,7 @@
         "en": "2,5-Bis(trifluoromethyl)-3,6-dioxaundecafluorononanoyl fluoride, C₉F₁₈O₃, CAS 2641-34-1"
       },
 
-      "description": {
-        "zh": "HFPO 三聚物，可用于合成含氟表面活性剂。",
-        "en": "HFPO trimer — used to synthesize fluorine-containing surfactants."
-      },
+      "description": { "zh": "HFPO trimer 系列唯一牌号 — 纯度 ≥95%，含氟表面活性剂合成原料。", "en": "Sole grade in the series — ≥95% purity, feedstock for fluorinated surfactants." },
 
       "applications": {
         "zh": ["含氟表面活性剂合成"],
@@ -4845,10 +4650,7 @@
         "en": "Perfluoropropyl vinyl ether, C₅F₁₀O, CAS 1623-05-8"
       },
 
-      "description": {
-        "zh": "PPVE 是含氟乙烯基醚类共聚单体 — 能有效打破基于 TFE 的共聚物的结晶性。广泛用于含氟聚合物（如 PFA、改性 PTFE 等）的合成；也用于向有机分子中引入功能基团，服务于农化与医药领域。",
-        "en": "PPVE is a comonomer of fluorinated vinyl ethers — effectively disrupts the crystallinity of TFE-based copolymers. Widely used in the synthesis of fluorinated polymers (e.g. PFA, modified PTFE), and also used to introduce functional groups into organic molecules for agrochemical and pharmaceutical applications."
-      },
+      "description": { "zh": "PPVE 系列唯一牌号 — 纯度 ≥99.5% 的共聚单体。", "en": "Sole grade in the series — ≥99.5%-purity comonomer." },
 
       "applications": {
         "zh": ["PFA 共聚单体", "改性 PTFE 共聚单体", "农化中间体", "医药中间体"],
@@ -4913,10 +4715,7 @@
         "en": "Hexafluorobutadiene, C₄F₆, CAS 685-63-2"
       },
 
-      "description": {
-        "zh": "HFBD 是合成树脂和含氟物质的重要单体；同时可作半导体行业的刻蚀气体 — 选择性优、精度高。相较于传统的全氟烷烃（PFC）刻蚀气体，HFBD 可用于高深宽比工艺，且大气与环境污染相对较低。",
-        "en": "Hexafluorobutadiene (HFBD) is an important monomer for the synthesis of resins and fluorinated substances. It can also be used as an etching gas in the semiconductor industry — with advantages of good selectivity and high accuracy. Compared with traditional perfluoroalkanes (PFCs) etching gases, HFBD can be used in high-aspect-ratio processes with relatively lower atmospheric and environmental pollution."
-      },
+      "description": { "zh": "六氟丁二烯（HFBD），分子式 C₄F₆、沸点 6–7°C、纯度 ≥99.90%。含氟单体兼半导体行业高深宽比刻蚀气体 — 较传统全氟烷烃（PFC）刻蚀气体污染更低、选择性更优。", "en": "Hexafluorobutadiene (HFBD), formula C₄F₆, boiling point 6–7°C, purity ≥99.90%. Fluorinated monomer and high-aspect-ratio etching gas for the semiconductor industry — lower atmospheric impact and better selectivity than legacy perfluoroalkane (PFC) etching gases." },
 
       "applications": {
         "zh": ["半导体刻蚀气体（高深宽比）", "含氟树脂合成单体", "含氟化学品合成"],
@@ -4955,7 +4754,7 @@
           "id": "ffc-hfbd-3n",
           "name": { "zh": "HFBD-3N", "en": "HFBD-3N" },
           "tag": { "zh": "3N 级（≥99.90%）", "en": "3N grade (≥99.90%)" },
-          "description": null,
+          "description": { "zh": "HFBD-3N — 纯度 ≥99.90% (3N)，半导体通用级。", "en": "HFBD-3N — ≥99.90% purity (3N), general semiconductor grade." },
           "cas_number": "685-63-2",
           "specs": {
             "chemical_name":      { "zh": "六氟丁二烯", "en": "Hexafluorobutadiene" },
@@ -4977,7 +4776,7 @@
           "id": "ffc-hfbd-4n",
           "name": { "zh": "HFBD-4N", "en": "HFBD-4N" },
           "tag": { "zh": "4N 级（≥99.99%）/ 半导体级", "en": "4N grade (≥99.99%) / semiconductor grade" },
-          "description": null,
+          "description": { "zh": "HFBD-4N — 纯度 ≥99.99% (4N)，含水量 ≤5 ppm,高端电子级。", "en": "HFBD-4N — ≥99.99% purity (4N), moisture ≤5 ppm, high-end electronic grade." },
           "cas_number": "685-63-2",
           "specs": {
             "chemical_name":      { "zh": "六氟丁二烯", "en": "Hexafluorobutadiene" },
