@@ -37,13 +37,13 @@ export function Overview() {
           {BLOCKS.map(({ key, icon: Icon }, i) => (
             <RevealOnScroll key={key} delay={i * 0.08}>
               <GlassCard className="h-full" glow>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-white shadow-[0_8px_20px_rgba(15,76,92,0.35)]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-ink-onbrand shadow-brand-md">
                   <Icon className="h-5 w-5" />
                 </div>
-                <h3 className="mt-5 text-xl font-semibold text-slate-900">
+                <h3 className="mt-5 text-xl font-semibold text-ink-strong">
                   {t(`blocks.${key}.title`)}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                <p className="mt-3 text-sm leading-relaxed text-ink-muted">
                   {t(`blocks.${key}.description`)}
                 </p>
               </GlassCard>
@@ -56,13 +56,13 @@ export function Overview() {
             <dl className="grid grid-cols-2 gap-8 sm:grid-cols-4">
               {METRICS.map((m) => (
                 <div key={m.key} className="text-center sm:text-left">
-                  <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-subtle">
                     {t(`metrics.${m.key}.label`)}
                   </dt>
                   <dd className="mt-3 flex items-baseline justify-center gap-1 sm:justify-start">
                     <AnimatedCounter
                       to={m.to}
-                      className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl"
+                      className="text-4xl font-semibold tracking-tight text-ink-strong sm:text-5xl"
                     />
                     {m.hasSuffix && (
                       <span className="text-2xl font-semibold text-brand-600 sm:text-3xl">

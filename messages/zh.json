@@ -210,5 +210,42 @@
     "address": "[ 公司地址占位 ]",
     "rights": "[ 版权声明占位 ]",
     "legal": "[ 备案 / 许可证号 占位 ]"
+  },
+  "themeSwitcher": {
+    "buttonLabel": "切换主题",
+    "title": "主题",
+    "modeLabel": "模式",
+    "modeLight": "亮色",
+    "modeDark": "深色",
+    "themeA": "青绿 + 金",
+    "themeB": "工业蓝 + 琥珀",
+    "themeC": "森林绿 + 奶油",
+    "themeD": "海军蓝 + 古铜",
+    "themeE": "石墨 + 朱红"
+  },
+  "products": {
+    "eyebrow": "[ 产品中心 ]",
+    "title": "全产品目录",
+    "subtitle": "覆盖氟树脂、氟橡胶、PVDF、PTFE、FEP、PFA 以及氟化精细化学品 — 一站式查询所有牌号、规格与技术指标。",
+    "categoryEyebrow": "[ 产品类别 ]",
+    "categoryDescription": "本类别下共 {count} 个系列，下方可查看每个系列的牌号与技术指标。",
+    "seriesCount": "系列数",
+    "variantsCount": "牌号数",
+    "specsCount": "指标项",
+    "viewCategory": "查看分类",
+    "viewSeries": "查看系列",
+    "viewVariant": "查看牌号",
+    "noSeriesYet": "暂无系列数据。",
+    "composition": "化学组成",
+    "manufacturer": "制造商",
+    "sinceYear": "上市年份",
+    "applications": "应用领域",
+    "engineeringCases": "工程案例",
+    "packaging": "包装规格",
+    "shippingNote": "储运提示",
+    "specsTitle": "技术数据表",
+    "testItem": "检测项目",
+    "testMethod": "测试方法",
+    "unit": "单位"
   }
 }

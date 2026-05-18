@@ -1,0 +1,30 @@
+# Local Postgres for development.
+# Start:  docker compose up -d
+# Stop:   docker compose down
+# Reset:  docker compose down -v   (drops the volume — wipes all data)
+#
+# Port 5433 is used (not 5432) to avoid conflicting with a system-installed
+# Postgres if you already have one. If you change it, also update
+# DATABASE_URL in .env.local.
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: homepage_sample_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: homepage
+      POSTGRES_PASSWORD: homepage_dev
+      POSTGRES_DB: homepage_sample
+    ports:
+      - "5433:5432"
+    volumes:
+      - homepage_db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U homepage -d homepage_sample"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  homepage_db:

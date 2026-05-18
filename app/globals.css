@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
+/* ========================================================================
+   Tailwind v4 — token names + DEFAULT VALUES (theme A, light).
+   Plain `@theme` (no `inline`) makes utility classes resolve to
+   `var(--color-X)` at runtime. We override those vars per-theme below.
+   Shadows use color-mix on brand vars so they auto-follow each theme.
+   ======================================================================== */
 @theme {
-  /* Brand color palette — Deep Teal (petrol blue) */
-  --color-brand-50: #eef6f8;
+  --color-brand-50:  #eef6f8;
   --color-brand-100: #d6e8ed;
   --color-brand-200: #a9cdd6;
   --color-brand-300: #7aaeba;
@@ -13,22 +18,35 @@
   --color-brand-800: #0a2b33;
   --color-brand-900: #061b21;
 
-  /* Accent — Sunlight Gold */
   --color-accent-200: #fde7b8;
   --color-accent-300: #f4cf80;
   --color-accent-400: #e8a33d;
   --color-accent-500: #c9842f;
   --color-accent-600: #a36821;
 
-  /* Glass/shadow tokens */
-  --shadow-glass: 0 8px 32px rgba(15, 76, 92, 0.12);
-  --shadow-glass-lg: 0 16px 48px rgba(15, 76, 92, 0.18);
-  --shadow-glow: 0 0 0 1px rgba(255, 255, 255, 0.5), 0 8px 32px rgba(27, 107, 127, 0.18);
+  --color-bg:      #fbfaf6;
+  --color-bg-soft: #f4f1ea;
 
-  /* Font families */
+  --color-ink-strong:  #0a2b33;
+  --color-ink-muted:   #475569;
+  --color-ink-subtle:  #64748b;
+  --color-ink-faint:   #94a3b8;
+  --color-ink-onbrand: #ffffff;
+
+  --color-surface-glass:  rgb(255 255 255 / 0.6);
+  --color-surface-card:   rgb(255 255 255 / 0.95);
+  --color-surface-strong: #ffffff;
+
+  --color-grid-line: rgba(15, 23, 42, 0.06);
+
+  --shadow-glass:    0 8px 32px color-mix(in srgb, var(--color-brand-700) 14%, transparent);
+  --shadow-glass-lg: 0 16px 48px color-mix(in srgb, var(--color-brand-700) 22%, transparent);
+  --shadow-glow:     0 0 0 1px rgba(255, 255, 255, 0.5), 0 8px 32px color-mix(in srgb, var(--color-brand-500) 22%, transparent);
+  --shadow-brand-md: 0 8px 24px color-mix(in srgb, var(--color-brand-700) 35%, transparent);
+  --shadow-brand-lg: 0 12px 36px color-mix(in srgb, var(--color-brand-700) 50%, transparent);
+
   --font-sans: var(--font-inter), var(--font-noto-sc), ui-sans-serif, system-ui, sans-serif;
 
-  /* Animations */
   --animate-blob: blob 22s ease-in-out infinite;
   --animate-marquee: marquee 36s linear infinite;
   --animate-float: float 7s ease-in-out infinite;
@@ -36,68 +54,377 @@
   --animate-spin-slow: spin 36s linear infinite;
 }
 
+/* ========================================================================
+   Mode-only overrides — apply to all themes in dark mode.
+   Brand panels stay tinted; large neutral surfaces and elevation shadows
+   shift to dark-friendly values.
+   ======================================================================== */
+[data-mode="dark"] {
+  --color-grid-line: rgba(255, 255, 255, 0.05);
+
+  --shadow-glass:    0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glass-lg: 0 16px 48px rgba(0, 0, 0, 0.55);
+  --shadow-glow:     0 0 0 1px rgba(255, 255, 255, 0.06), 0 8px 32px color-mix(in srgb, var(--color-brand-500) 30%, transparent);
+  --shadow-brand-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-brand-lg: 0 12px 36px rgba(0, 0, 0, 0.6);
+}
+
+/* ========================================================================
+   Theme A — Teal + Gold  (default light is in @theme above)
+   In dark mode the brand 50–900 scale flips so panels using
+   `from-brand-600 to-brand-800` stay saturated; ink-onbrand inverts to
+   keep readable contrast on those panels.
+   ======================================================================== */
+[data-theme="A"][data-mode="dark"] {
+  --color-brand-50:  #061b21;
+  --color-brand-100: #0a2b33;
+  --color-brand-200: #0e3b47;
+  --color-brand-300: #0f4c5c;
+  --color-brand-400: #1b6b7f;
+  --color-brand-500: #4a8fa5;
+  --color-brand-600: #7aaeba;
+  --color-brand-700: #a9cdd6;
+  --color-brand-800: #d6e8ed;
+  --color-brand-900: #eef6f8;
+
+  --color-accent-200: #5e3f0e;
+  --color-accent-300: #8a5a14;
+  --color-accent-400: #c9842f;
+  --color-accent-500: #e8a33d;
+  --color-accent-600: #f4cf80;
+
+  --color-bg:      #06141a;
+  --color-bg-soft: #0a2128;
+
+  --color-ink-strong:  #e6f3f5;
+  --color-ink-muted:   #b1c4cb;
+  --color-ink-subtle:  #8ba0a8;
+  --color-ink-faint:   #6b7e87;
+  --color-ink-onbrand: #061b21;
+
+  --color-surface-glass:  rgb(20 38 45 / 0.55);
+  --color-surface-card:   rgb(20 38 45 / 0.9);
+  --color-surface-strong: #0e2a32;
+}
+
+/* ========================================================================
+   Theme B — Royal Blue + Amber
+   ======================================================================== */
+[data-theme="B"][data-mode="light"] {
+  --color-brand-50:  #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #1e40af;
+  --color-brand-700: #1e3a8a;
+  --color-brand-800: #172554;
+  --color-brand-900: #0c1633;
+
+  --color-accent-200: #fef3c7;
+  --color-accent-300: #fde68a;
+  --color-accent-400: #fcd34d;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+
+  --color-bg:      #fafafa;
+  --color-bg-soft: #f5f5f5;
+
+  --color-ink-strong:  #0f172a;
+  --color-ink-muted:   #475569;
+  --color-ink-subtle:  #64748b;
+  --color-ink-faint:   #94a3b8;
+  --color-ink-onbrand: #ffffff;
+
+  --color-surface-glass:  rgb(255 255 255 / 0.6);
+  --color-surface-card:   rgb(255 255 255 / 0.95);
+  --color-surface-strong: #ffffff;
+}
+
+[data-theme="B"][data-mode="dark"] {
+  --color-brand-50:  #0c1633;
+  --color-brand-100: #172554;
+  --color-brand-200: #1e3a8a;
+  --color-brand-300: #1e40af;
+  --color-brand-400: #2563eb;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #60a5fa;
+  --color-brand-700: #93c5fd;
+  --color-brand-800: #bfdbfe;
+  --color-brand-900: #dbeafe;
+
+  --color-accent-200: #5e3f0e;
+  --color-accent-300: #92400e;
+  --color-accent-400: #d97706;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #fcd34d;
+
+  --color-bg:      #0a0e1a;
+  --color-bg-soft: #11172a;
+
+  --color-ink-strong:  #e2e8f0;
+  --color-ink-muted:   #b1b9c6;
+  --color-ink-subtle:  #94a3b8;
+  --color-ink-faint:   #64748b;
+  --color-ink-onbrand: #0a0e1a;
+
+  --color-surface-glass:  rgb(20 30 50 / 0.55);
+  --color-surface-card:   rgb(20 30 50 / 0.9);
+  --color-surface-strong: #11172a;
+}
+
+/* ========================================================================
+   Theme C — Forest Green + Cream
+   ======================================================================== */
+[data-theme="C"][data-mode="light"] {
+  --color-brand-50:  #f0fdf4;
+  --color-brand-100: #dcfce7;
+  --color-brand-200: #bbf7d0;
+  --color-brand-300: #86efac;
+  --color-brand-400: #4ade80;
+  --color-brand-500: #22c55e;
+  --color-brand-600: #15803d;
+  --color-brand-700: #14532d;
+  --color-brand-800: #0c3d22;
+  --color-brand-900: #052914;
+
+  --color-accent-200: #fef9c3;
+  --color-accent-300: #fef08a;
+  --color-accent-400: #fde047;
+  --color-accent-500: #fcd34d;
+  --color-accent-600: #fbbf24;
+
+  --color-bg:      #faf8f1;
+  --color-bg-soft: #f4f0e0;
+
+  --color-ink-strong:  #0a2e1a;
+  --color-ink-muted:   #475569;
+  --color-ink-subtle:  #64748b;
+  --color-ink-faint:   #94a3b8;
+  --color-ink-onbrand: #ffffff;
+
+  --color-surface-glass:  rgb(255 255 255 / 0.6);
+  --color-surface-card:   rgb(255 255 255 / 0.95);
+  --color-surface-strong: #ffffff;
+}
+
+[data-theme="C"][data-mode="dark"] {
+  --color-brand-50:  #052914;
+  --color-brand-100: #0c3d22;
+  --color-brand-200: #14532d;
+  --color-brand-300: #15803d;
+  --color-brand-400: #16a34a;
+  --color-brand-500: #4ade80;
+  --color-brand-600: #86efac;
+  --color-brand-700: #bbf7d0;
+  --color-brand-800: #dcfce7;
+  --color-brand-900: #f0fdf4;
+
+  --color-accent-200: #5e4a07;
+  --color-accent-300: #8a6d10;
+  --color-accent-400: #b59017;
+  --color-accent-500: #fcd34d;
+  --color-accent-600: #fde047;
+
+  --color-bg:      #07140d;
+  --color-bg-soft: #0c1f15;
+
+  --color-ink-strong:  #e7f5ec;
+  --color-ink-muted:   #a8c2b1;
+  --color-ink-subtle:  #82998a;
+  --color-ink-faint:   #5d7065;
+  --color-ink-onbrand: #07140d;
+
+  --color-surface-glass:  rgb(20 38 25 / 0.55);
+  --color-surface-card:   rgb(20 38 25 / 0.9);
+  --color-surface-strong: #0c2a18;
+}
+
+/* ========================================================================
+   Theme D — Navy + Copper
+   ======================================================================== */
+[data-theme="D"][data-mode="light"] {
+  --color-brand-50:  #f0f4f9;
+  --color-brand-100: #d9e2ed;
+  --color-brand-200: #b3c5d9;
+  --color-brand-300: #8ca6c0;
+  --color-brand-400: #5e80a1;
+  --color-brand-500: #1e3a5f;
+  --color-brand-600: #173052;
+  --color-brand-700: #112442;
+  --color-brand-800: #0c1e3e;
+  --color-brand-900: #050d1f;
+
+  --color-accent-200: #fde7c7;
+  --color-accent-300: #fbc987;
+  --color-accent-400: #ea8c2a;
+  --color-accent-500: #b45309;
+  --color-accent-600: #92400e;
+
+  --color-bg:      #f8f7f2;
+  --color-bg-soft: #efece2;
+
+  --color-ink-strong:  #0c1e3e;
+  --color-ink-muted:   #475569;
+  --color-ink-subtle:  #64748b;
+  --color-ink-faint:   #94a3b8;
+  --color-ink-onbrand: #ffffff;
+
+  --color-surface-glass:  rgb(255 255 255 / 0.6);
+  --color-surface-card:   rgb(255 255 255 / 0.95);
+  --color-surface-strong: #ffffff;
+}
+
+[data-theme="D"][data-mode="dark"] {
+  --color-brand-50:  #050d1f;
+  --color-brand-100: #0c1e3e;
+  --color-brand-200: #112442;
+  --color-brand-300: #173052;
+  --color-brand-400: #1e3a5f;
+  --color-brand-500: #5e80a1;
+  --color-brand-600: #8ca6c0;
+  --color-brand-700: #b3c5d9;
+  --color-brand-800: #d9e2ed;
+  --color-brand-900: #f0f4f9;
+
+  --color-accent-200: #5e3208;
+  --color-accent-300: #92400e;
+  --color-accent-400: #b45309;
+  --color-accent-500: #d97706;
+  --color-accent-600: #f59e0b;
+
+  --color-bg:      #050d1f;
+  --color-bg-soft: #0c1837;
+
+  --color-ink-strong:  #dde7f5;
+  --color-ink-muted:   #a8b6c8;
+  --color-ink-subtle:  #82909e;
+  --color-ink-faint:   #5d6776;
+  --color-ink-onbrand: #050d1f;
+
+  --color-surface-glass:  rgb(15 28 55 / 0.55);
+  --color-surface-card:   rgb(15 28 55 / 0.9);
+  --color-surface-strong: #0c1837;
+}
+
+/* ========================================================================
+   Theme E — Charcoal + Crimson
+   ======================================================================== */
+[data-theme="E"][data-mode="light"] {
+  --color-brand-50:  #f8fafc;
+  --color-brand-100: #f1f5f9;
+  --color-brand-200: #e2e8f0;
+  --color-brand-300: #cbd5e1;
+  --color-brand-400: #94a3b8;
+  --color-brand-500: #475569;
+  --color-brand-600: #334155;
+  --color-brand-700: #1e293b;
+  --color-brand-800: #0f172a;
+  --color-brand-900: #020617;
+
+  --color-accent-200: #fee2e2;
+  --color-accent-300: #fecaca;
+  --color-accent-400: #f87171;
+  --color-accent-500: #dc2626;
+  --color-accent-600: #991b1b;
+
+  --color-bg:      #fafafa;
+  --color-bg-soft: #f4f4f5;
+
+  --color-ink-strong:  #0f172a;
+  --color-ink-muted:   #475569;
+  --color-ink-subtle:  #64748b;
+  --color-ink-faint:   #94a3b8;
+  --color-ink-onbrand: #ffffff;
+
+  --color-surface-glass:  rgb(255 255 255 / 0.6);
+  --color-surface-card:   rgb(255 255 255 / 0.95);
+  --color-surface-strong: #ffffff;
+}
+
+[data-theme="E"][data-mode="dark"] {
+  --color-brand-50:  #0a0a0a;
+  --color-brand-100: #18181b;
+  --color-brand-200: #27272a;
+  --color-brand-300: #3f3f46;
+  --color-brand-400: #52525b;
+  --color-brand-500: #71717a;
+  --color-brand-600: #a1a1aa;
+  --color-brand-700: #d4d4d8;
+  --color-brand-800: #e4e4e7;
+  --color-brand-900: #f4f4f5;
+
+  --color-accent-200: #5e0e15;
+  --color-accent-300: #7f1d1d;
+  --color-accent-400: #b91c1c;
+  --color-accent-500: #dc2626;
+  --color-accent-600: #f87171;
+
+  --color-bg:      #0a0a0a;
+  --color-bg-soft: #18181b;
+
+  --color-ink-strong:  #f4f4f5;
+  --color-ink-muted:   #a1a1aa;
+  --color-ink-subtle:  #71717a;
+  --color-ink-faint:   #52525b;
+  --color-ink-onbrand: #0a0a0a;
+
+  --color-surface-glass:  rgb(30 30 32 / 0.55);
+  --color-surface-card:   rgb(30 30 32 / 0.9);
+  --color-surface-strong: #18181b;
+}
+
+/* ========================================================================
+   Keyframes
+   ======================================================================== */
 @keyframes blob {
-  0%, 100% {
-    transform: translate(0, 0) scale(1);
-  }
-  33% {
-    transform: translate(24px, -36px) scale(1.08);
-  }
-  66% {
-    transform: translate(-18px, 18px) scale(0.96);
-  }
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(24px, -36px) scale(1.08); }
+  66%      { transform: translate(-18px, 18px) scale(0.96); }
 }
 
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
 }
 
 @keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
-:root {
-  --background: #fbfaf6;
-  --foreground: #0a2b33;
-}
-
+/* ========================================================================
+   Base
+   ======================================================================== */
 html {
-  scroll-snap-type: y mandatory;
   scroll-padding-top: 4.5rem;
 }
-/* Note: SnapScrollController briefly clears `scroll-snap-type` via inline
+
+/* Snap scrolling is opt-in: only when the body has a section with
+   `data-snap-root` (set on the homepage layout). Product / catalog pages
+   scroll normally. SnapScrollController also briefly clears the inline
    style during its damped tween, then restores it. */
+html:has([data-snap-root]) {
+  scroll-snap-type: y mandatory;
+}
 
 /* Touch devices (mobile/tablet) get free natural scrolling — mandatory snap
    plus mobile-chrome viewport changes feel jarring with finger momentum. */
 @media (pointer: coarse) {
-  html {
+  html:has([data-snap-root]) {
     scroll-snap-type: none;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-bg);
+  color: var(--color-ink-strong);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -115,16 +442,17 @@ body {
   }
 }
 
-/* Utility: gradient text — teal → gold */
+/* ========================================================================
+   Utilities (theme-aware)
+   ======================================================================== */
 .text-gradient {
-  background-image: linear-gradient(120deg, #0f4c5c 0%, #1b6b7f 45%, #e8a33d 100%);
+  background-image: linear-gradient(120deg, var(--color-brand-600) 0%, var(--color-brand-500) 45%, var(--color-accent-400) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
 
-/* Utility: gradient border via mask */
 .gradient-border {
   position: relative;
   isolation: isolate;
@@ -135,7 +463,12 @@ body {
   inset: 0;
   padding: 1px;
   border-radius: inherit;
-  background: linear-gradient(135deg, rgba(74, 143, 165, 0.55), rgba(232, 163, 61, 0.4), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-brand-400) 55%, transparent),
+    color-mix(in srgb, var(--color-accent-400) 40%, transparent),
+    color-mix(in srgb, var(--color-surface-strong) 30%, transparent)
+  );
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

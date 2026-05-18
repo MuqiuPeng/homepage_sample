@@ -51,8 +51,8 @@ export function GlassCard({
       onMouseLeave={handleMouseLeave}
       style={tilt ? { rotateX, rotateY, transformStyle: "preserve-3d" } : undefined}
       className={cn(
-        "gradient-border relative rounded-2xl border border-white/60 bg-white/55 p-6 backdrop-blur-xl shadow-[0_8px_32px_rgba(31,38,135,0.12)]",
-        glow && "transition-shadow duration-500 hover:shadow-[0_20px_60px_rgba(59,130,246,0.25)]",
+        "gradient-border relative rounded-2xl border border-surface-strong/60 bg-surface-glass p-6 backdrop-blur-xl shadow-glass",
+        glow && "transition-shadow duration-500 hover:shadow-glass-lg",
         className,
       )}
       {...rest}

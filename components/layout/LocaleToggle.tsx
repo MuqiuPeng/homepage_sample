@@ -28,13 +28,13 @@ export function LocaleToggle({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-1 rounded-full border border-white/70 bg-white/60 p-1 backdrop-blur-md shadow-sm",
+        "inline-flex items-center gap-1 rounded-full border border-white/70 bg-surface-glass p-1 backdrop-blur-md shadow-sm",
         className,
       )}
       role="group"
       aria-label="Language switcher"
     >
-      <Globe className="ml-2 h-4 w-4 text-slate-500" aria-hidden />
+      <Globe className="ml-2 h-4 w-4 text-ink-subtle" aria-hidden />
       {(Object.keys(labels) as Locale[]).map((l) => (
         <button
           key={l}
@@ -44,8 +44,8 @@ export function LocaleToggle({ className }: { className?: string }) {
           className={cn(
             "rounded-full px-3 py-1 text-xs font-medium transition-all duration-300",
             l === locale
-              ? "bg-gradient-to-r from-brand-600 to-accent-500 text-white shadow-sm"
-              : "text-slate-600 hover:text-slate-900",
+              ? "bg-gradient-to-r from-brand-600 to-accent-500 text-ink-onbrand shadow-sm"
+              : "text-ink-muted hover:text-ink-strong",
           )}
         >
           {labels[l]}

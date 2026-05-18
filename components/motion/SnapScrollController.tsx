@@ -13,6 +13,9 @@ const SNAP_IDS = [
 ];
 const HEADER_OFFSET = 72;
 const ANIM_MS = 850;
+// Click-driven nav uses a slightly snappier tween — the user's intent is
+// explicit so we don't need the weighted feel of a wheel gesture.
+const CLICK_ANIM_MS = 620;
 // A wheel event arriving within this many ms of the previous one is treated
 // as a continuation of the same gesture (e.g. a trackpad fling sends ~60Hz
 // events for 500–700ms). Mouse-wheel clicks are typically separated by
@@ -21,11 +24,75 @@ const GESTURE_GAP_MS = 100;
 
 /**
  * Replaces native scroll-snap on desktop with a JS-driven tween, so wheel
- * navigation between sections feels weighted instead of instant. Native
- * snap stays available as a fallback for keyboard, anchor links and
- * touch devices.
+ * and keyboard navigation between sections feels weighted instead of
+ * instant. Also intercepts anchor-link clicks (nav, CTA, footer) on every
+ * device to give them the same damped feel — clicks would otherwise fall
+ * back to the browser's instant scroll-to-anchor.
  */
 export function SnapScrollController() {
+  // Anchor-click interception is universal — runs on touch, on reduced
+  // motion (where it falls back to an instant jump), on every device. Wheel
+  // and keyboard handlers below are gated to fine pointers.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    function tweenScroll(targetY: number, duration: number) {
+      const startY = window.scrollY;
+      const distance = targetY - startY;
+      if (Math.abs(distance) < 2) return;
+      const html = document.documentElement;
+      const prevSnap = html.style.scrollSnapType;
+      const prevBehavior = html.style.scrollBehavior;
+      html.style.scrollSnapType = "none";
+      html.style.scrollBehavior = "auto";
+      const startTime = performance.now();
+      function step(now: number) {
+        const elapsed = now - startTime;
+        const t = Math.min(elapsed / duration, 1);
+        const eased = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        window.scrollTo(0, Math.round(startY + distance * eased));
+        if (t < 1) {
+          requestAnimationFrame(step);
+        } else {
+          html.style.scrollSnapType = prevSnap;
+          html.style.scrollBehavior = prevBehavior;
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    function onClick(e: MouseEvent) {
+      // Plain left-clicks only — let modifier-clicks (cmd-open-in-new-tab) pass through.
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const link = (e.target as Element | null)?.closest?.('a[href^="#"]');
+      if (!link) return;
+      const href = link.getAttribute("href");
+      if (!href || href === "#" || href.length < 2) return;
+      const id = href.slice(1);
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      e.preventDefault();
+      const targetY = Math.max(0, el.offsetTop - HEADER_OFFSET);
+
+      if (reduced.matches) {
+        window.scrollTo(0, targetY);
+      } else {
+        tweenScroll(targetY, CLICK_ANIM_MS);
+      }
+
+      // Match native anchor behavior: update URL hash without re-triggering scroll.
+      if (window.history?.pushState) {
+        window.history.pushState(null, "", href);
+      }
+    }
+
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, []);
+
+  // Wheel + keyboard tween — desktop fine-pointer only.
   useEffect(() => {
     if (typeof window === "undefined") return;
     const fine = window.matchMedia("(pointer: fine)");

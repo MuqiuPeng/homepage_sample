@@ -210,5 +210,42 @@
     "address": "[ Company address placeholder ]",
     "rights": "[ Rights placeholder ]",
     "legal": "[ Legal / license placeholder ]"
+  },
+  "themeSwitcher": {
+    "buttonLabel": "Switch theme",
+    "title": "Theme",
+    "modeLabel": "Mode",
+    "modeLight": "Light",
+    "modeDark": "Dark",
+    "themeA": "Teal & Gold",
+    "themeB": "Royal Blue & Amber",
+    "themeC": "Forest Green & Cream",
+    "themeD": "Navy & Copper",
+    "themeE": "Charcoal & Crimson"
+  },
+  "products": {
+    "eyebrow": "[ Product Catalog ]",
+    "title": "Full Product Catalog",
+    "subtitle": "Covering FEVE fluororesin, FKM fluoroelastomers, PVDF, PTFE, FEP, PFA, and fluorine fine chemicals — browse every grade, spec, and technical data sheet in one place.",
+    "categoryEyebrow": "[ Category ]",
+    "categoryDescription": "{count} product series in this category — click into a series to see all of its grades and technical specs.",
+    "seriesCount": "Series",
+    "variantsCount": "Grades",
+    "specsCount": "Spec items",
+    "viewCategory": "Browse category",
+    "viewSeries": "View series",
+    "viewVariant": "View grade",
+    "noSeriesYet": "No series available yet.",
+    "composition": "Composition",
+    "manufacturer": "Manufacturer",
+    "sinceYear": "Since",
+    "applications": "Applications",
+    "engineeringCases": "Engineering cases",
+    "packaging": "Packaging",
+    "shippingNote": "Storage & shipping",
+    "specsTitle": "Technical data sheet",
+    "testItem": "Test items",
+    "testMethod": "Test method",
+    "unit": "Unit"
   }
 }

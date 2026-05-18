@@ -35,7 +35,10 @@ export function SectionHeading({
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="inline-flex items-center gap-2 rounded-full border border-brand-200/70 bg-brand-50/60 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-brand-700 backdrop-blur-md"
         >
-          <span className="h-1.5 w-1.5 rounded-full bg-brand-500 shadow-[0_0_10px_rgba(59,130,246,0.6)]" />
+          <span
+            className="h-1.5 w-1.5 rounded-full bg-brand-500"
+            style={{ boxShadow: "0 0 10px color-mix(in srgb, var(--color-brand-500) 60%, transparent)" }}
+          />
           {eyebrow}
         </motion.span>
       )}
@@ -44,7 +47,7 @@ export function SectionHeading({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
-        className="mt-5 text-balance text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl"
+        className="mt-5 text-balance text-4xl font-semibold tracking-tight text-ink-strong sm:text-5xl"
       >
         {title}
       </motion.h2>
@@ -54,7 +57,7 @@ export function SectionHeading({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-          className="mt-5 text-pretty text-base leading-relaxed text-slate-600 sm:text-lg"
+          className="mt-5 text-pretty text-base leading-relaxed text-ink-muted sm:text-lg"
         >
           {description}
         </motion.p>

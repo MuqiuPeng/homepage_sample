@@ -13,18 +13,18 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-24 border-t border-white/60 bg-white/55 backdrop-blur-xl">
+    <footer className="relative mt-24 border-t border-white/60 bg-surface-glass backdrop-blur-xl">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-white shadow-[0_4px_16px_rgba(15,76,92,0.4)]">
+            <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-ink-onbrand shadow-brand-md">
               <Hexagon className="h-5 w-5 fill-accent-400/80 stroke-white" strokeWidth={2} />
             </span>
-            <span className="text-base font-semibold text-slate-400">
+            <span className="text-base font-semibold text-ink-faint">
               [ Brand ]
             </span>
           </div>
-          <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-600">
+          <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-muted">
             {t("tagline")}
           </p>
           <div className="mt-5 flex items-center gap-3">
@@ -39,7 +39,7 @@ export function Footer() {
                 key={label}
                 href="#"
                 aria-label={label}
-                className="grid h-9 w-9 place-items-center rounded-full border border-white/70 bg-white/60 text-slate-500 transition-all duration-300 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
+                className="grid h-9 w-9 place-items-center rounded-full border border-white/70 bg-surface-glass text-ink-subtle transition-all duration-300 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
               >
                 <Icon className="h-4 w-4" />
               </a>
@@ -48,10 +48,10 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+          <h4 className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-subtle">
             {t("nav")}
           </h4>
-          <ul className="mt-4 space-y-2.5 text-sm text-slate-600">
+          <ul className="mt-4 space-y-2.5 text-sm text-ink-muted">
             {["home", "about", "products", "industries", "contact"].map(
               (key) => (
                 <li key={key}>
@@ -68,10 +68,10 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+          <h4 className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-subtle">
             {t("contact")}
           </h4>
-          <ul className="mt-4 space-y-2.5 text-sm text-slate-600">
+          <ul className="mt-4 space-y-2.5 text-sm text-ink-muted">
             <li>{t("address")}</li>
             <li>
               <a
@@ -87,7 +87,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/50">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-ink-subtle sm:flex-row sm:px-6 lg:px-8">
           <p>© {year} [ Brand ]. {t("rights")}</p>
           <p>{t("legal")}</p>
         </div>

@@ -12,6 +12,7 @@ import {
 import { useTranslations } from "next-intl";
 import { LinkButton } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { TrustStrip } from "@/components/sections/TrustStrip";
 
 const FLOATING_ICONS = [
   { icon: Atom, top: "10%", left: "6%", delay: 0 },
@@ -29,21 +30,22 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden pt-20 pb-24 sm:pt-28 sm:pb-32 lg:pt-36 lg:pb-40 snap-start min-h-svh flex flex-col lg:justify-center"
+      className="relative overflow-hidden pt-20 pb-6 sm:pt-28 sm:pb-8 lg:pt-32 lg:pb-10 snap-start min-h-svh flex flex-col"
     >
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:px-8">
+      <div className="flex flex-1 flex-col lg:justify-center">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:px-8">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="inline-flex items-center gap-2 rounded-full border border-brand-200/70 bg-white/60 px-4 py-1.5 text-xs font-medium text-brand-700 backdrop-blur-md"
+            className="inline-flex items-center gap-2 rounded-full border border-brand-200/70 bg-surface-glass px-4 py-1.5 text-xs font-medium text-brand-700 backdrop-blur-md"
           >
             <Sparkles className="h-3.5 w-3.5 text-accent-500" />
             {t("eyebrow")}
           </motion.div>
 
-          <h1 className="mt-6 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl lg:text-[64px] lg:leading-[1.05]">
+          <h1 className="mt-6 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-ink-strong sm:text-5xl lg:text-[64px] lg:leading-[1.05]">
             {titleWords.map((word, i) => (
               <motion.span
                 key={i}
@@ -77,7 +79,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-            className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg"
+            className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-ink-muted sm:text-lg"
           >
             {t("description")}
           </motion.p>
@@ -101,14 +103,14 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.85, ease: "easeOut" }}
-            className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-slate-200/70 pt-6"
+            className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-brand-100/60 pt-6"
           >
             {(["experience", "suppliers", "markets"] as const).map((key) => (
               <div key={key}>
-                <dt className="text-xs font-medium uppercase tracking-wider text-slate-500">
+                <dt className="text-xs font-medium uppercase tracking-wider text-ink-subtle">
                   {t(`stats.${key}.label`)}
                 </dt>
-                <dd className="mt-1 text-xl font-semibold text-slate-900 sm:text-2xl">
+                <dd className="mt-1 text-xl font-semibold text-ink-strong sm:text-2xl">
                   {t(`stats.${key}.value`)}
                 </dd>
               </div>
@@ -136,7 +138,7 @@ export function Hero() {
               className="absolute"
             >
               <GlassCard
-                className="!p-3 hover:!shadow-[0_12px_36px_rgba(15,76,92,0.32)]"
+                className="!p-3 hover:!shadow-glass-lg"
                 style={{ animation: `float 7s ease-in-out infinite ${delay}s` }}
               >
                 <Icon className="h-5 w-5 text-brand-600" />
@@ -144,7 +146,9 @@ export function Hero() {
             </motion.div>
           ))}
         </div>
+        </div>
       </div>
+      <TrustStrip />
     </section>
   );
 }
@@ -172,13 +176,13 @@ function HeroVisual() {
   return (
     <div className="relative h-full w-full">
       <div className="absolute inset-x-6 top-10 bottom-10">
-        <div className="relative h-full w-full overflow-hidden rounded-[40px] border border-white/70 bg-gradient-to-br from-white/80 via-brand-50/55 to-accent-200/40 shadow-[0_30px_80px_-20px_rgba(15,76,92,0.35)] backdrop-blur-2xl">
+        <div className="relative h-full w-full overflow-hidden rounded-[40px] border border-surface-strong/70 bg-gradient-to-br from-surface-strong/80 via-brand-50/55 to-accent-200/40 shadow-glass-lg backdrop-blur-2xl">
           <div
             aria-hidden
             className="absolute inset-0 opacity-70"
             style={{
               backgroundImage:
-                "radial-gradient(circle at 28% 22%, rgba(74,143,165,0.45), transparent 55%), radial-gradient(circle at 72% 78%, rgba(232,163,61,0.32), transparent 55%)",
+                "radial-gradient(circle at 28% 22%, color-mix(in srgb, var(--color-brand-400) 45%, transparent), transparent 55%), radial-gradient(circle at 72% 78%, color-mix(in srgb, var(--color-accent-400) 32%, transparent), transparent 55%)",
             }}
           />
           <svg
@@ -189,20 +193,20 @@ function HeroVisual() {
           >
             <defs>
               <linearGradient id="hex-stroke" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#0f4c5c" stopOpacity="0.85" />
-                <stop offset="100%" stopColor="#e8a33d" stopOpacity="0.65" />
+                <stop offset="0%" style={{ stopColor: "var(--color-brand-600)", stopOpacity: 0.85 }} />
+                <stop offset="100%" style={{ stopColor: "var(--color-accent-400)", stopOpacity: 0.65 }} />
               </linearGradient>
               <radialGradient id="atom-core" cx="0.5" cy="0.5" r="0.5">
-                <stop offset="0%" stopColor="#0f4c5c" stopOpacity="0.9" />
-                <stop offset="100%" stopColor="#0f4c5c" stopOpacity="0" />
+                <stop offset="0%" style={{ stopColor: "var(--color-brand-600)", stopOpacity: 0.9 }} />
+                <stop offset="100%" style={{ stopColor: "var(--color-brand-600)", stopOpacity: 0 }} />
               </radialGradient>
               <radialGradient id="atom-gold" cx="0.5" cy="0.5" r="0.5">
-                <stop offset="0%" stopColor="#e8a33d" stopOpacity="0.9" />
-                <stop offset="100%" stopColor="#e8a33d" stopOpacity="0" />
+                <stop offset="0%" style={{ stopColor: "var(--color-accent-400)", stopOpacity: 0.9 }} />
+                <stop offset="100%" style={{ stopColor: "var(--color-accent-400)", stopOpacity: 0 }} />
               </radialGradient>
               <linearGradient id="bond-line" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stopColor="#1b6b7f" stopOpacity="0.6" />
-                <stop offset="100%" stopColor="#1b6b7f" stopOpacity="0.2" />
+                <stop offset="0%" style={{ stopColor: "var(--color-brand-500)", stopOpacity: 0.6 }} />
+                <stop offset="100%" style={{ stopColor: "var(--color-brand-500)", stopOpacity: 0.2 }} />
               </linearGradient>
             </defs>
 
@@ -241,15 +245,14 @@ function HeroVisual() {
                     cx={x}
                     cy={y}
                     r="7"
-                    fill="white"
-                    stroke={i % 2 === 0 ? "#0f4c5c" : "#c9842f"}
+                    style={{ fill: "var(--color-surface-strong)", stroke: i % 2 === 0 ? "var(--color-brand-600)" : "var(--color-accent-500)" }}
                     strokeWidth="1.5"
                   />
                   <circle
                     cx={x}
                     cy={y}
                     r="3"
-                    fill={i % 2 === 0 ? "#0f4c5c" : "#c9842f"}
+                    style={{ fill: i % 2 === 0 ? "var(--color-brand-600)" : "var(--color-accent-500)" }}
                   >
                     <animate
                       attributeName="opacity"
@@ -266,7 +269,7 @@ function HeroVisual() {
             {/* Stationary central hexagon (benzene ring) */}
             <polygon
               points={hex.map(([x, y]) => `${x},${y}`).join(" ")}
-              fill="rgba(255,255,255,0.55)"
+              style={{ fill: "color-mix(in srgb, var(--color-surface-strong) 55%, transparent)" }}
               stroke="url(#hex-stroke)"
               strokeWidth="1.6"
             />
@@ -276,7 +279,7 @@ function HeroVisual() {
               cy={cy}
               r={r * 0.55}
               fill="none"
-              stroke="#0f4c5c"
+              style={{ stroke: "var(--color-brand-600)" }}
               strokeWidth="1"
               strokeOpacity="0.55"
               strokeDasharray="3 4"
@@ -286,8 +289,8 @@ function HeroVisual() {
             {hex.map(([x, y], i) => (
               <g key={`vertex-${i}`}>
                 <circle cx={x} cy={y} r="14" fill="url(#atom-core)" opacity="0.45" />
-                <circle cx={x} cy={y} r="6" fill="white" stroke="#0f4c5c" strokeWidth="1.5" />
-                <circle cx={x} cy={y} r="2.5" fill="#0f4c5c">
+                <circle cx={x} cy={y} r="6" style={{ fill: "var(--color-surface-strong)", stroke: "var(--color-brand-600)" }} strokeWidth="1.5" />
+                <circle cx={x} cy={y} r="2.5" style={{ fill: "var(--color-brand-600)" }}>
                   <animate
                     attributeName="opacity"
                     values="0.6;1;0.6"
@@ -301,8 +304,8 @@ function HeroVisual() {
 
             {/* Center atom highlight */}
             <circle cx={cx} cy={cy} r="32" fill="url(#atom-gold)" opacity="0.55" />
-            <circle cx={cx} cy={cy} r="9" fill="#fff" stroke="#c9842f" strokeWidth="1.6" />
-            <circle cx={cx} cy={cy} r="4" fill="#c9842f">
+            <circle cx={cx} cy={cy} r="9" style={{ fill: "var(--color-surface-strong)", stroke: "var(--color-accent-500)" }} strokeWidth="1.6" />
+            <circle cx={cx} cy={cy} r="4" style={{ fill: "var(--color-accent-500)" }}>
               <animate attributeName="r" values="3;5;3" dur="2.6s" repeatCount="indefinite" />
             </circle>
 
@@ -310,8 +313,7 @@ function HeroVisual() {
             <g transform="translate(70 410)" opacity="0.85">
               <path
                 d="M0 0 C 12 -22, 28 -22, 16 -2 Z"
-                fill="rgba(74,143,165,0.35)"
-                stroke="#0f4c5c"
+                style={{ fill: "color-mix(in srgb, var(--color-brand-400) 35%, transparent)", stroke: "var(--color-brand-600)" }}
                 strokeOpacity="0.5"
                 strokeWidth="1"
               />
@@ -319,8 +321,7 @@ function HeroVisual() {
             <g transform="translate(330 90)" opacity="0.85">
               <path
                 d="M0 0 C 9 -16, 22 -16, 12 -1 Z"
-                fill="rgba(232,163,61,0.35)"
-                stroke="#c9842f"
+                style={{ fill: "color-mix(in srgb, var(--color-accent-400) 35%, transparent)", stroke: "var(--color-accent-500)" }}
                 strokeOpacity="0.55"
                 strokeWidth="1"
               />

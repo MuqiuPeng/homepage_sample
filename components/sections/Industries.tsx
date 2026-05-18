@@ -65,20 +65,20 @@ export function Industries() {
                   aria-hidden
                   className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-to-br from-brand-300/40 to-accent-300/30 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100"
                 />
-                <div className="relative grid h-12 w-12 place-items-center rounded-xl border border-brand-200/70 bg-gradient-to-br from-brand-50 to-white text-brand-600 transition-transform duration-300 group-hover:scale-110">
+                <div className="relative grid h-12 w-12 place-items-center rounded-xl border border-brand-200/70 bg-gradient-to-br from-brand-50 to-surface-strong text-brand-600 transition-transform duration-300 group-hover:scale-110">
                   <Icon className="h-5 w-5" strokeWidth={1.8} />
                 </div>
-                <h3 className="relative mt-5 text-lg font-semibold text-slate-900">
+                <h3 className="relative mt-5 text-lg font-semibold text-ink-strong">
                   {t(`items.${key}.name`)}
                 </h3>
-                <p className="relative mt-2 text-sm leading-relaxed text-slate-600">
+                <p className="relative mt-2 text-sm leading-relaxed text-ink-muted">
                   {t(`items.${key}.use`)}
                 </p>
                 <ul className="relative mt-4 flex flex-wrap gap-1.5">
                   {(["t1", "t2", "t3"] as const).map((tk) => (
                     <li
                       key={tk}
-                      className="rounded-full border border-brand-200/60 bg-white/70 px-2.5 py-1 text-xs font-medium text-brand-700"
+                      className="rounded-full border border-brand-200/60 bg-surface-glass px-2.5 py-1 text-xs font-medium text-brand-700"
                     >
                       {t(`items.${key}.tags.${tk}`)}
                     </li>
