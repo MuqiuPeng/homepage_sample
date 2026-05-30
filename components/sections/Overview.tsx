@@ -11,19 +11,20 @@ const BLOCKS = [
   { key: "where", icon: Globe2 },
 ] as const;
 
-// Counts shown in the Company-profile band. Tracks reality:
-//   experience  — years of operation since the 1960 institute that became 3F
-//   suppliers   — total active grades in the DB (variants table)
-//   markets     — top-level product families (categories table)
-//   warehouses  — physical production sites (Shanghai + 3× Changshu + Inner
-//                 Mongolia + Fujian = 5)
+// Counts shown in the Company-profile band. Tracks reality for a trading
+// company specialised in high-end fluoropolymers:
+//   experience  — decades of fluoropolymer industry experience (20+ yrs)
+//   suppliers   — active grades carried across the portfolio (100+)
+//   markets     — top-level product families emphasised on the homepage
+//                 (PTFE micropowder / PFPE / FKM/FFKM / FEP-PFA / PVDF = 5)
+//   warehouses  — continents served via the global trade network (5+)
 // `hasSuffix` is true when the matching i18n entry has a non-empty `suffix`
-// (e.g. "+"). For exact counts ("7", "5") we leave it false.
+// (e.g. "+"). For exact counts (markets = 5 exact) we leave it false.
 const METRICS = [
-  { key: "experience", to: 60, hasSuffix: true },
-  { key: "suppliers", to: 130, hasSuffix: true },
-  { key: "markets", to: 7, hasSuffix: false },
-  { key: "warehouses", to: 5, hasSuffix: false },
+  { key: "experience", to: 20, hasSuffix: true },
+  { key: "suppliers", to: 100, hasSuffix: true },
+  { key: "markets", to: 5, hasSuffix: false },
+  { key: "warehouses", to: 5, hasSuffix: true },
 ] as const;
 
 export function Overview() {

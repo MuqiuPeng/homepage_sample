@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Huayi 3F — Fluorine Materials · Complete-chain Supplier",
-    "description": "Shanghai Huayi 3F New Materials is a core enterprise of Huayi Group with 60+ years specialized in fluoropolymer and fluorine fine chemical R&D and production. Covering fluororesin, fluoroelastomer, PVDF, PTFE, FEP, PFA and more."
+    "title": "Shanghai Rongshengke — Trusted Global Supplier of Fluoropolymers",
+    "description": "Shanghai Rongshengke is a leading China-based trading enterprise serving customers worldwide — specialized in PTFE micropowder, PFPE oils, fluoroelastomers (FKM/FFKM) and other high-end fluoropolymers."
   },
   "nav": {
-    "brand": "Huayi 3F",
+    "brand": "Rongshengke",
     "home": "Home",
     "about": "About",
     "products": "Products",
@@ -13,175 +13,175 @@
     "cta": "Get a quote"
   },
   "hero": {
-    "eyebrow": "Fluorine Materials · Complete-chain Supplier",
-    "title": "High-value Fluorine",
-    "titleAccent": "Materials · One-stop",
-    "description": "Shanghai Huayi 3F New Materials — a core enterprise of Huayi Group. Over 60 years specialized in fluoropolymer and fluorine fine chemical R&D and production, with 5 production bases and long-term partnerships with domestic and foreign Fortune 500 chemical enterprises.",
+    "eyebrow": "Trusted Global Supplier of Fluoropolymers",
+    "title": "High-End Fluoropolymers",
+    "titleAccent": "· One-Stop Sourcing",
+    "description": "Shanghai Rongshengke is a leading China-based trading enterprise serving customers worldwide, specialized in PTFE micropowder, perfluoropolyether (PFPE) oils, fluoroelastomers and other high-end fluoropolymers. Through deep industry understanding and dedicated focus, we strive to be your trusted supplier of high-performance polymers.",
     "ctaPrimary": "Explore products",
     "ctaSecondary": "Contact sales",
     "stats": {
-      "experience": { "label": "Years operating", "value": "60+" },
-      "suppliers": { "label": "Active grades", "value": "130+" },
-      "markets": { "label": "Production bases", "value": "5" }
+      "experience": { "label": "Industry experience", "value": "20+ yrs" },
+      "suppliers": { "label": "Active grades", "value": "100+" },
+      "markets": { "label": "Continents served", "value": "5+" }
     }
   },
   "trustStrip": {
-    "tagline": "60+ years of fluorine expertise · Long-term Fortune-500 partnerships",
+    "tagline": "Decades of fluorine expertise · Global trade network · One-stop sourcing",
     "items": {
-      "iso": "Shanghai A-share listed (600636)",
-      "reach": "60+ years of fluorine expertise",
-      "care": "Long-term Fortune-500 partner",
-      "ports": "5 production bases · complete chain"
+      "iso": "Decades of fluorine-industry experience",
+      "reach": "Mature international trade system",
+      "care": "Forward-looking material consultation",
+      "ports": "Compliant, efficient import/export"
     },
     "logosLabel": "Industries served"
   },
   "overview": {
     "eyebrow": "Company profile",
-    "title": "A core enterprise of Huayi Group · Fluorine materials industry leader",
-    "description": "Shanghai Huayi 3F New Materials Co., Ltd. is a core enterprise of Huayi Group, specializing in the R&D, production and operation of fluoropolymers, fluorine fine chemicals, fluorine-containing refrigerants and other fluorine-containing chemicals.",
+    "title": "A trusted global supplier of high-performance fluoropolymers",
+    "description": "Shanghai Rongshengke is a leading China-based trading enterprise serving customers worldwide — specialized in PTFE micropowder, PFPE oils, fluoroelastomers and other high-end fluoropolymers. Through deep industry understanding and dedicated focus, we strive to become your trusted supplier in the high-performance polymer field.",
     "blocks": {
       "who": {
-        "title": "Who we are",
-        "description": "Founded in 1960 as the Shanghai Synthetic Rubber Institute, renamed the Shanghai Organic Fluorine Materials Research Institute in 1980, and listed on the A-share market in 1994 as Shanghai 3F New Materials Co., Ltd. — over 60 years of fluorine materials R&D and operations."
+        "title": "Deep expertise · Quality built on craft",
+        "description": "Our sales and technical team brings decades of hands-on experience in fluoropolymers — proficient in the physical and chemical properties and application scenarios of every fluorine material, with a sharp read on the market and industry trends, enabling forward-looking material recommendations for our customers."
       },
       "what": {
-        "title": "What we do",
-        "description": "A complete fluorine product chain — fluoropolymers (fluororesin, PVDF, PTFE, FEP, PFA, fluoroelastomer), fluorine fine chemicals and refrigerants — covering customers' full fluorine sourcing scope from one supplier."
+        "title": "Diverse grades · Tailored to special needs",
+        "description": "Five product systems covering PTFE micropowder, PFPE oils, FKM/FFKM rubbers, FEP/PFA and PVDF. From standard grades to special custom specifications, we deliver one-stop solutions for the demanding requirements of industrial applications."
       },
       "where": {
-        "title": "Who we serve",
-        "description": "Customers span aerospace, semiconductor, new-energy, chemical, pharmaceutical and construction industries, with long-term partnerships with domestic and foreign Fortune 500 chemical enterprises."
+        "title": "Global reach · Smooth import/export",
+        "description": "Backed by a mature international trade system, we are well-versed in fluoropolymer trade regulations, logistics chains and customs policies — handling sample shipments, orders and global transport efficiently and in full compliance."
       }
     },
     "metrics": {
-      "experience": { "label": "Years operating", "suffix": "+" },
+      "experience": { "label": "Years experience", "suffix": "+" },
       "suppliers": { "label": "Active grades", "suffix": "+" },
       "markets": { "label": "Product families", "suffix": "" },
-      "warehouses": { "label": "Production bases", "suffix": "" }
+      "warehouses": { "label": "Continents served", "suffix": "+" }
     }
   },
   "productSystem": {
     "eyebrow": "Product systems",
-    "title": "Complete fluorine portfolio · 7 product families",
-    "description": "Fluororesin, fluoroelastomer, PVDF, PTFE, FEP, PFA and fluorine fine chemicals — 130+ active grades available for one-stop sourcing.",
+    "title": "High-end fluoropolymers · 5 product families",
+    "description": "PTFE micropowder, PFPE oils, FKM/FFKM rubbers, FEP/PFA and PVDF — multi-grade, high-quality product lines for the demanding requirements of industrial applications.",
     "useCasesLabel": "Typical uses",
     "categories": {
       "a": {
-        "name": "Fluororesin / Fluoroelastomer",
-        "description": "Core fluoropolymer families — the key materials for coatings, seals and high-temperature components.",
-        "uses": "Building façade coatings, bridge anti-corrosion, chemical seals, automotive fuel systems.",
-        "tags": { "t1": "Powder / pellet", "t2": "Raw rubber / dispersion", "t3": "Multi-process" }
+        "name": "PTFE Micropowder",
+        "description": "Flagship product — precise particle size (D50 1~20 μm), volatiles <0.2%, crystallinity 92~98%, friction coefficient <0.05.",
+        "uses": "Wear-modifying additive in inks and coatings, self-lubricating additive in engineering plastics, release agent in precision electronics.",
+        "tags": { "t1": "1~20 μm", "t2": "Low volatiles", "t3": "High dispersibility" }
       },
       "b": {
-        "name": "PVDF / PTFE",
-        "description": "Thermoplastic and high-melting fluoroplastics — central to lithium batteries, solar, filtration membranes and non-stick coatings.",
-        "uses": "Li-ion battery binders, PV backsheet film, filter membranes, non-stick coatings.",
-        "tags": { "t1": "Lithium grade", "t2": "Water-film grade", "t3": "Coating grade" }
+        "name": "PFPE oils / Fluoroelastomers",
+        "description": "Wide-temperature lubrication and corrosion-resistant sealing — PFPE rated −50~300°C+, FKM/FFKM long-term 200°C+ (250°C short-term).",
+        "uses": "Semiconductor vacuum chambers, heavy-load bearings, automotive fuel seals, petrochemical pipe linings.",
+        "tags": { "t1": "15~1600 cSt", "t2": "Shore 50A~95A", "t3": "Chemical inert" }
       },
       "c": {
-        "name": "FEP / PFA / Fine chemicals",
-        "description": "Melt-processable high-temperature fluoroplastics and key fluorine intermediates — for semiconductor, cable and pharmaceutical markets.",
-        "uses": "High-frequency communication cables, wafer fab, sevoflurane feedstock, fluoropolymer intermediates.",
-        "tags": { "t1": "Electronic grade", "t2": "Cable-specific", "t3": "Pharma intermediate" }
+        "name": "FEP / PFA / PVDF",
+        "description": "Melt-processable fluoroplastics — breaking PTFE's non-melt-processable limitation while preserving outstanding thermal and corrosion resistance.",
+        "uses": "High-end cable insulation, semiconductor fluid transport, lithium-battery binders, PV backsheet films.",
+        "tags": { "t1": "Tensile ≥45 MPa", "t2": "Continuous 200°C+", "t3": "Standard / high-flow" }
       }
     }
   },
   "industries": {
     "eyebrow": "Industries served",
-    "title": "Fluorine materials enabling critical processes across key industries",
-    "description": "Our fluorine materials enable critical processes and components across aerospace, semiconductor, new energy, chemicals, construction and pharmaceutical industries.",
+    "title": "High-end fluoropolymers enabling critical processes across key industries",
+    "description": "Our fluoropolymer products serve critical processes and extreme-condition components across semiconductor, new energy, automotive, aerospace, chemical and construction industries.",
     "items": {
       "batteries": {
         "name": "Lithium batteries / New energy",
-        "use": "Lithium-grade PVDF binders and separator coatings — for LFP and ternary cathode coating plus separator coating.",
-        "tags": { "t1": "PVDF binder", "t2": "Cathode coating", "t3": "Separator coating" }
+        "use": "PVDF lithium-grade binders and PV backsheet film — for Li-ion cathode coating, separator coating and PV module backsheet extrusion.",
+        "tags": { "t1": "PVDF binder", "t2": "PV backsheet film", "t3": "New energy" }
       },
       "semiconductor": {
-        "name": "Semiconductor / Electronics",
-        "use": "High-purity PFA parts, FEP cable insulation and HFBD etching gas — for wafer fab, packaging and high-frequency cabling.",
-        "tags": { "t1": "PFA parts", "t2": "FEP cables", "t3": "HFBD etch gas" }
+        "name": "Semiconductor / Vacuum equipment",
+        "use": "PFPE for vacuum-chamber lubrication, FEP/PFA for high-purity fluid transport, PTFE micropowder as precision release agent — covering wafer fab, etch and packaging.",
+        "tags": { "t1": "PFPE vacuum", "t2": "PFA fluid lines", "t3": "PTFE release" }
+      },
+      "automotive": {
+        "name": "Automotive / Fuel systems",
+        "use": "FKM fluoroelastomers in automotive fuel-system seals, O-rings and fuel-line fittings — fuel-resistant, high-temperature, low volume swell.",
+        "tags": { "t1": "Fuel seals", "t2": "O-rings", "t3": "High-temp oil resistant" }
       },
       "coatings": {
-        "name": "Coatings / Anti-corrosion",
-        "use": "Fluororesins (JF / ZHM / ZHT) and PTFE / PVDF coating dispersions — high-weatherability, high-corrosion-resistance formulations.",
-        "tags": { "t1": "Weather-resistant", "t2": "Corrosion-resistant", "t3": "PVDF FC coatings" }
+        "name": "Coatings / Inks / Engineering plastics",
+        "use": "PTFE micropowder for wear-modification in inks and coatings; self-lubricating additive in PA / POM / PPS / PEEK engineering plastics.",
+        "tags": { "t1": "PTFE micropowder", "t2": "Plastic modification", "t3": "Premium coatings" }
       },
       "construction": {
-        "name": "Construction / Bridges / Solar",
-        "use": "Fluorocarbon resins (JF / ZHM) for building façades, bridge steel structures and solar backsheets; PVDF FR906W for PV backsheet film extrusion.",
-        "tags": { "t1": "Building facades", "t2": "Bridges", "t3": "PV backsheets" }
+        "name": "Construction / Water / Solar",
+        "use": "PVDF for building-façade fluorocarbon coatings, water-treatment ultrafiltration membranes and PV backsheets — high weatherability, corrosion resistance, long service life.",
+        "tags": { "t1": "FC coatings", "t2": "UF membranes", "t3": "PV backsheets" }
       },
-      "pharma": {
-        "name": "Pharma / Agrochemicals",
-        "use": "HFIP (sevoflurane feedstock), HFA·3H₂O, BPAF and other fluorine fine chemicals — for pharmaceutical and agrochemical intermediates.",
-        "tags": { "t1": "Pharma intermediate", "t2": "Agro intermediate", "t3": "Fine chemicals" }
-      },
-      "energy": {
-        "name": "Chemicals / Energy / High-temp",
-        "use": "Perfluoroether (FFKM), FEP, PFA and FKM rubbers — for chemical equipment, valves, seals and high-temperature piping.",
-        "tags": { "t1": "FFKM seals", "t2": "Chemical valves", "t3": "High-temp piping" }
+      "aerospace": {
+        "name": "Aerospace / Petrochemical",
+        "use": "PFPE for heavy-load bearings and oxygen-environment lubrication, FFKM for aerospace seals, FKM for petrochemical pipe linings — core solutions for extreme service conditions.",
+        "tags": { "t1": "FFKM seals", "t2": "PFPE lubrication", "t3": "Petro piping" }
       }
     }
   },
   "whyUs": {
     "eyebrow": "Why choose us",
     "title": "4 differentiators · Creating value with global customers",
-    "description": "From R&D and production to compliance and global supply — our complete fluorine chain makes us a long-term, reliable partner.",
+    "description": "Deep industry expertise · Global trade network · Diverse product matrix — making us a long-term, reliable fluoropolymer partner for our customers.",
     "items": {
       "supply": {
-        "title": "Complete fluorine chain",
-        "description": "From fluorine monomers to fine chemicals — one supplier covers customers' entire fluorine sourcing scope, eliminating multi-vendor coordination overhead."
+        "title": "One-stop sourcing",
+        "description": "Full coverage across PTFE micropowder, PFPE, FKM/FFKM, FEP/PFA and PVDF — one supplier for the entire fluoropolymer sourcing scope, eliminating multi-vendor coordination overhead."
       },
       "spec": {
-        "title": "Custom R&D capability",
-        "description": "60+ years of technical depth and a full R&D pipeline — we customize special fluorine products and co-develop new grades with customers."
+        "title": "Decades of expertise",
+        "description": "Our sales and technical team understands fluorine materials at the physical-chemistry and application-scenario level — delivering forward-looking material recommendations, not just quotations."
       },
       "compliance": {
-        "title": "A-share listed · Compliance",
-        "description": "Listed on the Shanghai Stock Exchange A-share market (600636) with a complete financial and compliance framework — transparent, long-term operations."
+        "title": "Diverse grades · High quality",
+        "description": "Standard, specialty and custom grades — from regular PTFE micropowder to custom-spec PFPE oils, we cover the special-need scenarios most suppliers cannot."
       },
       "logistics": {
-        "title": "5 production bases",
-        "description": "Shanghai + 3 sites in Changshu (Jiangsu) + Inner Mongolia + Fujian — a nationwide footprint backing stable supply and global export capacity."
+        "title": "Global trade · Efficient compliance",
+        "description": "Deep knowledge of fluoropolymer trade regulations, logistics chains and customs policies — efficient and compliant handling of samples, orders and global shipping for any customer worldwide."
       }
     }
   },
   "preview": {
     "eyebrow": "Featured products",
-    "title": "Featured grades at a glance",
-    "description": "A snapshot of our most-shipped grades — spanning lithium batteries, solar, semiconductor and chemical applications.",
+    "title": "Flagship grades at a glance",
+    "description": "Representative grades from our 5 product families — covering wear modification, wide-temperature lubrication and extreme-condition sealing.",
     "items": {
       "a": {
-        "name": "FR909W (Lithium-grade PVDF)",
-        "description": "Emulsion-homopolymer LFP cathode binder — fast dissolution and high adhesion, widely used in LFP systems.",
-        "spec": "Particle ≤30 μm · Rotational viscosity 10000~20000",
-        "cta": "View grade"
+        "name": "PTFE micropowder (D50 1~20 μm)",
+        "description": "Precise particle size, low volatiles (<0.2%) and high dispersibility — the go-to additive for ink/coating wear modification and engineering-plastic self-lubrication.",
+        "spec": "Crystallinity 92~98% · Friction coefficient <0.05",
+        "cta": "View product"
       },
       "b": {
-        "name": "FR906W (PV-backsheet PVDF)",
-        "description": "Pioneer of domestic PV-backsheet PVDF, in stable use for over a decade — significantly extending backsheet service life.",
-        "spec": "MFI 8~30 · Tm 162~172°C",
-        "cta": "View grade"
+        "name": "PFPE perfluoropolyether oil",
+        "description": "Viscosity range 15~1600 cSt — the ultimate lubrication solution for semiconductor vacuum chambers, heavy-load bearings and oxygen-rich environments.",
+        "spec": "Service temp −50~300°C+ · Vapor pressure ~10⁻¹² Torr",
+        "cta": "View product"
       },
       "c": {
-        "name": "PFE4015 (FFKM seals)",
-        "description": "Perfluoroether elastomer (FFKM) raw rubber — service −10~230°C, broadest resistance against corrosive media.",
-        "spec": "Fluorine 72.5% · Mooney 55",
-        "cta": "View grade"
+        "name": "FKM / FFKM fluoroelastomer",
+        "description": "Standard, specialty low-temp and chemical-resistant raw and compounded rubbers — the preferred choice for automotive fuel, petrochemical and aerospace seals.",
+        "spec": "Long-term 200°C+ · Shore 50A~95A · Tensile >20 MPa",
+        "cta": "View product"
       }
     },
-    "footer": "Browse the full catalog — 130+ grades across 55 series"
+    "footer": "Browse the full catalog — multi-grade, multi-family, custom-capable"
   },
   "contact": {
     "eyebrow": "Get in touch",
     "title": "Inquiries & technical consulting · We respond within 24 hours",
-    "description": "Whether you need product sourcing, technical-data inquiries or custom development, please reach us through any of the channels below.",
+    "description": "Whether you need standard-grade sourcing, technical-data inquiries or custom-spec development — please reach us through any of the channels below.",
     "infoTitle": "Contact info",
     "info": {
-      "address": { "label": "HQ address", "value": "Hualun Building, No. 560 Xujiahui Road, Huangpu District, Shanghai" },
-      "email": { "label": "Email", "value": "info@3fchem.com" },
-      "sales": { "label": "HQ phone", "value": "+86 (021) 2353-6233" },
-      "support": { "label": "Technical support", "value": "+86 (021) 2353-6232" }
+      "address": { "label": "Company address", "value": "Shanghai · [district / street] · TBD" },
+      "email": { "label": "Email", "value": "info@rongshengke.com" },
+      "sales": { "label": "Sales hotline", "value": "+86 (021) · TBD" },
+      "support": { "label": "Technical support", "value": "+86 (021) · TBD" }
     },
     "wechat": {
       "title": "Scan for technical support",
@@ -191,7 +191,7 @@
       "name": "Your name",
       "company": "Company",
       "email": "Email",
-      "product": "Product of interest (series / grade)",
+      "product": "Product of interest (family / grade)",
       "quantity": "Estimated quantity",
       "message": "Additional details",
       "submit": "Submit inquiry",
@@ -205,12 +205,12 @@
     }
   },
   "footer": {
-    "tagline": "Shanghai Huayi 3F New Materials Co., Ltd. — complete-chain fluorine materials supplier with 60+ years of expertise and 5 production bases.",
+    "tagline": "Shanghai Rongshengke — a trusted global supplier of high-performance fluoropolymers, specialized in PTFE micropowder, PFPE oils, fluoroelastomers and more.",
     "nav": "Navigation",
     "contact": "Contact",
-    "address": "Hualun Building, No. 560 Xujiahui Road, Shanghai",
+    "address": "Shanghai · [district / street] · TBD",
     "rights": "All rights reserved.",
-    "legal": "Stock Code: 600636 · ICP number — TBD"
+    "legal": "ICP filing · TBD"
   },
   "themeSwitcher": {
     "buttonLabel": "Switch theme",
@@ -227,7 +227,7 @@
   "products": {
     "eyebrow": "Product center",
     "title": "Full product catalog",
-    "subtitle": "Covering fluororesin, fluoroelastomer, PVDF, PTFE, FEP, PFA and fluorine fine chemicals — one-stop access to every grade, spec and technical data sheet.",
+    "subtitle": "Covering PTFE micropowder, PFPE oils, FKM/FFKM fluoroelastomers, FEP/PFA and PVDF — one-stop access to every grade, spec and technical data sheet.",
     "categoryEyebrow": "Category",
     "categoryDescription": "{count} product series in this category — click into a series to see all of its grades and technical specs.",
     "seriesCount": "Series",

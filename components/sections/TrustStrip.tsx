@@ -15,8 +15,8 @@ const ITEMS = [
 // we don't have permission to display partner brand marks. Worded compactly
 // because they scroll in a marquee.
 const SEGMENTS = {
-  zh: ["新能源 / 锂电", "光伏背板", "半导体", "高频通信", "化工与油气", "医药与农药", "建筑与桥梁", "航空航天"],
-  en: ["New energy / Li-ion", "PV backsheet", "Semiconductor", "High-frequency comms", "Chemicals & oil/gas", "Pharma & agro", "Construction & bridges", "Aerospace"],
+  zh: ["锂电 / 新能源", "半导体真空", "汽车燃油", "石化管道", "航空航天", "光伏背板", "工程塑料", "高端涂料"],
+  en: ["Li-ion / New energy", "Semiconductor vacuum", "Automotive fuel", "Petrochemical piping", "Aerospace", "PV backsheet", "Engineering plastics", "Premium coatings"],
 } as const;
 
 export function TrustStrip() {
