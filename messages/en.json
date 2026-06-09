@@ -25,16 +25,6 @@
       "markets": { "label": "Continents served", "value": "5+" }
     }
   },
-  "trustStrip": {
-    "tagline": "Decades of fluorine expertise · Global trade network · One-stop sourcing",
-    "items": {
-      "iso": "Decades of fluorine-industry experience",
-      "reach": "Mature international trade system",
-      "care": "Forward-looking material consultation",
-      "ports": "Compliant, efficient import/export"
-    },
-    "logosLabel": "Industries served"
-  },
   "overview": {
     "eyebrow": "Company profile",
     "title": "A trusted global supplier of high-performance fluoropolymers",

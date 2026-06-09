@@ -25,16 +25,6 @@
       "markets": { "label": "服务大洲", "value": "5+" }
     }
   },
-  "trustStrip": {
-    "tagline": "数十年实战经验 · 全球贸易网络 · 一站式选材方案",
-    "items": {
-      "iso": "数十年氟材料行业经验",
-      "reach": "成熟国际贸易体系",
-      "care": "前瞻性选材建议",
-      "ports": "进出口合规高效运营"
-    },
-    "logosLabel": "服务客户领域"
-  },
   "overview": {
     "eyebrow": "公司概况",
     "title": "全球氟聚合物领域 · 值得信赖的供应商",

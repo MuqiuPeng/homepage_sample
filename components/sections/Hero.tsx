@@ -12,7 +12,6 @@ import {
 import { useTranslations } from "next-intl";
 import { LinkButton } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
-import { TrustStrip } from "@/components/sections/TrustStrip";
 
 const FLOATING_ICONS = [
   { icon: Atom, top: "10%", left: "6%", delay: 0 },
@@ -28,15 +27,13 @@ export function Hero() {
   const titleWords = titleText.split(" ");
 
   return (
-    // Hero panel sizing budget (must add up to ≤ 100svh so the snap-scroll
-    // controller doesn't have to fight content that overflows the fold):
-    //   sticky header        72 px
-    //   hero top padding     pt-24 = 96 px   (was pt-32 = 128 px)
-    //   text column / visual content
-    //   trust strip          ~210 px         (was ~260 px after tightening)
-    //   hero bottom padding  pb-8  = 32 px   (was pb-10 = 40 px)
-    // At a 1440×900 laptop that leaves ~490 px for the central content, which
-    // is what the visual column (h-[480px]) and the text column collapse to.
+    // Hero panel sizing budget at 1440×900: sticky header (72) + top padding
+    // (pt-24 = 96) + content + bottom padding (pb-8 = 32). The trust-strip
+    // band that used to live at the bottom of this section was redundant
+    // (its 4 chips repeated WhyUs, its industry marquee repeated Industries,
+    // its tagline restated this section's own description) so it was removed.
+    // `lg:justify-center` on the inner flex-1 wrapper centres the remaining
+    // text+visual content in the freed-up vertical space.
     <section
       id="hero"
       className="relative overflow-hidden pt-20 pb-6 sm:pt-24 sm:pb-7 lg:pt-24 lg:pb-8 snap-start min-h-svh flex flex-col"
@@ -157,7 +154,6 @@ export function Hero() {
         </div>
         </div>
       </div>
-      <TrustStrip />
     </section>
   );
 }
