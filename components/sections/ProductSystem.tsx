@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -81,27 +81,34 @@ export function ProductSystem({ categories }: Props) {
                       </div>
                     </dl>
 
-                    {/* Sample series names */}
+                    {/* Sample series — sub-items under the category, listed
+                        rather than shown as tags (they aren't taxonomy tags). */}
                     {c.sampleSeries.length > 0 && (
                       <div className="mt-5 rounded-2xl border border-brand-100/70 bg-gradient-to-br from-brand-50/60 to-surface-strong/55 p-4">
                         <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-brand-700">
-                          {t("useCasesLabel")}
+                          {t("seriesLabel")}
                         </p>
-                        <ul className="mt-2 flex flex-wrap gap-1.5">
+                        <ul className="mt-2 flex flex-col divide-y divide-brand-100/60">
                           {c.sampleSeries.slice(0, 4).map((s) => (
                             <li
                               key={s.id}
-                              className="rounded-full border border-brand-200/70 bg-brand-50/60 px-2.5 py-0.5 text-xs font-medium text-brand-700"
+                              className="flex items-center gap-1.5 py-1.5 text-sm text-ink-muted first:pt-0 last:pb-0"
                             >
-                              {pickI18n(s.name, locale)}
+                              <ChevronRight
+                                className="h-3.5 w-3.5 shrink-0 text-brand-400"
+                                strokeWidth={2.4}
+                              />
+                              <span className="truncate">
+                                {pickI18n(s.name, locale)}
+                              </span>
                             </li>
                           ))}
-                          {c.sampleSeries.length > 4 && (
-                            <li className="rounded-full px-2 py-0.5 text-xs text-ink-faint">
-                              +{c.sampleSeries.length - 4}
-                            </li>
-                          )}
                         </ul>
+                        {c.sampleSeries.length > 4 && (
+                          <p className="mt-2 pl-5 text-xs text-ink-faint">
+                            +{c.sampleSeries.length - 4}
+                          </p>
+                        )}
                       </div>
                     )}
 
