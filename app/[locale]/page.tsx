@@ -11,7 +11,9 @@ import {
   getHomepageCategories,
 } from "@/lib/db/queries";
 
-export const dynamic = "force-static";
+// ISR: pre-render statically, then re-generate in the background at most
+// once every 60s so database edits show up without a redeploy.
+export const revalidate = 60;
 
 export default async function HomePage({
   params,
