@@ -32,7 +32,7 @@ export function ProductSystem({ categories }: Props) {
   return (
     <section
       id="products"
-      className="relative snap-start min-h-svh flex flex-col lg:justify-center px-4 py-24 sm:px-6 sm:py-28 lg:px-8 lg:py-32"
+      className="relative snap-start min-h-svh flex flex-col lg:justify-center px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-20"
     >
       <div className="mx-auto max-w-7xl">
         <SectionHeading
@@ -41,7 +41,7 @@ export function ProductSystem({ categories }: Props) {
           description={t("description")}
         />
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {categories.map((c, i) => {
             const visual = CATEGORY_VISUAL[c.id] ?? DEFAULT_VISUAL;
             const Icon = visual.icon;

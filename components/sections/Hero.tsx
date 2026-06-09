@@ -28,12 +28,21 @@ export function Hero() {
   const titleWords = titleText.split(" ");
 
   return (
+    // Hero panel sizing budget (must add up to ≤ 100svh so the snap-scroll
+    // controller doesn't have to fight content that overflows the fold):
+    //   sticky header        72 px
+    //   hero top padding     pt-24 = 96 px   (was pt-32 = 128 px)
+    //   text column / visual content
+    //   trust strip          ~210 px         (was ~260 px after tightening)
+    //   hero bottom padding  pb-8  = 32 px   (was pb-10 = 40 px)
+    // At a 1440×900 laptop that leaves ~490 px for the central content, which
+    // is what the visual column (h-[480px]) and the text column collapse to.
     <section
       id="hero"
-      className="relative overflow-hidden pt-20 pb-6 sm:pt-28 sm:pb-8 lg:pt-32 lg:pb-10 snap-start min-h-svh flex flex-col"
+      className="relative overflow-hidden pt-20 pb-6 sm:pt-24 sm:pb-7 lg:pt-24 lg:pb-8 snap-start min-h-svh flex flex-col"
     >
       <div className="flex flex-1 flex-col lg:justify-center">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:px-8">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:px-8">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
@@ -45,7 +54,7 @@ export function Hero() {
             {t("eyebrow")}
           </motion.div>
 
-          <h1 className="mt-6 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-ink-strong sm:text-5xl lg:text-[64px] lg:leading-[1.05]">
+          <h1 className="mt-5 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-ink-strong sm:text-5xl lg:text-[56px] lg:leading-[1.05]">
             {titleWords.map((word, i) => (
               <motion.span
                 key={i}
@@ -79,7 +88,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-            className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-ink-muted sm:text-lg"
+            className="mt-5 max-w-xl text-pretty text-sm leading-relaxed text-ink-muted sm:text-base"
           >
             {t("description")}
           </motion.p>
@@ -88,13 +97,13 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.65, ease: "easeOut" }}
-            className="mt-9 flex flex-wrap items-center gap-4"
+            className="mt-7 flex flex-wrap items-center gap-4"
           >
-            <LinkButton href="#products" variant="primary" className="px-7 py-3.5">
+            <LinkButton href="#products" variant="primary" className="px-6 py-3">
               {t("ctaPrimary")}
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </LinkButton>
-            <LinkButton href="#contact" variant="ghost" className="px-7 py-3.5">
+            <LinkButton href="#contact" variant="ghost" className="px-6 py-3">
               {t("ctaSecondary")}
             </LinkButton>
           </motion.div>
@@ -103,7 +112,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.85, ease: "easeOut" }}
-            className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-brand-100/60 pt-6"
+            className="mt-8 grid max-w-md grid-cols-3 gap-6 border-t border-brand-100/60 pt-5"
           >
             {(["experience", "suppliers", "markets"] as const).map((key) => (
               <div key={key}>
@@ -118,7 +127,7 @@ export function Hero() {
           </motion.dl>
         </div>
 
-        <div className="relative h-[420px] sm:h-[520px] lg:h-[560px]">
+        <div className="relative h-[360px] sm:h-[440px] lg:h-[480px]">
           <motion.div
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}

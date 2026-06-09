@@ -93,7 +93,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative snap-start min-h-svh flex flex-col lg:justify-center px-4 py-24 sm:px-6 sm:py-28 lg:px-8 lg:py-32"
+      className="relative snap-start min-h-svh flex flex-col lg:justify-center px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-20"
     >
       <div className="mx-auto max-w-7xl">
         <SectionHeading
@@ -102,7 +102,7 @@ export function Contact() {
           description={t("description")}
         />
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+        <div className="mt-10 grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
           <GlassCard className="!p-7 sm:!p-8">
             <h3 className="text-lg font-semibold text-ink-strong">
               {t("infoTitle")}

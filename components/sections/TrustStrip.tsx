@@ -27,20 +27,24 @@ export function TrustStrip() {
   // Rendered inside the Hero section as the bottom band — no top-level
   // <section> wrapper / snap point of its own.
   return (
+    // Trust strip lives inside the hero panel, so its overall height has a
+    // hard budget — we keep it ≤ ~210 px so the hero fits in 100svh on a
+    // 1440×900 laptop. Vertical rhythm tuned for that ceiling: shorter
+    // outer padding, tighter gaps between tagline / chips / marquee row.
     <div className="relative px-4 sm:px-6 lg:px-8">
       <RevealOnScroll>
-        <div className="mx-auto max-w-7xl rounded-3xl border border-white/65 bg-surface-glass px-6 py-5 backdrop-blur-xl shadow-glass sm:px-10 sm:py-6">
+        <div className="mx-auto max-w-7xl rounded-3xl border border-white/65 bg-surface-glass px-6 py-4 backdrop-blur-xl shadow-glass sm:px-10 sm:py-5">
           <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">
             {t("tagline")}
           </p>
 
-          <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+          <ul className="mt-4 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
             {ITEMS.map(({ key, icon: Icon }) => (
               <li
                 key={key}
-                className="flex items-center gap-3 rounded-2xl border border-brand-100/80 bg-gradient-to-br from-brand-50/70 to-surface-strong/60 px-4 py-3"
+                className="flex items-center gap-3 rounded-2xl border border-brand-100/80 bg-gradient-to-br from-brand-50/70 to-surface-strong/60 px-4 py-2.5"
               >
-                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-ink-onbrand shadow-brand-md">
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-ink-onbrand shadow-brand-md">
                   <Icon className="h-4 w-4" strokeWidth={2} />
                 </span>
                 <span className="text-sm font-medium leading-snug text-ink-strong">
@@ -50,7 +54,7 @@ export function TrustStrip() {
             ))}
           </ul>
 
-          <div className="mt-7 flex flex-col items-center gap-3 border-t border-brand-100/60 pt-6 sm:flex-row sm:gap-6">
+          <div className="mt-4 flex flex-col items-center gap-2.5 border-t border-brand-100/60 pt-4 sm:flex-row sm:gap-6">
             <span className="shrink-0 text-xs font-semibold uppercase tracking-[0.18em] text-ink-subtle">
               {t("logosLabel")}
             </span>
@@ -59,7 +63,7 @@ export function TrustStrip() {
                 {segments.map((name) => (
                   <span
                     key={name}
-                    className="text-base font-semibold tracking-wide text-ink-faint"
+                    className="text-sm font-semibold tracking-wide text-ink-faint"
                   >
                     {name}
                   </span>

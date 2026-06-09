@@ -33,7 +33,7 @@ export function Overview() {
   return (
     <section
       id="about"
-      className="relative snap-start min-h-svh flex flex-col lg:justify-center px-4 py-24 sm:px-6 sm:py-28 lg:px-8 lg:py-32"
+      className="relative snap-start min-h-svh flex flex-col lg:justify-center px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-20"
     >
       <div className="mx-auto max-w-7xl">
         <SectionHeading
@@ -42,7 +42,7 @@ export function Overview() {
           description={t("description")}
         />
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {BLOCKS.map(({ key, icon: Icon }, i) => (
             <RevealOnScroll key={key} delay={i * 0.08}>
               <GlassCard className="h-full" glow>
@@ -60,7 +60,7 @@ export function Overview() {
           ))}
         </div>
 
-        <RevealOnScroll delay={0.2} className="mt-14">
+        <RevealOnScroll delay={0.2} className="mt-10">
           <GlassCard className="!p-8 sm:!p-10">
             <dl className="grid grid-cols-2 gap-8 sm:grid-cols-4">
               {METRICS.map((m) => (

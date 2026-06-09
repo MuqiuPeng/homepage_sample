@@ -24,7 +24,7 @@ export function WhyUs() {
   return (
     <section
       id="why-us"
-      className="relative snap-start min-h-svh flex flex-col lg:justify-center px-4 py-24 sm:px-6 sm:py-28 lg:px-8 lg:py-32"
+      className="relative snap-start min-h-svh flex flex-col lg:justify-center px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-20"
     >
       <div className="mx-auto max-w-7xl">
         <SectionHeading
@@ -43,7 +43,7 @@ export function WhyUs() {
               transition: { staggerChildren: 0.08, delayChildren: 0.1 },
             },
           }}
-          className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
         >
           {ITEMS.map(({ key, icon: Icon }, i) => (
             <motion.div
