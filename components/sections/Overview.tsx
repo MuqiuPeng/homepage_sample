@@ -45,8 +45,8 @@ export function Overview() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {BLOCKS.map(({ key, icon: Icon }, i) => (
             <RevealOnScroll key={key} delay={i * 0.08}>
-              <GlassCard className="h-full" glow>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-ink-onbrand shadow-brand-md">
+              <GlassCard className="h-full">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-700 text-ink-onbrand">
                   <Icon className="h-5 w-5" />
                 </div>
                 <h3 className="mt-5 text-xl font-semibold text-ink-strong">

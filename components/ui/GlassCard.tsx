@@ -1,63 +1,41 @@
 "use client";
 
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { useRef, type ComponentPropsWithoutRef, type ReactNode } from "react";
+import { type ComponentPropsWithoutRef, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
 type Props = {
   children: ReactNode;
   className?: string;
+  /** No-op since the "plain mode" pass; kept so call sites compile. */
   tilt?: boolean;
+  /** No-op since the "plain mode" pass; kept so call sites compile. */
   glow?: boolean;
-} & Omit<ComponentPropsWithoutRef<typeof motion.div>, "children">;
+} & ComponentPropsWithoutRef<"div">;
 
+/**
+ * Card surface. Originally a frosted-glass + backdrop-blur + 3D-tilt + glow
+ * panel; flattened to a plain solid card with a thin border. The `tilt` and
+ * `glow` props are accepted but ignored — kept to avoid touching every
+ * existing call site.
+ */
 export function GlassCard({
   children,
   className,
-  tilt = false,
-  glow = false,
+  tilt: _tilt,
+  glow: _glow,
   ...rest
 }: Props) {
-  const ref = useRef<HTMLDivElement>(null);
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [6, -6]), {
-    stiffness: 220,
-    damping: 18,
-  });
-  const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-6, 6]), {
-    stiffness: 220,
-    damping: 18,
-  });
-
-  function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
-    if (!tilt) return;
-    const rect = e.currentTarget.getBoundingClientRect();
-    mouseX.set((e.clientX - rect.left) / rect.width - 0.5);
-    mouseY.set((e.clientY - rect.top) / rect.height - 0.5);
-  }
-
-  function handleMouseLeave() {
-    if (!tilt) return;
-    mouseX.set(0);
-    mouseY.set(0);
-  }
-
+  void _tilt;
+  void _glow;
   return (
-    <motion.div
-      ref={ref}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      style={tilt ? { rotateX, rotateY, transformStyle: "preserve-3d" } : undefined}
+    <div
       className={cn(
-        "gradient-border relative rounded-2xl border border-surface-strong/60 bg-surface-glass p-6 backdrop-blur-xl shadow-glass",
-        glow && "transition-shadow duration-500 hover:shadow-glass-lg",
+        "relative rounded-2xl border border-surface-strong bg-surface-card p-6",
         className,
       )}
       {...rest}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

@@ -28,7 +28,7 @@ export function LocaleToggle({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-1 rounded-full border border-white/70 bg-surface-glass p-1 backdrop-blur-md shadow-sm",
+        "inline-flex items-center gap-1 rounded-full border border-surface-strong bg-surface-card p-1",
         className,
       )}
       role="group"
@@ -44,7 +44,7 @@ export function LocaleToggle({ className }: { className?: string }) {
           className={cn(
             "rounded-full px-3 py-1 text-xs font-medium transition-all duration-300",
             l === locale
-              ? "bg-gradient-to-r from-brand-600 to-accent-500 text-ink-onbrand shadow-sm"
+              ? "bg-brand-700 text-ink-onbrand"
               : "text-ink-muted hover:text-ink-strong",
           )}
         >

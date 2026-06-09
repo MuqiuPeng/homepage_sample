@@ -49,9 +49,9 @@ export function Header() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.55, ease: "easeOut" }}
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-500",
+        "sticky top-0 z-50 w-full transition-colors duration-300",
         scrolled
-          ? "border-b border-white/40 bg-surface-glass backdrop-blur-xl shadow-glass"
+          ? "border-b border-surface-strong bg-bg/95"
           : "border-b border-transparent bg-transparent",
       )}
     >
@@ -61,9 +61,8 @@ export function Header() {
           className="group flex items-center gap-2.5"
           aria-label={t("brand")}
         >
-          <span className="relative grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-ink-onbrand shadow-brand-md transition-transform duration-300 group-hover:scale-105">
-            <Hexagon className="h-5 w-5 fill-accent-400/80 stroke-white" strokeWidth={2} />
-            <span className="absolute inset-0 rounded-xl bg-gradient-to-tr from-white/30 to-transparent opacity-60" />
+          <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-700 text-ink-onbrand">
+            <Hexagon className="h-5 w-5 stroke-white" strokeWidth={2} />
           </span>
           <span className="text-base font-semibold tracking-tight text-ink-strong">
             {t("brand")}
@@ -99,7 +98,7 @@ export function Header() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 place-items-center rounded-full border border-white/60 bg-surface-glass text-ink-strong backdrop-blur-md md:hidden"
+            className="grid h-10 w-10 place-items-center rounded-full border border-surface-strong bg-surface-card text-ink-strong md:hidden"
             aria-label="Toggle menu"
             aria-expanded={open}
           >
@@ -113,7 +112,7 @@ export function Header() {
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.25 }}
-          className="border-t border-white/50 bg-surface-card backdrop-blur-xl md:hidden"
+          className="border-t border-surface-strong bg-bg md:hidden"
         >
           <div className="flex flex-col gap-1 px-4 py-4">
             {NAV_ITEMS.map((item) =>

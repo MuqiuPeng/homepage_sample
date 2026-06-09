@@ -11,9 +11,9 @@ type Props = {
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-gradient-to-r from-brand-600 to-accent-500 text-ink-onbrand shadow-brand-md hover:shadow-brand-lg hover:from-brand-700 hover:to-accent-600",
+    "bg-brand-700 text-ink-onbrand hover:bg-brand-800",
   ghost:
-    "bg-surface-glass text-ink-strong border border-surface-strong/70 backdrop-blur-md hover:bg-surface-card hover:border-brand-200",
+    "bg-surface-card text-ink-strong border border-surface-strong hover:border-brand-300",
   outline:
     "bg-transparent text-brand-700 border border-brand-300 hover:bg-brand-50/80 hover:border-brand-500",
 };

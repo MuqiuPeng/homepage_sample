@@ -62,28 +62,21 @@ export function Industries() {
                 show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } },
               }}
             >
-              <GlassCard
-                glow
-                className="group relative h-full overflow-hidden !p-5 transition-transform duration-300 hover:-translate-y-1"
-              >
-                <div
-                  aria-hidden
-                  className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-to-br from-brand-300/40 to-accent-300/30 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100"
-                />
-                <div className="relative grid h-11 w-11 place-items-center rounded-xl border border-brand-200/70 bg-gradient-to-br from-brand-50 to-surface-strong text-brand-600 transition-transform duration-300 group-hover:scale-110">
+              <GlassCard className="relative h-full overflow-hidden !p-5">
+                <div className="grid h-11 w-11 place-items-center rounded-xl border border-brand-200/70 bg-brand-50 text-brand-600">
                   <Icon className="h-5 w-5" strokeWidth={1.8} />
                 </div>
-                <h3 className="relative mt-4 text-base font-semibold text-ink-strong">
+                <h3 className="mt-4 text-base font-semibold text-ink-strong">
                   {t(`items.${key}.name`)}
                 </h3>
-                <p className="relative mt-1.5 text-sm leading-snug text-ink-muted">
+                <p className="mt-1.5 text-sm leading-snug text-ink-muted">
                   {t(`items.${key}.use`)}
                 </p>
-                <ul className="relative mt-3 flex flex-wrap gap-1.5">
+                <ul className="mt-3 flex flex-wrap gap-1.5">
                   {(["t1", "t2", "t3"] as const).map((tk) => (
                     <li
                       key={tk}
-                      className="rounded-full border border-brand-200/60 bg-surface-glass px-2.5 py-0.5 text-xs font-medium text-brand-700"
+                      className="rounded-full border border-brand-200/60 bg-brand-50/60 px-2.5 py-0.5 text-xs font-medium text-brand-700"
                     >
                       {t(`items.${key}.tags.${tk}`)}
                     </li>

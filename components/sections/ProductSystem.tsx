@@ -50,9 +50,9 @@ export function ProductSystem({ categories }: Props) {
             return (
               <RevealOnScroll key={c.id} delay={i * 0.08} y={32}>
                 <Link href={`/products/${c.id}`} className="block h-full group">
-                  <GlassCard tilt glow className="h-full !p-7 sm:!p-8">
+                  <GlassCard className="h-full !p-7 sm:!p-8">
                     <div
-                      className={`grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br ${visual.accent} text-ink-onbrand shadow-brand-md`}
+                      className={`grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br ${visual.accent} text-ink-onbrand`}
                     >
                       <Icon className="h-6 w-6" strokeWidth={1.8} />
                     </div>
@@ -91,7 +91,7 @@ export function ProductSystem({ categories }: Props) {
                           {c.sampleSeries.slice(0, 4).map((s) => (
                             <li
                               key={s.id}
-                              className="rounded-full border border-brand-200/70 bg-surface-glass px-2.5 py-0.5 text-xs font-medium text-brand-700"
+                              className="rounded-full border border-brand-200/70 bg-brand-50/60 px-2.5 py-0.5 text-xs font-medium text-brand-700"
                             >
                               {pickI18n(s.name, locale)}
                             </li>
@@ -119,7 +119,7 @@ export function ProductSystem({ categories }: Props) {
         <div className="mt-10 text-center">
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 rounded-full border border-brand-300/60 bg-surface-glass px-6 py-2.5 text-sm font-medium text-brand-700 hover:bg-brand-50/60 hover:border-brand-500 transition-colors"
+            className="inline-flex items-center gap-2 rounded-full border border-brand-300/60 bg-surface-card px-6 py-2.5 text-sm font-medium text-brand-700 hover:bg-brand-50/60 hover:border-brand-500 transition-colors"
           >
             {tp("title")}
             <ArrowRight className="h-4 w-4" />

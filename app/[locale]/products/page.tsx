@@ -68,10 +68,7 @@ export default async function ProductsLandingPage({
                 href={`/products/${c.id}`}
                 className="group block"
               >
-                <GlassCard
-                  glow
-                  className="h-full !p-7 sm:!p-8 transition-transform duration-300 group-hover:-translate-y-1"
-                >
+                <GlassCard className="h-full !p-7 sm:!p-8">
                   <div
                     className={`grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br ${visual.accent} text-ink-onbrand shadow-brand-md`}
                   >

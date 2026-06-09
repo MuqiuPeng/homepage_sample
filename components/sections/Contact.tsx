@@ -110,7 +110,7 @@ export function Contact() {
             <ul className="mt-6 space-y-5">
               {INFO.map(({ icon: Icon, key }) => (
                 <li key={key} className="flex items-start gap-4">
-                  <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-ink-onbrand shadow-brand-md">
+                  <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-brand-700 text-ink-onbrand">
                     <Icon className="h-4 w-4" strokeWidth={2} />
                   </div>
                   <div>
@@ -253,7 +253,7 @@ export function Contact() {
             role="status"
             aria-live="polite"
           >
-            <div className="flex items-center gap-3 rounded-full border border-surface-strong/80 bg-surface-card px-5 py-3 shadow-glass-lg backdrop-blur-xl">
+            <div className="flex items-center gap-3 rounded-full border border-surface-strong bg-surface-card px-5 py-3 shadow-md">
               <CheckCircle2 className="h-5 w-5 text-emerald-500" />
               <span className="text-sm font-medium text-ink-strong">
                 {t("form.success")}
@@ -301,7 +301,7 @@ function FormField({
 
 function inputCls(invalid: boolean) {
   return cn(
-    "w-full rounded-xl border bg-surface-card px-4 py-2.5 text-sm text-ink-strong placeholder:text-ink-faint backdrop-blur-md transition-all duration-200",
+    "w-full rounded-xl border bg-surface-card px-4 py-2.5 text-sm text-ink-strong placeholder:text-ink-faint transition-all duration-200",
     "focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-offset-surface-strong/60",
     invalid
       ? "border-rose-300 focus:border-rose-400 focus:ring-rose-200"

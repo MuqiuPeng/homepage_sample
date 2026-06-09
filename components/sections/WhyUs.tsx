@@ -57,11 +57,11 @@ export function WhyUs() {
                 },
               }}
             >
-              <GlassCard glow className="group relative h-full overflow-hidden !p-6">
+              <GlassCard className="relative h-full overflow-hidden !p-6">
                 <span className="absolute right-4 top-4 text-xs font-semibold tracking-[0.18em] text-brand-300">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <div className="grid h-12 w-12 place-items-center rounded-xl border border-brand-200/70 bg-gradient-to-br from-brand-50 to-surface-strong text-brand-700 transition-transform duration-300 group-hover:scale-105">
+                <div className="grid h-12 w-12 place-items-center rounded-xl border border-brand-200/70 bg-brand-50 text-brand-700">
                   <Icon className="h-5 w-5" strokeWidth={1.8} />
                 </div>
                 <h3 className="mt-5 text-base font-semibold text-ink-strong">

@@ -37,10 +37,10 @@ export function SpecsTable({ schema, variants, locale, labels }: Props) {
   return (
     <>
       {/* Desktop table */}
-      <div className="hidden md:block overflow-x-auto rounded-2xl border border-brand-100/60 bg-surface-glass backdrop-blur-md">
+      <div className="hidden md:block overflow-x-auto rounded-2xl border border-brand-100/60 bg-surface-card">
         <table className="w-full text-sm">
           <thead>
-            <tr className="bg-gradient-to-br from-brand-600 to-brand-800 text-ink-onbrand">
+            <tr className="bg-brand-700 text-ink-onbrand">
               <th className="px-4 py-3 text-left font-semibold whitespace-nowrap">
                 {labels.testItems}
               </th>
@@ -121,9 +121,9 @@ export function SpecsTable({ schema, variants, locale, labels }: Props) {
         {variants.map((v) => (
           <div
             key={v.id}
-            className="rounded-2xl border border-brand-100/60 bg-surface-glass backdrop-blur-md overflow-hidden"
+            className="rounded-2xl border border-brand-100/60 bg-surface-card overflow-hidden"
           >
-            <div className="bg-gradient-to-br from-brand-600 to-brand-800 px-4 py-3 text-ink-onbrand">
+            <div className="bg-brand-700 px-4 py-3 text-ink-onbrand">
               <p className="text-base font-semibold">
                 {pickI18n(v.nameI18n, locale)}
               </p>

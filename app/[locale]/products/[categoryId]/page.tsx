@@ -84,10 +84,7 @@ export default async function CategoryPage({
                 href={`/products/${categoryId}/${s.id}`}
                 className="group block"
               >
-                <GlassCard
-                  glow
-                  className="h-full !p-6 sm:!p-7 transition-transform duration-300 group-hover:-translate-y-1"
-                >
+                <GlassCard className="h-full !p-6 sm:!p-7">
                   <h3 className="text-lg font-semibold text-ink-strong leading-snug">
                     {seriesName}
                   </h3>

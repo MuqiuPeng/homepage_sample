@@ -49,7 +49,7 @@ export function ThemeSwitcher({ className }: Props) {
         aria-label={t("buttonLabel")}
         aria-expanded={open}
         aria-haspopup="dialog"
-        className="grid h-9 w-9 place-items-center rounded-full border border-surface-strong/70 bg-surface-glass text-ink-muted backdrop-blur-md transition-colors hover:text-brand-700"
+        className="grid h-9 w-9 place-items-center rounded-full border border-surface-strong bg-surface-card text-ink-muted transition-colors hover:text-brand-700"
       >
         <Palette className="h-4 w-4" strokeWidth={1.8} />
       </button>
@@ -63,7 +63,7 @@ export function ThemeSwitcher({ className }: Props) {
             transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
             role="dialog"
             aria-label={t("title")}
-            className="absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-surface-strong/70 bg-surface-card p-2 shadow-glass-lg backdrop-blur-xl"
+            className="absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-surface-strong bg-surface-card p-2 shadow-md"
           >
             <div className="px-3 pt-2 pb-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-ink-subtle">
               {t("title")}

@@ -17,12 +17,12 @@ export function Footer() {
   const phone = tContact("sales.value");
 
   return (
-    <footer className="relative mt-24 border-t border-white/60 bg-surface-glass backdrop-blur-xl">
+    <footer className="relative mt-24 border-t border-surface-strong bg-surface-card">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 text-ink-onbrand shadow-brand-md">
-              <Hexagon className="h-5 w-5 fill-accent-400/80 stroke-white" strokeWidth={2} />
+            <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-700 text-ink-onbrand">
+              <Hexagon className="h-5 w-5 stroke-white" strokeWidth={2} />
             </span>
             <span className="text-base font-semibold text-ink-strong">
               {brand}
@@ -43,7 +43,7 @@ export function Footer() {
                 key={label}
                 href="#"
                 aria-label={label}
-                className="grid h-9 w-9 place-items-center rounded-full border border-white/70 bg-surface-glass text-ink-subtle transition-all duration-300 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
+                className="grid h-9 w-9 place-items-center rounded-full border border-surface-strong text-ink-subtle transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
               >
                 <Icon className="h-4 w-4" />
               </a>

@@ -92,10 +92,7 @@ export function ProductPreview({ variants }: Props) {
                   href={`/products/${v.categoryId}/${v.seriesId}`}
                   className="block h-full group"
                 >
-                  <GlassCard
-                    glow
-                    className="flex h-full flex-col overflow-hidden !p-0"
-                  >
+                  <GlassCard className="flex h-full flex-col overflow-hidden !p-0">
                     <ProductVisual kind={kind} />
                     <div className="flex flex-1 flex-col p-5">
                       <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-700">
@@ -112,9 +109,9 @@ export function ProductPreview({ variants }: Props) {
                           {tagText}
                         </p>
                       )}
-                      <span className="mt-auto pt-4 inline-flex items-center justify-between rounded-full border border-brand-200/70 bg-surface-glass px-4 py-2 text-xs font-semibold text-brand-700 transition-all duration-300 group-hover:border-brand-500 group-hover:bg-brand-50">
+                      <span className="mt-auto pt-4 inline-flex items-center justify-between rounded-full border border-brand-200/70 bg-brand-50/60 px-4 py-2 text-xs font-semibold text-brand-700 transition-colors duration-200 group-hover:border-brand-500 group-hover:bg-brand-50">
                         {tp("viewVariant")}
-                        <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                        <ArrowUpRight className="h-3.5 w-3.5" />
                       </span>
                     </div>
                   </GlassCard>
