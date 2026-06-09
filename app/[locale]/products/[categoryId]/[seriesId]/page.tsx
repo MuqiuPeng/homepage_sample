@@ -18,8 +18,10 @@ import type {
   SpecsSchemaEntry,
 } from "@/lib/db/schema";
 
-export const dynamic = "force-static";
-export const dynamicParams = false;
+// ISR: re-generate at most once every 60s. `dynamicParams = true` lets
+// series added to the DB after build render on first request instead of 404.
+export const revalidate = 60;
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   return getAllSeriesParams();

@@ -11,8 +11,10 @@ import {
 } from "@/lib/db/queries";
 import { pickI18n, pickI18nList, type Locale } from "@/lib/i18n-helpers";
 
-export const dynamic = "force-static";
-export const dynamicParams = false;
+// ISR: re-generate at most once every 60s. `dynamicParams = true` lets
+// categories added to the DB after build render on first request instead of 404.
+export const revalidate = 60;
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const ids = await getAllCategoryIds();

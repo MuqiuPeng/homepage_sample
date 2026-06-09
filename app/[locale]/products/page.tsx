@@ -15,8 +15,9 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getCategoriesWithCounts } from "@/lib/db/queries";
 import { pickI18n, type Locale } from "@/lib/i18n-helpers";
 
-// Statically pre-render at build time; revalidate on demand by re-deploying.
-export const dynamic = "force-static";
+// ISR: pre-render statically, then re-generate at most once every 60s so
+// database edits show up without a redeploy.
+export const revalidate = 60;
 
 /**
  * Visual icon + accent palette per category. Kept local because it's pure
