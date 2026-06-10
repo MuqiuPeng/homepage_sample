@@ -258,6 +258,41 @@ export async function getFeaturedVariants(): Promise<
  * Sort order: by variant count descending (most-stocked categories first),
  * stable tie-break by id.
  */
+type I18nStr = { zh: string; en: string };
+
+/** First clause of a string — up to the first CJK/ASCII sentence terminator. */
+function firstSentence(s: string): string {
+  const m = s.match(/^[^。．.!！?？\n]+/);
+  return (m ? m[0] : s).trim();
+}
+
+/**
+ * A short, newcomer-friendly subtitle for a homepage series row: its top
+ * applications ("用途"), falling back to the chemistry/composition, then the
+ * first sentence of the description. A bare product code like "FE2462" means
+ * nothing to a first-time visitor — this gives it meaning. Returns null when
+ * the series has none of these fields.
+ */
+function seriesSummary(
+  apps: { zh?: string[]; en?: string[] } | null,
+  comp: I18nStr | null,
+  desc: I18nStr | null,
+): I18nStr | null {
+  const pick = (lang: "zh" | "en"): string => {
+    const a = apps?.[lang];
+    if (a && a.length > 0) return a.slice(0, 2).join(" · ");
+    const c = comp?.[lang]?.trim();
+    if (c) return c;
+    const d = desc?.[lang]?.trim();
+    if (d) return firstSentence(d);
+    return "";
+  };
+  const zh = pick("zh");
+  const en = pick("en");
+  if (!zh && !en) return null;
+  return { zh, en };
+}
+
 export async function getHomepageCategories(
   limit = 3,
 ): Promise<
@@ -266,7 +301,11 @@ export async function getHomepageCategories(
     name: { zh: string; en: string };
     seriesCount: number;
     variantsCount: number;
-    sampleSeries: Array<{ id: string; name: { zh: string; en: string } }>;
+    sampleSeries: Array<{
+      id: string;
+      name: { zh: string; en: string };
+      summary: { zh: string; en: string } | null;
+    }>;
   }>
 > {
   const cats = await getCategoriesWithCounts();
@@ -277,7 +316,13 @@ export async function getHomepageCategories(
   return Promise.all(
     top.map(async (c) => {
       const seriesRows = await db
-        .select({ id: series.id, name: series.nameI18n })
+        .select({
+          id: series.id,
+          name: series.nameI18n,
+          applications: series.applicationsI18n,
+          composition: series.compositionI18n,
+          description: series.descriptionI18n,
+        })
         .from(series)
         .where(and(eq(series.categoryId, c.id), eq(series.isPublished, true)))
         .orderBy(asc(series.sortOrder), asc(series.id))
@@ -290,7 +335,12 @@ export async function getHomepageCategories(
         variantsCount: c.variantsCount,
         sampleSeries: seriesRows.map((s) => ({
           id: s.id,
-          name: s.name as { zh: string; en: string },
+          name: s.name as I18nStr,
+          summary: seriesSummary(
+            s.applications as { zh?: string[]; en?: string[] } | null,
+            s.composition as I18nStr | null,
+            s.description as I18nStr | null,
+          ),
         })),
       };
     }),
