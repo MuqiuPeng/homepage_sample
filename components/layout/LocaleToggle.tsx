@@ -28,7 +28,7 @@ export function LocaleToggle({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-1 rounded-full border border-surface-strong bg-surface-card p-1",
+        "inline-flex items-center gap-1 rounded-md border border-surface-strong bg-surface-card p-1",
         className,
       )}
       role="group"
@@ -42,7 +42,7 @@ export function LocaleToggle({ className }: { className?: string }) {
           aria-pressed={l === locale}
           aria-label={`Switch to ${l === "zh" ? "Chinese" : "English"}`}
           className={cn(
-            "rounded-full px-3 py-1 text-xs font-medium transition-all duration-300",
+            "rounded-md px-3 py-1 text-xs font-medium transition-all duration-300",
             l === locale
               ? "bg-brand-700 text-ink-onbrand"
               : "text-ink-muted hover:text-ink-strong",

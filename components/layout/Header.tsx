@@ -36,7 +36,7 @@ export function Header() {
   });
 
   const navItemClasses =
-    "group relative rounded-full px-4 py-2 text-sm font-medium text-ink-muted transition-colors hover:text-brand-700";
+    "group relative rounded-md px-4 py-2 text-sm font-medium text-ink-muted transition-colors hover:text-brand-700";
   const navItemUnderline =
     "pointer-events-none absolute inset-x-3 -bottom-px h-px scale-x-0 rounded-full bg-gradient-to-r from-brand-500 to-accent-500 transition-transform duration-300 group-hover:scale-x-100";
 
@@ -98,7 +98,7 @@ export function Header() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 place-items-center rounded-full border border-surface-strong bg-surface-card text-ink-strong md:hidden"
+            className="grid h-10 w-10 place-items-center rounded-md border border-surface-strong bg-surface-card text-ink-strong md:hidden"
             aria-label="Toggle menu"
             aria-expanded={open}
           >

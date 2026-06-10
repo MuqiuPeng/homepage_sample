@@ -49,7 +49,7 @@ export function ThemeSwitcher({ className }: Props) {
         aria-label={t("buttonLabel")}
         aria-expanded={open}
         aria-haspopup="dialog"
-        className="grid h-9 w-9 place-items-center rounded-full border border-surface-strong bg-surface-card text-ink-muted transition-colors hover:text-brand-700"
+        className="grid h-9 w-9 place-items-center rounded-md border border-surface-strong bg-surface-card text-ink-muted transition-colors hover:text-brand-700"
       >
         <Palette className="h-4 w-4" strokeWidth={1.8} />
       </button>

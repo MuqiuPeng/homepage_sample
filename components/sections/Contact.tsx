@@ -253,7 +253,7 @@ export function Contact() {
             role="status"
             aria-live="polite"
           >
-            <div className="flex items-center gap-3 rounded-full border border-surface-strong bg-surface-card px-5 py-3 shadow-md">
+            <div className="flex items-center gap-3 rounded-md border border-surface-strong bg-surface-card px-5 py-3 shadow-md">
               <CheckCircle2 className="h-5 w-5 text-emerald-500" />
               <span className="text-sm font-medium text-ink-strong">
                 {t("form.success")}
