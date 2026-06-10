@@ -177,7 +177,7 @@ export function ProductSystem({ categories }: Props) {
         <div className="mt-10 text-center">
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 rounded-full border border-brand-300/60 bg-surface-card px-6 py-2.5 text-sm font-medium text-brand-700 hover:bg-brand-50/60 hover:border-brand-500 transition-colors"
+            className="inline-flex items-center gap-2 rounded-md border border-brand-300/60 bg-surface-card px-6 py-2.5 text-sm font-medium text-brand-700 hover:bg-brand-50/60 hover:border-brand-500 transition-colors"
           >
             {tp("title")}
             <ArrowRight className="h-4 w-4" />

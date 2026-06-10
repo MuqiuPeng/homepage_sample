@@ -76,7 +76,7 @@ export function Industries() {
                   {(["t1", "t2", "t3"] as const).map((tk) => (
                     <li
                       key={tk}
-                      className="rounded-full border border-brand-200/60 bg-brand-50/60 px-2.5 py-0.5 text-xs font-medium text-brand-700"
+                      className="rounded-md border border-brand-200/60 bg-brand-50/60 px-2.5 py-0.5 text-xs font-medium text-brand-700"
                     >
                       {t(`items.${key}.tags.${tk}`)}
                     </li>

@@ -45,6 +45,12 @@
   --shadow-brand-md: 0 8px 24px color-mix(in srgb, var(--color-brand-700) 35%, transparent);
   --shadow-brand-lg: 0 12px 36px color-mix(in srgb, var(--color-brand-700) 50%, transparent);
 
+  /* Radius — tightened for a more serious, less pill-like UI. Cards, tiles
+     and inputs all resolve through these tokens; buttons use rounded-md. */
+  --radius-lg:  0.3125rem;
+  --radius-xl:  0.375rem;
+  --radius-2xl: 0.5rem;
+
   --font-sans: var(--font-inter), var(--font-noto-sc), ui-sans-serif, system-ui, sans-serif;
 
   --animate-blob: blob 22s ease-in-out infinite;

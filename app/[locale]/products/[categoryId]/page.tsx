@@ -102,14 +102,14 @@ export default async function CategoryPage({
                       {applications.slice(0, 3).map((app, i) => (
                         <li
                           key={i}
-                          className="inline-flex items-center gap-1 rounded-full border border-brand-200/60 bg-brand-50/40 px-2 py-0.5 text-[11px] font-medium text-brand-700"
+                          className="inline-flex items-center gap-1 rounded-md border border-brand-200/60 bg-brand-50/40 px-2 py-0.5 text-[11px] font-medium text-brand-700"
                         >
                           <Tag className="h-2.5 w-2.5" strokeWidth={2.2} />
                           {app}
                         </li>
                       ))}
                       {applications.length > 3 && (
-                        <li className="rounded-full px-2 py-0.5 text-[11px] text-ink-faint">
+                        <li className="rounded-md px-2 py-0.5 text-[11px] text-ink-faint">
                           +{applications.length - 3}
                         </li>
                       )}

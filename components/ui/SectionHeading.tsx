@@ -33,7 +33,7 @@ export function SectionHeading({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="inline-flex items-center gap-2 rounded-full border border-brand-200/70 bg-brand-50/60 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-brand-700"
+          className="inline-flex items-center gap-2 rounded-md border border-brand-200/70 bg-brand-50/60 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-brand-700"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
           {eyebrow}

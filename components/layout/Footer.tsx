@@ -43,7 +43,7 @@ export function Footer() {
                 key={label}
                 href="#"
                 aria-label={label}
-                className="grid h-9 w-9 place-items-center rounded-full border border-surface-strong text-ink-subtle transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
+                className="grid h-9 w-9 place-items-center rounded-md border border-surface-strong text-ink-subtle transition-colors duration-200 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
               >
                 <Icon className="h-4 w-4" />
               </a>

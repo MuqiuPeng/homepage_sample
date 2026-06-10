@@ -109,7 +109,7 @@ export function ProductPreview({ variants }: Props) {
                           {tagText}
                         </p>
                       )}
-                      <span className="mt-auto pt-4 inline-flex items-center justify-between rounded-full border border-brand-200/70 bg-brand-50/60 px-4 py-2 text-xs font-semibold text-brand-700 transition-colors duration-200 group-hover:border-brand-500 group-hover:bg-brand-50">
+                      <span className="mt-auto pt-4 inline-flex items-center justify-between rounded-md border border-brand-200/70 bg-brand-50/60 px-4 py-2 text-xs font-semibold text-brand-700 transition-colors duration-200 group-hover:border-brand-500 group-hover:bg-brand-50">
                         {tp("viewVariant")}
                         <ArrowUpRight className="h-3.5 w-3.5" />
                       </span>

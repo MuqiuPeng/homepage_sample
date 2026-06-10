@@ -30,7 +30,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="inline-flex items-center rounded-full border border-brand-200/70 bg-brand-50/60 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-brand-700"
+            className="inline-flex items-center rounded-md border border-brand-200/70 bg-brand-50/60 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-brand-700"
           >
             {t("eyebrow")}
           </motion.div>
