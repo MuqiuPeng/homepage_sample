@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -10,6 +11,7 @@ import {
   CATEGORY_VISUAL,
   DEFAULT_VISUAL,
 } from "@/components/products/category-visual";
+import { cn } from "@/lib/cn";
 import { pickI18n, type Locale } from "@/lib/i18n-helpers";
 
 export type HomepageCategory = {
@@ -17,8 +19,77 @@ export type HomepageCategory = {
   name: { zh: string; en: string };
   seriesCount: number;
   variantsCount: number;
-  sampleSeries: Array<{ id: string; name: { zh: string; en: string } }>;
+  sampleSeries: Array<{
+    id: string;
+    name: { zh: string; en: string };
+    summary: { zh: string; en: string } | null;
+  }>;
 };
+
+/**
+ * Collapsible list of a category's series. Collapsed by default so the card
+ * stays compact; expands to a two-line list — product code on top, a small
+ * grey use-case subtitle below. Lives inside the card's <Link>, so the toggle
+ * swallows the click to avoid navigating to the category page.
+ */
+function SeriesDisclosure({
+  label,
+  series,
+  locale,
+}: {
+  label: string;
+  series: HomepageCategory["sampleSeries"];
+  locale: Locale;
+}) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="mt-5 rounded-2xl border border-brand-100/70 bg-gradient-to-br from-brand-50/60 to-surface-strong/55 p-4">
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          setOpen((v) => !v);
+        }}
+        className="flex w-full items-center justify-between gap-2"
+      >
+        <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-brand-700">
+          {label}
+          <span className="ml-1.5 text-ink-faint">{series.length}</span>
+        </span>
+        <ChevronDown
+          className={cn(
+            "h-4 w-4 shrink-0 text-brand-500 transition-transform duration-300",
+            open && "rotate-180",
+          )}
+          strokeWidth={2.2}
+        />
+      </button>
+
+      {open && (
+        <ul className="mt-3 flex flex-col divide-y divide-brand-100/60">
+          {series.map((s) => {
+            const summary = s.summary ? pickI18n(s.summary, locale) : null;
+            return (
+              <li key={s.id} className="py-2 first:pt-0 last:pb-0">
+                <p className="text-sm font-medium text-ink-strong">
+                  {pickI18n(s.name, locale)}
+                </p>
+                {summary && (
+                  <p className="mt-0.5 line-clamp-1 text-xs leading-snug text-ink-faint">
+                    {summary}
+                  </p>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </div>
+  );
+}
 
 type Props = {
   categories: HomepageCategory[];
@@ -81,35 +152,15 @@ export function ProductSystem({ categories }: Props) {
                       </div>
                     </dl>
 
-                    {/* Sample series — sub-items under the category, listed
-                        rather than shown as tags (they aren't taxonomy tags). */}
+                    {/* Series — sub-items under the category. Collapsed by
+                        default; each row pairs the product code with a small
+                        use-case subtitle so a code alone isn't just noise. */}
                     {c.sampleSeries.length > 0 && (
-                      <div className="mt-5 rounded-2xl border border-brand-100/70 bg-gradient-to-br from-brand-50/60 to-surface-strong/55 p-4">
-                        <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-brand-700">
-                          {t("seriesLabel")}
-                        </p>
-                        <ul className="mt-2 flex flex-col divide-y divide-brand-100/60">
-                          {c.sampleSeries.slice(0, 4).map((s) => (
-                            <li
-                              key={s.id}
-                              className="flex items-center gap-1.5 py-1.5 text-sm text-ink-muted first:pt-0 last:pb-0"
-                            >
-                              <ChevronRight
-                                className="h-3.5 w-3.5 shrink-0 text-brand-400"
-                                strokeWidth={2.4}
-                              />
-                              <span className="truncate">
-                                {pickI18n(s.name, locale)}
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
-                        {c.sampleSeries.length > 4 && (
-                          <p className="mt-2 pl-5 text-xs text-ink-faint">
-                            +{c.sampleSeries.length - 4}
-                          </p>
-                        )}
-                      </div>
+                      <SeriesDisclosure
+                        label={t("seriesLabel")}
+                        series={c.sampleSeries}
+                        locale={locale}
+                      />
                     )}
 
                     <p className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-brand-700 transition-all duration-300 group-hover:gap-2">
