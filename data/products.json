@@ -3213,7 +3213,7 @@
         "en": "Polytetrafluoroethylene (PTFE) dispersion polymerization resin"
       },
 
-      "description": { "zh": "FR203 系列唯一牌号 — 拉伸强度 ≥24 MPa，覆盖生料带与纤维制品。", "en": "Sole grade in the series — tensile strength ≥24 MPa, covering raw tapes and fibers." },
+      "description": { "zh": "高分子量分散 PTFE 树脂粉末，平均粒径约 500 μm、耐压耐热性能良好。适用于糊膏挤出加工，可制造中高密度生料带及 PTFE 长纤与短纤。", "en": "High-MW dispersion PTFE resin powder, average particle size ~500 μm, good pressure and heat resistance. Used for paste extrusion of medium-to-high-density raw tapes plus long and short PTFE fibers." },
 
       "applications": {
         "zh": [
@@ -3262,7 +3262,7 @@
           "id": "ptfe-fr203",
           "name": { "zh": "FR203", "en": "FR203" },
           "tag": { "zh": "高分子量 / 糊膏挤出", "en": "High MW / paste extrusion" },
-          "description": null,
+          "description": { "zh": "FR203 系列唯一牌号 — 拉伸强度 ≥24 MPa，覆盖生料带与纤维制品。", "en": "Sole grade in the series — tensile strength ≥24 MPa, covering raw tapes and fibers." },
           "specs": {
             "average_particle_size":  "400~575 (500)",
             "moisture_content":       "≤0.03 (0.02)",
@@ -3288,7 +3288,7 @@
         "en": "Polytetrafluoroethylene (PTFE) dispersion polymerization resin"
       },
 
-      "description": { "zh": "FR204 系列唯一牌号 — 超高分子量分散树脂，热不稳定指数 ≤10。", "en": "Sole grade in the series — ultra-high-MW dispersion resin, thermal-instability index ≤10." },
+      "description": { "zh": "超高分子量分散 PTFE 树脂粉末，平均粒径约 500 μm、耐压耐热性能良好。适用于糊膏挤出加工，可制造单 / 双向拉伸薄膜与挤出管材，用于服装薄膜、医药过滤膜及膨化板材。", "en": "Ultra-high-MW dispersion PTFE resin powder, average particle size ~500 μm, good pressure and heat resistance. Used for paste extrusion of uni- / bi-directional stretch films and extruded tubes — for garment films, pharmaceutical filter films and expanded boards." },
 
       "applications": {
         "zh": [
@@ -3342,7 +3342,7 @@
           "id": "ptfe-fr204",
           "name": { "zh": "FR204", "en": "FR204" },
           "tag": { "zh": "超高分子量 / 拉伸成膜", "en": "Ultra-high MW / stretch film" },
-          "description": null,
+          "description": { "zh": "FR204 系列唯一牌号 — 超高分子量分散树脂，热不稳定指数 ≤10。", "en": "Sole grade in the series — ultra-high-MW dispersion resin, thermal-instability index ≤10." },
           "specs": {
             "average_particle_size":      "400~600 (500)",
             "moisture_content":           "≤0.03 (0.02)",
@@ -3369,7 +3369,7 @@
         "en": "PTFE concentrated dispersion (milky white or slightly yellow emulsion)"
       },
 
-      "description": { "zh": "FR301K 系列唯一牌号 — 阻燃滴落剂专用 PTFE 分散液。", "en": "Sole grade in the series — PTFE dispersion dedicated to anti-drip-agent production." },
+      "description": { "zh": "PTFE 浓缩水基分散液，固含量约 60%、pH 8–10。适用于工程塑料阻燃滴落剂的生产，作为关键功能添加剂。", "en": "PTFE concentrated aqueous dispersion, ~60% solids, pH 8–10. Used in producing flame-retardant anti-drip agents for engineering plastics as a key functional additive." },
 
       "applications": {
         "zh": [
@@ -3411,7 +3411,7 @@
           "id": "ptfe-fr301k",
           "name": { "zh": "FR301K", "en": "FR301K" },
           "tag": { "zh": "阻燃滴落剂", "en": "Anti-drip agent" },
-          "description": null,
+          "description": { "zh": "FR301K 系列唯一牌号 — 阻燃滴落剂专用 PTFE 分散液。", "en": "Sole grade in the series — PTFE dispersion dedicated to anti-drip-agent production." },
           "specs": {
             "solid_content":        "58~62 (60)",
             "surfactant_content":   "3~7 (4.7)",
@@ -3629,7 +3629,7 @@
         "en": "Modified PTFE concentrated dispersion"
       },
 
-      "description": { "zh": "FR305W 系列唯一牌号 — 改性 PTFE 分散液，作为 PTFE 涂料的表面改性添加剂。", "en": "Sole grade in the series — modified PTFE dispersion used as a surface-improvement additive for PTFE coatings." },
+      "description": { "zh": "改性 PTFE 浓缩水基分散液，固含量约 51%、熔点 305±10°C — 高温下具备良好流动性。适用作 PTFE 涂料的添加剂，改善涂层表面性能与高光泽。", "en": "Modified PTFE concentrated aqueous dispersion, ~51% solids, melting point 305±10°C — good fluidity at high temperature. Used as an additive in PTFE coatings to improve surface performance and gloss." },
 
       "applications": {
         "zh": [
@@ -3671,7 +3671,7 @@
           "id": "ptfe-fr305w",
           "name": { "zh": "FR305W", "en": "FR305W" },
           "tag": { "zh": "改性 / 涂料添加剂", "en": "Modified / coating additive" },
-          "description": null,
+          "description": { "zh": "FR305W 系列唯一牌号 — 改性 PTFE 分散液，作为 PTFE 涂料的表面改性添加剂。", "en": "Sole grade in the series — modified PTFE dispersion used as a surface-improvement additive for PTFE coatings." },
           "specs": {
             "solid_content":      "48~52 (51)",
             "surfactant_content": "7~9 (7.5)",
@@ -3779,7 +3779,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and hexafluoropropylene (HFP)"
       },
 
-      "description": { "zh": "FR462 系列唯一牌号 — 熔融指数 0.8–2.0，FEP 模压通用牌号。", "en": "Sole grade in the series — MFI 0.8–2.0, general-purpose FEP compression grade." },
+      "description": { "zh": "FEP 模压级颗粒（TFE-HFP 共聚），熔点 260°C、长期使用温度 200°C — 兼具优异耐温、耐腐蚀与电绝缘性。适用于模压成型，可制造阀门、管道、衬里、接头及板材棒材。", "en": "FEP compression-molding pellet (TFE-HFP copolymer), Tm 260°C, long-term service 200°C — excellent thermal, corrosion and electrical insulation performance. Used for compression molding of valves, pipelines, linings, joints and plates / rods." },
 
       "applications": {
         "zh": [
@@ -3824,7 +3824,7 @@
           "id": "fep-fr462",
           "name": { "zh": "FR462", "en": "FR462" },
           "tag": { "zh": "模压成型", "en": "Compression molding" },
-          "description": null,
+          "description": { "zh": "FR462 系列唯一牌号 — 熔融指数 0.8–2.0，FEP 模压通用牌号。", "en": "Sole grade in the series — MFI 0.8–2.0, general-purpose FEP compression grade." },
           "specs": {
             "melt_flow_index":        "0.8~2.0 (1.5)",
             "relative_density":       "2.12~2.17 (2.14)",
@@ -3924,7 +3924,7 @@
         "en": "Aqueous dispersion of TFE-HFP copolymer"
       },
 
-      "description": { "zh": "FR463 系列唯一牌号 — 浸渍 / 涂料用 FEP 分散液。", "en": "Sole grade in the series — FEP dispersion for impregnation and coating." },
+      "description": { "zh": "FEP 浓缩水基分散液（TFE-HFP 共聚），固含量约 50%、pH 7–9。适用于浸渍和涂料工艺，可作模具脱模剂及机械与器具表面的不粘涂层。", "en": "FEP concentrated aqueous dispersion (TFE-HFP copolymer), ~50% solids, pH 7–9. Used in impregnation and coating processes as a mold release agent and anti-adhesive coating for machinery and appliances." },
 
       "applications": {
         "zh": [
@@ -3962,7 +3962,7 @@
           "id": "fep-fr463",
           "name": { "zh": "FR463", "en": "FR463" },
           "tag": { "zh": "浸渍 / 不粘涂层", "en": "Impregnation / non-stick coating" },
-          "description": null,
+          "description": { "zh": "FR463 系列唯一牌号 — 浸渍 / 涂料用 FEP 分散液。", "en": "Sole grade in the series — FEP dispersion for impregnation and coating." },
           "specs": {
             "appearance":         { "zh": "乳白色或微黄色", "en": "Milky white or light yellow" },
             "solid_content":      "50±1 (50)",
@@ -4080,7 +4080,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and perfluoroalkyl vinyl ether (PAVE)"
       },
 
-      "description": { "zh": "FR511 系列唯一牌号 — MFI 0.8–3.0，PFA 模压通用牌号。", "en": "Sole grade in the series — MFI 0.8–3.0, general-purpose PFA compression grade." },
+      "description": { "zh": "PFA 模压级颗粒（TFE-PPVE 共聚），熔点 305–315°C、长期使用温度 260°C — 兼具 PTFE 级化学惰性与可熔融加工性。适用于模压与挤出，可制造阀门、管道、衬里、接头及大直径管材棒材。", "en": "PFA compression-molding pellet (TFE-PPVE copolymer), Tm 305–315°C, long-term service 260°C — PTFE-level chemical inertness combined with melt processability. Used for compression molding and extrusion of valves, pipelines, linings, joints and large-diameter pipes / rods." },
 
       "applications": {
         "zh": [
@@ -4126,7 +4126,7 @@
           "id": "pfa-fr511",
           "name": { "zh": "FR511", "en": "FR511" },
           "tag": { "zh": "模压 / 大直径制品", "en": "Compression molding / large parts" },
-          "description": null,
+          "description": { "zh": "FR511 系列唯一牌号 — MFI 0.8–3.0，PFA 模压通用牌号。", "en": "Sole grade in the series — MFI 0.8–3.0, general-purpose PFA compression grade." },
           "specs": {
             "melt_flow_index":        "0.8~3.0 (2.0)",
             "relative_density":       "2.12~2.17 (2.14)",
@@ -4153,7 +4153,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and perfluoroalkyl vinyl ether (PAVE)"
       },
 
-      "description": { "zh": "FR512 系列唯一牌号 — MFI 3.1–8.0，PFA 挤出通用牌号。", "en": "Sole grade in the series — MFI 3.1–8.0, general-purpose PFA extrusion grade." },
+      "description": { "zh": "PFA 挤出级颗粒（TFE-PPVE 共聚），熔点 305–315°C、长期使用温度 260°C。适用于挤出工艺，可挤出尺寸稳定性高的管材与片材。", "en": "PFA extrusion-grade pellet (TFE-PPVE copolymer), Tm 305–315°C, long-term service 260°C. Used for extrusion of pipes and sheets with high dimensional stability." },
 
       "applications": {
         "zh": ["PFA 管材", "PFA 片材"],
@@ -4187,7 +4187,7 @@
           "id": "pfa-fr512",
           "name": { "zh": "FR512", "en": "FR512" },
           "tag": { "zh": "挤出 / 管材片材", "en": "Extrusion / pipes & sheets" },
-          "description": null,
+          "description": { "zh": "FR512 系列唯一牌号 — MFI 3.1–8.0，PFA 挤出通用牌号。", "en": "Sole grade in the series — MFI 3.1–8.0, general-purpose PFA extrusion grade." },
           "specs": {
             "melt_flow_index":        "3.1~8.0",
             "relative_density":       "2.12~2.17 (2.14)",
@@ -4214,7 +4214,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and perfluoroalkyl vinyl ether (PAVE)"
       },
 
-      "description": { "zh": "FR513 系列唯一牌号 — MFI 8.1–18.0,PFA 注塑通用牌号。", "en": "Sole grade in the series — MFI 8.1–18.0, general-purpose PFA injection grade." },
+      "description": { "zh": "PFA 注塑级颗粒（TFE-PPVE 共聚），熔点 305–315°C、长期使用温度 260°C。适用于注塑成型，可制造复杂形状零部件以及接头、弯头等管件。", "en": "PFA injection-grade pellet (TFE-PPVE copolymer), Tm 305–315°C, long-term service 260°C. Used for injection molding of complex-shaped parts plus joints, elbows and other pipe fittings." },
 
       "applications": {
         "zh": [
@@ -4254,7 +4254,7 @@
           "id": "pfa-fr513",
           "name": { "zh": "FR513", "en": "FR513" },
           "tag": { "zh": "注塑成型", "en": "Injection molding" },
-          "description": null,
+          "description": { "zh": "FR513 系列唯一牌号 — MFI 8.1–18.0,PFA 注塑通用牌号。", "en": "Sole grade in the series — MFI 8.1–18.0, general-purpose PFA injection grade." },
           "specs": {
             "melt_flow_index":        "8.1~18.0",
             "relative_density":       "2.12~2.17 (2.14)",
@@ -4281,7 +4281,7 @@
         "en": "Copolymer of tetrafluoroethylene (TFE) and perfluoroalkyl vinyl ether (PAVE)"
       },
 
-      "description": { "zh": "FR515 系列唯一牌号 — MFI 18.1–40.0,PFA 电缆高速挤出专用。", "en": "Sole grade in the series — MFI 18.1–40.0, dedicated PFA grade for high-speed cable extrusion." },
+      "description": { "zh": "PFA 电缆级颗粒（TFE-PPVE 共聚），熔点 305–315°C、长期使用温度 260°C。适用于高速挤出，可制造电线电缆绝缘包覆。", "en": "PFA cable-grade pellet (TFE-PPVE copolymer), Tm 305–315°C, long-term service 260°C. Used for high-speed extrusion of wire & cable insulation coverings." },
 
       "applications": {
         "zh": [
@@ -4319,7 +4319,7 @@
           "id": "pfa-fr515",
           "name": { "zh": "FR515", "en": "FR515" },
           "tag": { "zh": "电缆 / 高速挤出", "en": "Cable / high-speed extrusion" },
-          "description": null,
+          "description": { "zh": "FR515 系列唯一牌号 — MFI 18.1–40.0,PFA 电缆高速挤出专用。", "en": "Sole grade in the series — MFI 18.1–40.0, dedicated PFA grade for high-speed cable extrusion." },
           "specs": {
             "melt_flow_index":        "18.1~40.0",
             "relative_density":       "2.12~2.17 (2.14)",
@@ -4346,7 +4346,7 @@
         "en": "Important fluorine-containing intermediate, molecular formula C₃F₆O"
       },
 
-      "description": { "zh": "HFPO — 纯度 ≥99.3%、含水量 ≤50 ppm 的电子级气体。", "en": "HFPO — electronic-grade gas at ≥99.3% purity and moisture ≤50 ppm." },
+      "description": { "zh": "六氟环氧丙烷（HFPO），分子式 C₃F₆O、沸点 −27°C、纯度 ≥99.3%。重要含氟中间体，用于合成全氟聚醚（PFPE）、PPVE 及含氟表面活性剂等高级含氟功能化合物。", "en": "Hexafluoropropylene oxide (HFPO), formula C₃F₆O, boiling point −27°C, purity ≥99.3%. Key fluorinated intermediate for the synthesis of perfluoropolyethers (PFPE), PPVE and fluorinated surfactants — end uses span chemicals, batteries, semiconductors and aerospace." },
 
       "applications": {
         "zh": [
@@ -4391,7 +4391,7 @@
           "id": "ffc-hfpo",
           "name": { "zh": "HFPO", "en": "HFPO" },
           "tag": { "zh": "含氟中间体", "en": "Fluorine-containing intermediate" },
-          "description": null,
+          "description": { "zh": "HFPO — 纯度 ≥99.3%、含水量 ≤50 ppm 的电子级气体。", "en": "HFPO — electronic-grade gas at ≥99.3% purity and moisture ≤50 ppm." },
           "cas_number": "428-59-1",
           "specs": {
             "chemical_name":     { "zh": "六氟环氧丙烷", "en": "Hexafluoropropylene oxide" },
@@ -4500,7 +4500,7 @@
         "en": "Hexafluoroacetone trihydrate, molecular formula C₃F₆O·3H₂O, CAS 34202-69-2"
       },
 
-      "description": { "zh": "HFA·3H₂O 系列唯一牌号 — 纯度 ≥99%、pH 3–4 的水合物液体。", "en": "Sole grade in the series — trihydrate liquid at ≥99% purity, pH 3–4." },
+      "description": { "zh": "六氟丙酮三水合物（HFA·3H₂O），分子式 C₃F₆O·3H₂O、沸点 106–108°C、纯度 ≥99%。用于医药、农药中间体合成，以及含氟弹性体的聚合或改性。", "en": "Hexafluoroacetone trihydrate (HFA·3H₂O), formula C₃F₆O·3H₂O, boiling point 106–108°C, purity ≥99%. Used in the synthesis of pharmaceutical / agrochemical intermediates and in the polymerization or modification of fluoroelastomers." },
 
       "applications": {
         "zh": [
@@ -4542,7 +4542,7 @@
           "id": "ffc-hfa-3h2o",
           "name": { "zh": "HFA·3H₂O", "en": "HFA·3H₂O" },
           "tag": { "zh": "医药 / 农药中间体", "en": "Pharma / agrochemical intermediate" },
-          "description": null,
+          "description": { "zh": "HFA·3H₂O 系列唯一牌号 — 纯度 ≥99%、pH 3–4 的水合物液体。", "en": "Sole grade in the series — trihydrate liquid at ≥99% purity, pH 3–4." },
           "cas_number": "34202-69-2",
           "specs": {
             "chemical_name":    { "zh": "六氟丙酮三水合物", "en": "Hexafluoroacetone trihydrate" },
@@ -4568,7 +4568,7 @@
         "en": "Hexafluoroisopropanol, molecular formula C₃H₂F₆O, CAS 920-66-1"
       },
 
-      "description": { "zh": "HFIP 系列唯一牌号 — 高纯电子级溶剂,纯度 ≥99.95%。", "en": "Sole grade in the series — high-purity electronic-grade solvent at ≥99.95% purity." },
+      "description": { "zh": "六氟异丙醇（HFIP），分子式 C₃H₂F₆O、沸点 59°C、纯度 ≥99.95%。高极性、低粘度、低表面张力的含氟溶剂，用于七氟醚（吸入麻醉剂）合成、塑料回收及医药农药合成。", "en": "Hexafluoroisopropanol (HFIP), formula C₃H₂F₆O, boiling point 59°C, purity ≥99.95%. High-polarity, low-viscosity, low-surface-tension fluorinated solvent — used in sevoflurane (inhalational anaesthetic) synthesis, plastic recycling and pharmaceutical / agrochemical synthesis." },
 
       "applications": {
         "zh": [
@@ -4616,7 +4616,7 @@
           "id": "ffc-hfip",
           "name": { "zh": "HFIP", "en": "HFIP" },
           "tag": { "zh": "七氟醚原料 / 高极性溶剂", "en": "Sevoflurane feedstock / high-polarity solvent" },
-          "description": null,
+          "description": { "zh": "HFIP 系列唯一牌号 — 高纯电子级溶剂,纯度 ≥99.95%。", "en": "Sole grade in the series — high-purity electronic-grade solvent at ≥99.95% purity." },
           "cas_number": "920-66-1",
           "specs": {
             "chemical_name":         { "zh": "六氟异丙醇", "en": "Hexafluoroisopropanol" },
@@ -4647,7 +4647,7 @@
         "en": "4,4'-(Hexafluoroisopropylidene) bisphenol (Bisphenol AF), molecular formula C₁₅H₁₀F₆O₂, CAS 1478-61-1"
       },
 
-      "description": { "zh": "BPAF 系列唯一牌号 — 高纯固体,纯度 ≥99.5%。", "en": "Sole grade in the series — high-purity solid at ≥99.5%." },
+      "description": { "zh": "双酚 AF（BPAF），分子式 C₁₅H₁₀F₆O₂、熔点 160–163°C、纯度 ≥99.5%。主要用作氟橡胶硫化促进剂，也是含氟聚合物与含氟化学品合成的关键中间体。", "en": "Bisphenol AF (BPAF), formula C₁₅H₁₀F₆O₂, melting point 160–163°C, purity ≥99.5%. Primarily used as a fluororubber vulcanization accelerator and as a key intermediate for fluorinated polymer and chemical synthesis." },
 
       "applications": {
         "zh": [
@@ -4693,7 +4693,7 @@
           "id": "ffc-bpaf",
           "name": { "zh": "BPAF", "en": "BPAF" },
           "tag": { "zh": "氟橡胶硫化促进剂", "en": "Fluorine rubber vulcanization accelerator" },
-          "description": null,
+          "description": { "zh": "BPAF 系列唯一牌号 — 高纯固体,纯度 ≥99.5%。", "en": "Sole grade in the series — high-purity solid at ≥99.5%." },
           "cas_number": "1478-61-1",
           "specs": {
             "chemical_name":     { "zh": "4,4'-（六氟异丙烯）双酚 / 双酚 AF", "en": "4,4'-(Hexafluoroisopropylidene) bisphenol; Bisphenol AF" },
@@ -4887,7 +4887,7 @@
         "en": "2,5-Bis(trifluoromethyl)-3,6-dioxaundecafluorononanoyl fluoride, C₉F₁₈O₃, CAS 2641-34-1"
       },
 
-      "description": { "zh": "HFPO trimer 系列唯一牌号 — 纯度 ≥95%，含氟表面活性剂合成原料。", "en": "Sole grade in the series — ≥95% purity, feedstock for fluorinated surfactants." },
+      "description": { "zh": "六氟环氧丙烷三聚物（HFPO trimer），分子式 C₉F₁₈O₃、沸点 113°C、纯度 ≥95%。用于含氟表面活性剂的合成。", "en": "Hexafluoropropylene oxide trimer (HFPO trimer), formula C₉F₁₈O₃, boiling point 113°C, purity ≥95%. Used in the synthesis of fluorinated surfactants." },
 
       "applications": {
         "zh": [
@@ -4921,7 +4921,7 @@
           "id": "ffc-hfpo-trimer",
           "name": { "zh": "HFPO trimer", "en": "HFPO trimer" },
           "tag": { "zh": "含氟表面活性剂中间体", "en": "Fluorinated surfactant intermediate" },
-          "description": null,
+          "description": { "zh": "HFPO trimer 系列唯一牌号 — 纯度 ≥95%，含氟表面活性剂合成原料。", "en": "Sole grade in the series — ≥95% purity, feedstock for fluorinated surfactants." },
           "cas_number": "2641-34-1",
           "specs": {
             "chemical_name":    { "zh": "2,5-双（三氟甲基）-3,6-二氧十一氟壬酰氟", "en": "2,5-Bis(trifluoromethyl)-3,6-dioxaundecafluorononanoyl fluoride" },
@@ -4948,7 +4948,7 @@
         "en": "Perfluoropropyl vinyl ether, C₅F₁₀O, CAS 1623-05-8"
       },
 
-      "description": { "zh": "PPVE 系列唯一牌号 — 纯度 ≥99.5% 的共聚单体。", "en": "Sole grade in the series — ≥99.5%-purity comonomer." },
+      "description": { "zh": "全氟丙基乙烯基醚（PPVE），分子式 C₅F₁₀O、沸点 160–163°C、纯度 ≥99.5%。含氟乙烯基醚类共聚单体，用于 PFA、改性 PTFE 等含氟聚合物的合成，以及农化、医药领域的有机分子功能化。", "en": "Perfluoropropyl vinyl ether (PPVE), formula C₅F₁₀O, boiling point 160–163°C, purity ≥99.5%. Fluorinated vinyl-ether comonomer used in PFA, modified PTFE and other fluoropolymer synthesis, and in functionalizing organic molecules for agrochemicals and pharmaceuticals." },
 
       "applications": {
         "zh": [
@@ -4994,7 +4994,7 @@
           "id": "ffc-ppve",
           "name": { "zh": "PPVE", "en": "PPVE" },
           "tag": { "zh": "PFA 共聚单体", "en": "PFA comonomer" },
-          "description": null,
+          "description": { "zh": "PPVE 系列唯一牌号 — 纯度 ≥99.5% 的共聚单体。", "en": "Sole grade in the series — ≥99.5%-purity comonomer." },
           "cas_number": "1623-05-8",
           "specs": {
             "chemical_name":    { "zh": "全氟丙基乙烯基醚", "en": "Perfluoropropyl vinyl ether" },

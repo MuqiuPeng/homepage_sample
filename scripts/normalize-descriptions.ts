@@ -986,10 +986,20 @@ type Doc = { series: Series[]; [k: string]: unknown };
  * All three are caught by anchoring on the `"id": "<id>"` line, then finding
  * the next `"description":` within the same object, then parsing forward until
  * the value ends (null | }).
+ *
+ * `searchFrom` controls where the `indexOf` lookup starts — for variant
+ * patches on single-variant series (where variant_id == series_id), the
+ * caller passes the offset just past the series's `"id":` line so we land on
+ * the variant block instead of re-patching the series block. Defaults to 0
+ * which gives the previous "first match wins" behaviour.
  */
-function findDescriptionSpan(text: string, id: string): { start: number; end: number; indent: string; afterIdEnd: number } | null {
+function findDescriptionSpan(
+  text: string,
+  id: string,
+  searchFrom = 0,
+): { start: number; end: number; indent: string; afterIdEnd: number } | null {
   const idLine = `"id": ${JSON.stringify(id)}`;
-  const idIdx = text.indexOf(idLine);
+  const idIdx = text.indexOf(idLine, searchFrom);
   if (idIdx === -1) return null;
 
   // Find the start of the line containing this id (for indent calculation).
@@ -1188,6 +1198,21 @@ function main() {
   type Patch = DescPatch | AppPatch;
   let text = raw;
 
+  // Single-variant series where the lone variant id equals the series id
+  // (e.g. ptfe-fr203, fep-fr462, ffc-hfpo). For those, the JSON contains
+  // `"id": "<id>"` TWICE — once for the series and once for the inner
+  // variant. The earlier version of this script did `text.indexOf(...)` for
+  // both patches, so both landed on the series block (overwriting the
+  // 2-sentence series description with the 1-sentence variant text and
+  // leaving the variant slot null). We need to send the variant patch to
+  // the SECOND occurrence in those cases.
+  const collidingIds = new Set<string>();
+  for (const s of data.series) {
+    for (const v of s.variants ?? []) {
+      if (v.id === s.id) collidingIds.add(s.id);
+    }
+  }
+
   const patches: Patch[] = [];
   for (const [id, neu] of Object.entries(SERIES_DESCRIPTIONS)) {
     const idOffset = text.indexOf(`"id": ${JSON.stringify(id)}`);
@@ -1195,8 +1220,15 @@ function main() {
     patches.push({ id, kind: "series-desc", neu, idOffset });
   }
   for (const [id, neu] of Object.entries(VARIANT_DESCRIPTIONS)) {
-    const idOffset = text.indexOf(`"id": ${JSON.stringify(id)}`);
-    if (idOffset === -1) throw new Error(`variant:${id} not found in source`);
+    const firstIdx = text.indexOf(`"id": ${JSON.stringify(id)}`);
+    if (firstIdx === -1) throw new Error(`variant:${id} not found in source`);
+    // For colliding ids, point at the SECOND occurrence (the actual variant).
+    const idOffset = collidingIds.has(id)
+      ? text.indexOf(`"id": ${JSON.stringify(id)}`, firstIdx + 1)
+      : firstIdx;
+    if (idOffset === -1) {
+      throw new Error(`variant:${id} only appears once in source (collision id but no second match)`);
+    }
     patches.push({ id, kind: "variant-desc", neu, idOffset });
   }
   for (const [id, neu] of Object.entries(APPLICATIONS_OVERRIDES)) {
@@ -1223,8 +1255,10 @@ function main() {
       applicationsChanged++;
       continue;
     }
-    // Description patch (series or variant).
-    const span = findDescriptionSpan(text, patch.id);
+    // Description patch (series or variant). Pass the patch's resolved
+    // offset as the search start so colliding-id variants don't get
+    // misdirected to the series block.
+    const span = findDescriptionSpan(text, patch.id, patch.idOffset);
     if (!span) {
       failures.push(`${patch.kind}:${patch.id} — unexpected span shape`);
       continue;
