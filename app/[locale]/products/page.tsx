@@ -15,9 +15,9 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getCategoriesWithCounts } from "@/lib/db/queries";
 import { pickI18n, type Locale } from "@/lib/i18n-helpers";
 
-// ISR: pre-render statically, then re-generate at most once every 60s so
-// database edits show up without a redeploy.
-export const revalidate = 60;
+// Event-driven ISR: invalidated on demand by `/api/revalidate` (Supabase
+// webhook). The long `revalidate` is just a safety-net fallback.
+export const revalidate = 86400;
 
 /**
  * Visual icon + accent palette per category. Kept local because it's pure

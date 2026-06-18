@@ -11,9 +11,10 @@ import {
 } from "@/lib/db/queries";
 import { pickI18n, pickI18nList, type Locale } from "@/lib/i18n-helpers";
 
-// ISR: re-generate at most once every 60s. `dynamicParams = true` lets
-// categories added to the DB after build render on first request instead of 404.
-export const revalidate = 60;
+// Event-driven ISR: invalidated on demand by `/api/revalidate` (Supabase
+// webhook); the long `revalidate` is a safety-net fallback. `dynamicParams`
+// lets categories added after build render on first request instead of 404.
+export const revalidate = 86400;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {

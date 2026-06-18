@@ -11,9 +11,11 @@ import {
   getHomepageCategories,
 } from "@/lib/db/queries";
 
-// ISR: pre-render statically, then re-generate in the background at most
-// once every 60s so database edits show up without a redeploy.
-export const revalidate = 60;
+// Event-driven ISR: catalog pages are invalidated on demand by
+// `/api/revalidate` (called from a Supabase webhook on every DB write), so
+// edits show up right away. The long `revalidate` is only a safety-net fallback
+// in case a webhook is ever missed — not the primary update path.
+export const revalidate = 86400; // 1 day fallback; real updates are push-based
 
 export default async function HomePage({
   params,
@@ -23,8 +25,8 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  // Server-side data fetch — runs once at build time, plain JSON over to
-  // the client components below.
+  // Server-side data fetch — runs at build time and on each revalidation,
+  // then hands plain JSON to the client components below.
   const [categories, featured] = await Promise.all([
     getHomepageCategories(3),
     getFeaturedVariants(),

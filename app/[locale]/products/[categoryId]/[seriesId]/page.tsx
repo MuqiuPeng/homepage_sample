@@ -18,9 +18,10 @@ import type {
   SpecsSchemaEntry,
 } from "@/lib/db/schema";
 
-// ISR: re-generate at most once every 60s. `dynamicParams = true` lets
-// series added to the DB after build render on first request instead of 404.
-export const revalidate = 60;
+// Event-driven ISR: invalidated on demand by `/api/revalidate` (Supabase
+// webhook); the long `revalidate` is a safety-net fallback. `dynamicParams`
+// lets series added after build render on first request instead of 404.
+export const revalidate = 86400;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
